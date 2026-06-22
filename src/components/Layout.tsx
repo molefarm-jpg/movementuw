@@ -70,7 +70,7 @@ export default function Layout() {
             <button
               onClick={openPartner}
               className="hidden sm:flex items-center gap-1.5 h-8 px-4 text-white text-xs font-medium rounded-full active:scale-[0.97] transition-all"
-              style={{ backgroundColor: UOFW_COLORS.gold, hover: { opacity: 0.9 } }}
+              style={{ backgroundColor: UOFW_COLORS.gold }}
             >
               <Handshake className="w-3.5 h-3.5" />
               Partner
@@ -228,12 +228,30 @@ export default function Layout() {
       </footer>
 
       {/* ========== MOBILE PINNED BOTTOM BAR ========== */}
-      <div className="sm:hidden fixed bottom-0 left-0 right-0 z-50 px-4 py-3 flex items-center gap-3 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]" style={{ backgroundColor: UOFW_COLORS.purple, borderTop: `3px solid ${UOFW_COLORS.gold}` }}>
-        <a
-          href={APP_DOWNLOAD_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="flex-1 flex items-center justify-center gap-2 h-10 text-white text-xs font-bold rounded-full active:scale-[0.97] transition-all\"\n          style={{ backgroundColor: UOFW_COLORS.gold }}\n          onClick={() => console.log('[CLICK TRACK] Mobile Bar: Get the App')}\n        >\n          <Download className=\"w-4 h-4\" />\n          Get the App\n        </a>\n        <button\n          onClick={openPartner}\n          className=\"flex items-center justify-center gap-2 h-10 px-4 text-xs font-medium rounded-full active:scale-[0.97] transition-all\"\n          style={{ color: UOFW_COLORS.gold, border: `1.5px solid ${UOFW_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.1)' }}\n        >\n          <Handshake className=\"w-3.5 h-3.5\" />\n          Partner\n        </button>\n      </div>
+        <div
+          className="sm:hidden fixed bottom-0 left-0 right-0 z-50 px-4 py-3 flex items-center gap-3 shadow-[0_-4px_20px_rgba(0,0,0,0.08)]"
+          style={{ backgroundColor: UOFW_COLORS.purple, borderTop: `3px solid ${UOFW_COLORS.gold}` }}
+        >
+          <a
+            href={APP_DOWNLOAD_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex-1 flex items-center justify-center gap-2 h-10 text-white text-xs font-bold rounded-full active:scale-[0.97] transition-all"
+            style={{ backgroundColor: UOFW_COLORS.gold }}
+            onClick={() => console.log('[CLICK TRACK] Mobile Bar: Get the App')}
+          >
+            <Download className="w-4 h-4" />
+            Get the App
+          </a>
+          <button
+            onClick={openPartner}
+            className="flex items-center justify-center gap-2 h-10 px-4 text-xs font-medium rounded-full active:scale-[0.97] transition-all"
+            style={{ color: UOFW_COLORS.gold, border: `1.5px solid ${UOFW_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.1)' }}
+          >
+            <Handshake className="w-3.5 h-3.5" />
+            Partner
+          </button>
+        </div>
 
       {/* Modals */}
       <PartnerModal open={isPartnerOpen} onClose={closePartner} />

@@ -6,22 +6,28 @@ import { SITE_NAME, APP_DOWNLOAD_URL, UOFW_COLORS } from '@/lib/siteConfig';
 const STEPS = [
   {
     icon: Download,
-    color: UOFW_COLORS.purple,
+    iconColor: UOFW_COLORS.purple,
+    iconBg: 'rgba(57,39,91,0.12)',
     step: 'Step 1',
+    stepColor: 'text-uw-purple',
     title: `Download the ${SITE_NAME} App`,
     description: 'Get the free app on iOS or Android and create your student profile.',
   },
   {
     icon: Store,
-    color: UOFW_COLORS.gold,
+    iconColor: UOFW_COLORS.gold,
+    iconBg: 'rgba(142,99,42,0.12)',
     step: 'Step 2',
+    stepColor: 'text-uw-gold-dark',
     title: 'Find merchants on The Ave',
     description: 'Browse 8+ local businesses with exclusive student discounts.',
   },
   {
     icon: QrCode,
-    color: '#16A34A',
+    iconColor: '#16A34A',
+    iconBg: 'rgba(22,163,74,0.08)',
     step: 'Step 3',
+    stepColor: 'text-emerald-600',
     title: 'Scan & redeem instantly',
     description: 'Show your digital UofW student ID at checkout and save every time.',
   },
@@ -88,10 +94,10 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8">
             {STEPS.map((s) => (
               <div key={s.step} className="flex flex-col items-center text-center">
-                <div className={`w-12 h-12 rounded-full ${s.iconBg} flex items-center justify-center mb-3`}>
-                  <s.icon className={`w-5 h-5 ${s.iconColor}`} />
+                <div className="w-12 h-12 rounded-full flex items-center justify-center mb-3" style={{ background: s.iconBg }}>
+                  <s.icon className="w-5 h-5" style={{ color: s.iconColor }} />
                 </div>
-                <span className={`text-[10px] font-bold uppercase tracking-widest ${s.stepColor} mb-1`}>
+                <span className="text-[10px] font-bold uppercase tracking-widest mb-1" style={{ color: s.iconColor }}>
                   {s.step}
                 </span>
                 <p className="text-sm font-semibold text-[#1A1A1A] mb-1">{s.title}</p>
