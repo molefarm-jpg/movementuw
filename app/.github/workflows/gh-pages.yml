@@ -21,12 +21,13 @@ jobs:
         run: echo "VITE_BASE=/" >> $GITHUB_ENV
 
       - name: Install
-        run: npm ci
+        run: npm install --prefer-offline --no-audit
         working-directory: ./app
 
       - name: Build
         run: npm run build
         working-directory: ./app
+        timeout-minutes: 10
 
       - name: Ensure SPA fallback
         run: cp dist/index.html dist/404.html || true
