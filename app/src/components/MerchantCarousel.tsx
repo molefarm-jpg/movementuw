@@ -164,7 +164,7 @@ export default function MerchantCarousel() {
                     <img
                       src={m.imageUrl}
                       alt={`${m.name} thumbnail`}
-                      className="h-20 w-20 object-cover sm:h-24 sm:w-24"
+                      className="h-24 w-24 object-cover sm:h-32 sm:w-32"
                       loading="lazy"
                     />
                   </div>
