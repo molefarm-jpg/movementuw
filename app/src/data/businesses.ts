@@ -52,6 +52,7 @@ export const ACTIVE_MERCHANTS: Merchant[] = [
     name: "Mama Grande's Cafe",
     category: 'cafe',
     websiteUrl: 'https://www.mamagrandescafe.com/',
+    imageUrl: '/images/merchants/Mama Grande Owner - Alex Garcia.jpg',
     address: 'The Ave, Seattle, WA',
     description: 'Family-owned cafe with hearty breakfast plates, Mexican-inspired dishes, and great coffee.',
     discount: `Unlock discount via ${SITE_NAME} App`,
