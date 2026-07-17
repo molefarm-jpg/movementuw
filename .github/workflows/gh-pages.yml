@@ -32,7 +32,11 @@ jobs:
         run: cp app/dist/index.html app/dist/404.html || true
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./app/dist
+        run: |
+          cd app/dist
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git init
+          git add -A
+          git commit -m "Deploy: $(cd .. && git rev-parse --short HEAD)"
+          git push -f https://oauth2:${{ secrets.GITHUB_TOKEN }}@github.com/molefarm-jpg/movementuw.git HEAD:gh-pages
