@@ -40,7 +40,7 @@ export const ACTIVE_MERCHANTS: Merchant[] = [
     id: '2',
     name: 'One Bite Cafe',
     category: 'cafe',
-    websiteUrl: 'https://www.toasttab.com/local/order/onebitecafe-seattle/',
+    websiteUrl: 'https://www.toasttab.com/local/order/onebitecafe-seattle/r-ae180206-386a-416e-aa03-4d783ba309bf',
     imageUrl: '/images/merchants/onebitecafe-owner.jfif',
     address: 'The Ave, Seattle, WA',
     description: 'Cozy neighborhood cafe serving espresso drinks, fresh pastries, and light bites.',
