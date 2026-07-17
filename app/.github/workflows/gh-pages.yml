@@ -22,15 +22,18 @@ jobs:
 
       - name: Install
         run: npm ci
+        working-directory: ./app
 
       - name: Build
         run: npm run build
+        working-directory: ./app
 
       - name: Ensure SPA fallback
         run: cp dist/index.html dist/404.html || true
+        working-directory: ./app
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist
+          publish_dir: ./app/dist
