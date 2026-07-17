@@ -5,7 +5,9 @@ on:
     branches: [ main ]
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   build:
@@ -31,12 +33,18 @@ jobs:
       - name: Ensure SPA fallback
         run: cp app/dist/index.html app/dist/404.html || true
 
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './app/dist'
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
       - name: Deploy to GitHub Pages
-        run: |
-          cd app/dist
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git init
-          git add -A
-          git commit -m "Deploy: $(cd .. && git rev-parse --short HEAD)"
-          git push -f https://oauth2:${{ secrets.GITHUB_TOKEN }}@github.com/molefarm-jpg/movementuw.git HEAD:gh-pages
+        id: deployment
+        uses: actions/deploy-pages@v4
