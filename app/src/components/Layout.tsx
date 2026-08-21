@@ -66,7 +66,7 @@ export default function Layout() {
               target="_blank"
               rel="noopener noreferrer"
               className="hidden sm:flex items-center gap-1.5 h-8 px-3 text-xs font-medium rounded-full transition-all"
-              style={{ color: UOFW_COLORS.gold, border: `1.5px solid ${UOFW_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.1)' }}
+              style={{ color: '#ffffff', border: `1.5px solid ${UOFW_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.1)' }}
               onClick={() => console.log('[CLICK TRACK] Nav: Get the App')}
             >
               <Download className="w-3.5 h-3.5" />
