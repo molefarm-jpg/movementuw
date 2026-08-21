@@ -43,6 +43,13 @@ export default defineConfig([
 ])
 ```
 
+## Deployment URLs
+
+- GitHub repository: `https://github.com/molefarm-jpg/movementuw`
+- GitHub Pages project URL: `https://molefarm-jpg.github.io/movementuw/`
+- Production URL (custom domain): `https://movementuw.college`
+- Note: The GitHub Pages URL redirects to the custom domain.
+
 You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
 
 ```js

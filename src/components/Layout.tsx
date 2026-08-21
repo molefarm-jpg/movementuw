@@ -4,6 +4,7 @@ import { Handshake, Download, Menu, X, AlertTriangle } from 'lucide-react';
 import { useModal } from '@/hooks/useModal';
 import { SITE_NAME, APP_DOWNLOAD_URL, UOFW_COLORS } from '@/lib/siteConfig';
 import PartnerModal from './PartnerModal';
+import RouteSeo from './RouteSeo';
 
 const NAV_LINKS = [
   { to: '/', label: 'Home' },
@@ -21,6 +22,7 @@ export default function Layout() {
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#F5F5F5' }}>
+      <RouteSeo />
       {/* ========== HEADER ========== */}
       <header className="sticky top-0 z-40" style={{ backgroundColor: UOFW_COLORS.purple, borderBottom: `3px solid ${UOFW_COLORS.gold}` }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">

@@ -1,4 +1,5 @@
 import { MapPin, GraduationCap, Download } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { SITE_NAME, APP_DOWNLOAD_URL } from '@/lib/siteConfig';
 
 const MERCHANTS_ON_THE_AVE = [
@@ -109,6 +110,25 @@ export default function UofW() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="px-4 sm:px-6 max-w-3xl mx-auto pb-16">
+        <div className="rounded-xl border border-[#E8E8E6] p-6 sm:p-8">
+          <h2 className="text-base font-semibold text-[#1A1A1A] mb-3">
+            UW discount guides
+          </h2>
+          <p className="text-sm text-[#6B6B6B] leading-relaxed mb-4">
+            Explore detailed student savings guides for The Ave and the wider University District.
+          </p>
+          <div className="space-y-2">
+            <Link to="/uw-student-discounts-the-ave" className="block text-sm font-semibold text-uw-purple hover:underline">
+              UW Student Discounts on The Ave
+            </Link>
+            <Link to="/university-district-student-savings-guide" className="block text-sm font-semibold text-uw-purple hover:underline">
+              University District Student Savings Guide
+            </Link>
+          </div>
         </div>
       </section>
     </div>
