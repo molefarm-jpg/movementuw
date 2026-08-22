@@ -23,7 +23,7 @@ export default function UwStudentDiscountsAve() {
           className="inline-flex items-center gap-2 px-6 py-3 bg-uw-purple text-white font-bold text-sm rounded-full hover:bg-uw-purple-light active:scale-[0.97] transition-all"
         >
           <Download className="w-4 h-4" />
-          {`Download ${SITE_NAME} App`}
+          {`Download ${SITE_NAME} Social App`}
         </a>
       </section>
 
@@ -31,7 +31,7 @@ export default function UwStudentDiscountsAve() {
         <div className="rounded-xl border border-[#E8E8E6] p-6 sm:p-8">
           <h2 className="text-base font-semibold text-[#1A1A1A] mb-3">How to claim discounts as a UW student</h2>
           <ol className="space-y-3 text-sm text-[#6B6B6B] leading-relaxed list-decimal list-inside">
-            <li>Download The Movement app and create your student profile.</li>
+            <li>Download The Movement Social App and create your student profile.</li>
             <li>Verify your student status with your UW email.</li>
             <li>Browse active offers and choose your merchant.</li>
             <li>Show your in-app student ID at checkout to redeem instantly.</li>

@@ -34,7 +34,7 @@ const VALUE_PROPS = [
   {
     icon: Store,
     title: 'Free merchant profile',
-    description: `List your business on ${SITE_NAME} at no cost. Your profile includes photos, hours, menu, and your student offer.`,
+    description: `List your business on the Social App at no cost. Your profile includes photos, hours, menu, and your student offer.`,
   },
   {
     icon: ShieldCheck,
@@ -71,7 +71,7 @@ const PROCESS_STEPS = [
     step: '3',
     icon: Rocket,
     title: 'Go Live & Get Discovered',
-    description: '`Your deal goes live to thousands of UofW students browsing ${SITE_NAME} app.`',
+    description: '`Your deal goes live to thousands of UofW students browsing the Social App.`',
   },
   {
     step: '4',
@@ -97,7 +97,7 @@ const FAQS = [
   },
   {
     q: 'How do students redeem the discount?',
-    a: '`Students show their digital student ID through ${SITE_NAME} app at checkout. You verify it in seconds — no paper coupons needed.`',
+    a: '`Students show their digital student ID through the Social App at checkout. You verify it in seconds — no paper coupons needed.`',
   },
 ];
 
@@ -254,7 +254,7 @@ export default function Merchants() {
         <div className="max-w-3xl mx-auto flex items-start sm:items-center gap-2">
           <AlertTriangle className="w-4 h-4 text-amber-500 shrink-0 mt-0.5 sm:mt-0" />
           <p className="text-xs text-amber-700 leading-relaxed">
-            <span className="font-semibold">Attention:</span> {`All student discounts listed below are exclusively available and redeemable through ${SITE_NAME} social app.`}{' '}
+            <span className="font-semibold">Attention:</span> {`All student discounts listed below are exclusively available and redeemable through the Social App.`}{' '}
             <a
               href={APP_DOWNLOAD_URL}
               target="_blank"

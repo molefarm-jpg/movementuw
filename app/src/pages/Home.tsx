@@ -10,7 +10,7 @@ const STEPS = [
     iconBg: 'rgba(57,39,91,0.12)',
     step: 'Step 1',
     stepColor: 'text-uw-purple',
-    title: `Download ${SITE_NAME} App`,
+    title: `Download ${SITE_NAME} Social App`,
     description: 'Get the free app on iOS or Android and create your student profile.',
   },
   {
@@ -36,8 +36,8 @@ const STEPS = [
 const FEATURES = [
   {
     title: 'For Students',
-    description: `Unlock exclusive discounts at your favorite spots on The Ave. From coffee to haircuts, save every day with ${SITE_NAME} app.`,
-    cta: 'Download the App',
+    description: `Unlock exclusive discounts at your favorite spots on The Ave. From coffee to haircuts, save every day with ${SITE_NAME} Social App.`,
+    cta: 'Get the Social App',
     href: APP_DOWNLOAD_URL,
   },
   {
@@ -80,7 +80,7 @@ export default function Home() {
             onClick={() => console.log('[CLICK TRACK] Home: Download App')}
           >
             <Download className="w-3.5 h-3.5" />
-            {`Download ${SITE_NAME} App`}
+            Get the Social App
           </a>
         </div>
       </section>

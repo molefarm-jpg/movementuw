@@ -15,7 +15,7 @@ const ROUTE_SEO: Record<string, SeoConfig> = {
   '/': {
     title: 'UofW Student Discounts on The Ave | The Movement at UW Seattle',
     description:
-      'Discover exclusive University of Washington student discounts on The Ave and across the U District. Download The Movement app, verify student ID, and save daily.',
+      'Discover exclusive University of Washington student discounts on The Ave and across the U District. Download The Movement Social App, verify student ID, and save daily.',
     keywords:
       'University of Washington student discounts, UofW discounts, The Ave deals, University District deals, UW student app',
   },
@@ -43,7 +43,7 @@ const ROUTE_SEO: Record<string, SeoConfig> = {
   '/students': {
     title: 'For Students: UW Seattle Deals & Discounts | The Movement',
     description:
-      'UW students get exclusive local discounts with The Movement app. Browse offers, show your digital student ID, and save at participating University District businesses.',
+      'UW students get exclusive local discounts with The Movement Social App. Browse offers, show your digital student ID, and save at participating University District businesses.',
     keywords:
       'UofW student deals, University of Washington discounts, Seattle student savings, digital student ID discounts',
   },
@@ -57,7 +57,7 @@ const ROUTE_SEO: Record<string, SeoConfig> = {
   '/uw-student-discounts-the-ave': {
     title: 'UW Student Discounts on The Ave | 2026 Savings Guide',
     description:
-      'Find UW student discounts on The Ave with this practical guide. Learn where to look, how to redeem with The Movement app, and how to save more each week.',
+      'Find UW student discounts on The Ave with this practical guide. Learn where to look, how to redeem with The Movement Social App, and how to save more each week.',
     keywords:
       'UW student discounts The Ave, University Way discounts, Seattle student deals, U District savings guide',
   },

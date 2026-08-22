@@ -5,17 +5,17 @@ const TESTIMONIALS = [
   {
     name: 'Alex R.',
     role: 'UofW Junior',
-    text: `I use ${SITE_NAME} app almost every day. The discounts at One Bite Cafe and Mama Grande's are only available through the app — I have saved over $40 this quarter alone.`,
+    text: `I use ${SITE_NAME} Social App almost every day. The discounts at One Bite Cafe and Mama Grande's are only available through the app — I have saved over $40 this quarter alone.`,
   },
   {
     name: 'Jordan M.',
     role: 'UofW Sophomore',
-    text: `As a student on a budget, every dollar counts. ${SITE_NAME} app is the only way to unlock these discounts. It makes supporting local businesses so easy.`,
+    text: `As a student on a budget, every dollar counts. ${SITE_NAME} Social App is the only way to unlock these discounts. It makes supporting local businesses so easy.`,
   },
   {
     name: 'Priya S.',
     role: 'UofW Senior',
-    text: `I love that I can just pull up ${SITE_NAME} app and show my digital student ID. No fumbling for my UofW student ID — all the discounts are right there in one place.`,
+    text: `I love that I can just pull up ${SITE_NAME} Social App and show my digital student ID. No fumbling for my UofW student ID — all the discounts are right there in one place.`,
   },
 ];
 
@@ -31,7 +31,7 @@ export default function Community() {
           A movement built by <span className="text-uw-purple">students</span>, for <span className="text-uw-purple">students.</span>
         </h1>
         <p className="text-sm sm:text-base text-[#6B6B6B] leading-relaxed max-w-lg mx-auto">
-          {`${SITE_NAME} is more than discounts — it is a community of UofW students supporting local businesses through one shared app. Join thousands of UofW students already saving on The Ave. Download the app to be part of it.`}
+          {`${SITE_NAME} is more than discounts — it is a community of UofW students supporting local businesses through one shared app. Join thousands of UofW students already saving on The Ave. Download the Social App to be part of it.`}
         </p>
       </section>
 
@@ -42,17 +42,17 @@ export default function Community() {
             {
               icon: Heart,
               title: 'Support Local',
-              desc: `Every discount redeemed through ${SITE_NAME} app keeps dollars flowing into our neighborhood businesses.`,
+              desc: `Every discount redeemed through the Social App keeps dollars flowing into our neighborhood businesses.`,
             },
             {
               icon: Users,
               title: 'Student-Led',
-              desc: `${SITE_NAME} app is built with student input at every step. Your voice shapes what we build.`,
+              desc: `The Social App is built with student input at every step. Your voice shapes what we build.`,
             },
             {
               icon: MessageCircle,
               title: 'Spread the Word',
-              desc: `Tell your friends, roommates, and classmates to download ${SITE_NAME} app. The more students join, the more merchants we activate.`,
+              desc: `Tell your friends, roommates, and classmates to download the Social App. The more students join, the more merchants we activate.`,
             },
           ].map((p) => (
             <div
@@ -109,7 +109,7 @@ export default function Community() {
             Join the community
           </h2>
           <p className="text-sm text-[#6B6B6B] max-w-md mx-auto mb-4">
-            {`Help us grow ${SITE_NAME} at UofW. Download the app, share your favorite discounts, suggest new merchants, and bring your friends along.`}
+            {`Help us grow ${SITE_NAME} at UofW. Download the Social App, share your favorite discounts, suggest new merchants, and bring your friends along.`}
           </p>
           <p className="text-xs text-[#9E9E9E]">
             Have a story to share? Reach out — we would love to feature you.

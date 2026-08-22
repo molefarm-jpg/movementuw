@@ -39,7 +39,7 @@ export default function UofW() {
           className="inline-flex items-center gap-2 px-6 py-3 bg-uw-purple text-white font-bold text-sm rounded-full hover:bg-uw-purple-light active:scale-[0.97] transition-all"
         >
           <Download className="w-4 h-4" />
-          {`Download ${SITE_NAME} App`}
+          Get the Social App
         </a>
       </section>
 
@@ -81,7 +81,7 @@ export default function UofW() {
           {[
             {
               step: '1',
-              title: `Download ${SITE_NAME} App`,
+              title: `Download ${SITE_NAME} Social App`,
               desc: 'Available free on iOS and Android. Sign up with your UofW email to verify your student status.',
             },
             {

@@ -13,13 +13,13 @@ const VALUES = [
     icon: Users,
     title: 'For Students',
     description:
-      `${SITE_NAME} app is the only way to verify your student status and claim the merchant offers listed on this hub. Download the app, verify your enrollment, and unlock exclusive discounts at merchants on The Ave instantly.`,
+      `The Social App is the only way to verify your student status and claim the merchant offers listed on this hub. Download the Social App, verify your enrollment, and unlock exclusive discounts at merchants on The Ave instantly.`,
   },
   {
     icon: TrendingUp,
     title: 'For Merchants',
     description:
-      `Local businesses gain access to a loyal, engaged customer base of thousands of college students through ${SITE_NAME} app. No upfront costs, no complicated setup — just activate your discount and watch verified student foot traffic grow.`,
+      `Local businesses gain access to a loyal, engaged customer base of thousands of college students through ${SITE_NAME} Social App. No upfront costs, no complicated setup — just activate your discount and watch verified student foot traffic grow.`,
   },
   {
     icon: Heart,
@@ -71,7 +71,7 @@ export default function About() {
           Building bridges between <span className="text-uw-purple">students</span> and <span className="text-uw-purple">local business.</span>
         </h1>
         <p className="text-sm sm:text-base text-[#6B6B6B] leading-relaxed max-w-lg mx-auto">
-          {`${SITE_NAME} is a student discount activation platform. Every offer on this hub is exclusively available and redeemable through ${SITE_NAME} app — the only way to verify your student status and claim these deals.`}
+          {`${SITE_NAME} is a student discount activation platform. Every offer on this hub is exclusively available and redeemable through ${SITE_NAME} Social App — the only way to verify your student status and claim these deals.`}
         </p>
       </section>
 

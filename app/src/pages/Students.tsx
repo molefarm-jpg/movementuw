@@ -5,12 +5,12 @@ const BENEFITS = [
   {
     icon: Tag,
     title: 'Exclusive Discounts',
-    description: `${SITE_NAME} app is the only way to access and redeem the student discounts listed on this hub. Download to unlock every deal.`,
+    description: `${SITE_NAME} Social App is the only way to access and redeem the student discounts listed on this hub. Download to unlock every deal.`,
   },
   {
     icon: QrCode,
     title: 'Digital UofW Student ID',
-    description: `Verify your student status once inside ${SITE_NAME} app, then show your digital ID at any partner merchant to redeem instantly.`,
+    description: `Verify your student status once inside ${SITE_NAME} Social App, then show your digital ID at any partner merchant to redeem instantly.`,
   },
   {
     icon: Bell,
@@ -20,7 +20,7 @@ const BENEFITS = [
   {
     icon: Shield,
     title: 'Always Free',
-    description: `${SITE_NAME} app is 100% free for students. No subscriptions, no fees, no catches — just verified savings on The Ave.`,
+    description: `${SITE_NAME} Social App is 100% free for students. No subscriptions, no fees, no catches — just verified savings on The Ave.`,
   },
 ];
 
@@ -36,7 +36,7 @@ export default function Students() {
           Your student ID just got <span className="text-uw-purple">more valuable.</span>
         </h1>
           <p className="text-sm sm:text-base text-[#6B6B6B] leading-relaxed max-w-lg mx-auto mb-6">
-          {`${SITE_NAME} app is the only way to verify your student status and claim the merchant offers on this hub. Download the app, verify your enrollment, and start saving on The Ave today.`}
+          {`The Social App is the only way to verify your student status and claim the merchant offers on this hub. Download the Social App, verify your enrollment, and start saving on The Ave today.`}
         </p>
         <a
           href={APP_DOWNLOAD_URL}
@@ -45,7 +45,7 @@ export default function Students() {
           className="inline-flex items-center gap-2 px-6 py-3 bg-uw-purple text-white font-bold text-sm rounded-full hover:bg-uw-purple-light active:scale-[0.97] transition-all"
         >
           <Smartphone className="w-4 h-4" />
-          {`Get ${APP_DISPLAY_NAME}`}
+          Get the Social App
         </a>
       </section>
 
@@ -113,16 +113,16 @@ export default function Students() {
         <div className="space-y-3">
           {[
             {
-              q: `Is ${SITE_NAME} app free?`,
+              q: `Is ${SITE_NAME} Social App free?`,
               a: 'Yes — 100% free for all currently enrolled students. Just verify your status with your .edu email inside the app.',
             },
             {
               q: 'Is the app the only way to redeem discounts?',
-              a: `Yes. All student discounts on this hub are exclusively available and redeemable through ${SITE_NAME} app. Download is required to verify your student status and claim offers.`,
+              a: `Yes. All student discounts on this hub are exclusively available and redeemable through ${SITE_NAME} Social App. Download is required to verify your student status and claim offers.`,
             },
             {
               q: 'Which merchants are included?',
-              a: `We are continuously activating merchants on The Ave. Every offer listed on this hub requires ${SITE_NAME} app to redeem. Check the Merchants page for the full directory.`,
+              a: `We are continuously activating merchants on The Ave. Every offer listed on this hub requires ${SITE_NAME} Social App to redeem. Check the Merchants page for the full directory.`,
             },
             {
               q: 'Can I suggest a merchant?',

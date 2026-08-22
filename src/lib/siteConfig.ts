@@ -1,6 +1,6 @@
 export const SITE_NAME = 'The Movement';
 
-export const APP_DISPLAY_NAME = 'The Movement - Social';
+export const APP_DISPLAY_NAME = 'The Movement Social App';
 export const APP_STORE_URLS = {
   apple: 'https://apps.apple.com/us/app/the-movement-social/id1550149161',
   google: 'https://play.google.com/store/apps/details?id=movement.theshaybi.social.network',

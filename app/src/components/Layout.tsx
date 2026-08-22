@@ -72,7 +72,7 @@ export default function Layout() {
               onClick={() => console.log('[CLICK TRACK] Nav: Get the App')}
             >
               <Download className="w-3.5 h-3.5" />
-              Get the App
+              Get the Social App
             </a>
             <button
               onClick={openPartner}
@@ -150,7 +150,7 @@ export default function Layout() {
           <div className="max-w-5xl mx-auto flex items-center justify-center gap-2 text-center">
             <AlertTriangle className="w-3.5 h-3.5 shrink-0" style={{ color: UOFW_COLORS.gold }} />
             <p className="text-[11px] sm:text-xs" style={{ color: UOFW_COLORS.gold }}>
-              <span className="font-semibold">{`All discounts are exclusively redeemable through ${SITE_NAME} app.`}</span>{' '}
+              <span className="font-semibold">{`All discounts are exclusively redeemable through the Social App.`}</span>{' '}
               <a
                 href={APP_DOWNLOAD_URL}
                 target="_blank"
@@ -215,7 +215,7 @@ export default function Layout() {
                   style={{ color: UOFW_COLORS.gold }}
                   onClick={() => console.log('[CLICK TRACK] Footer: Get the App')}
                 >
-                  Download the App
+                  Get the Social App
                 </a>
                 <button
                   onClick={openPartner}
