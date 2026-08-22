@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { Compass, Download } from 'lucide-react';
-import { APP_DOWNLOAD_URL, SITE_NAME } from '@/lib/siteConfig';
+import { APP_DOWNLOAD_URL } from '@/lib/siteConfig';
 
 export default function UniversityDistrictSavingsGuide() {
   return (

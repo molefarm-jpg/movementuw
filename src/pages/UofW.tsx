@@ -30,7 +30,7 @@ export default function UofW() {
           {`${SITE_NAME} at `}<span className="text-uw-purple">UofW.</span>
         </h1>
         <p className="text-sm sm:text-base text-[#6B6B6B] leading-relaxed max-w-lg mx-auto mb-6">
-          {`The official ${SITE_NAME} hub for UofW. Exclusive student discounts activated by The Movement in the UofW University District - The Ave, Wallingford, Montlake, University Village, and Roosevelt.`}
+          {`The official ${SITE_NAME} hub for UofW. Explore student discounts at Maison Blanc Salon, One Bite Cafe, Mama Grande's Cafe, and other local favorites across The Ave, Wallingford, Montlake, University Village, and Roosevelt.`}
         </p>
         <a
           href={APP_DOWNLOAD_URL}
@@ -53,7 +53,7 @@ export default function UofW() {
             </h2>
           </div>
           <p className="text-sm text-[#6B6B6B] leading-relaxed mb-5">
-            {`University Way NE, locally known as "The Ave" or University Way, is the heart of student life near UofW. The UofW University District includes The Ave, Wallingford, Montlake, University Village, and Roosevelt, and The Movement is activating merchants across the area to offer exclusive discounts to UofW student ID holders.`}
+            {`University Way NE, locally known as "The Ave" or University Way, is the heart of student life near UofW. The Movement is activating student discounts at trusted local businesses like Maison Blanc Salon, One Bite Cafe, and Mama Grande's Cafe, plus growing merchant options across The Ave, Wallingford, Montlake, University Village, and Roosevelt.`}
           </p>
 
           <h3 className="text-xs font-semibold uppercase tracking-wider text-[#9E9E9E] mb-3">

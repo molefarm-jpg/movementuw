@@ -1,5 +1,3 @@
-import { SITE_NAME } from '@/lib/siteConfig';
-
 export interface Merchant {
   id: string;
   name: string;
