@@ -1,0 +1,17 @@
+{
+  "name": "The Movement at the UofW",
+  "short_name": "The Movement",
+  "description": "UW student discounts and deals on The Ave and across the University District.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#39275B",
+  "theme_color": "#39275B",
+  "icons": [
+    {
+      "src": "/media/Washington-Huskies-logo-500x300.png",
+      "sizes": "500x300",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
