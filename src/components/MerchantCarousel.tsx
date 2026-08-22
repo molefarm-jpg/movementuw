@@ -198,7 +198,7 @@ export default function MerchantCarousel() {
                   </div>
 
                   <a
-                    href={APP_DOWNLOAD_URL}
+                    href={m.websiteUrl ?? APP_DOWNLOAD_URL}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="shrink-0 inline-flex items-center gap-2 px-5 py-2.5 bg-white text-uw-purple font-bold text-xs rounded-full hover:bg-white/90 active:scale-[0.97] transition-all"

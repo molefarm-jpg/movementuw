@@ -5,6 +5,7 @@ export interface Merchant {
   name: string;
   // expanded category union to match CATEGORY_LABEL / CATEGORY_GRADIENT usages
   category: 'food' | 'services' | 'cafe' | 'retail' | 'health';
+  websiteUrl?: string;
   imageUrl?: string;
   address: string;
   description: string;
@@ -27,6 +28,7 @@ export const ACTIVE_MERCHANTS: Merchant[] = [
     id: '1',
     name: 'Maison Blanc Salon',
     category: 'services',
+    websiteUrl: 'https://www.maisonblancsalon.com/',
     imageUrl: '/images/merchants/maison-blanc-galina-photo.png',
     address: 'The Ave, Seattle, WA',
     description: 'Premium salon offering haircuts, styling, coloring, and treatments for all hair types.',
@@ -38,6 +40,8 @@ export const ACTIVE_MERCHANTS: Merchant[] = [
     id: '2',
     name: 'One Bite Cafe',
     category: 'cafe',
+    websiteUrl: 'https://www.toasttab.com/local/order/onebitecafe-seattle/r-ae180206-386a-416e-aa03-4d783ba309bf',
+    imageUrl: '/images/merchants/OneBiteCafeOwner.jfif',
     address: 'The Ave, Seattle, WA',
     description: 'Cozy neighborhood cafe serving espresso drinks, fresh pastries, and light bites.',
     discount: 'Unlock discount via the Social App',
@@ -48,6 +52,8 @@ export const ACTIVE_MERCHANTS: Merchant[] = [
     id: '3',
     name: "Mama Grande's Cafe",
     category: 'cafe',
+    websiteUrl: 'https://www.mamagrandescafe.com/',
+    imageUrl: '/images/merchants/Mama Grande Owner - Alex Garcia.jpg',
     address: 'The Ave, Seattle, WA',
     description: 'Family-owned cafe with hearty breakfast plates, Mexican-inspired dishes, and great coffee.',
     discount: 'Unlock discount via the Social App',
