@@ -49,11 +49,11 @@ export default function Layout() {
                   `px-3 py-1.5 rounded-full text-xs font-medium transition-all ${
                     isActive
                       ? 'bg-white/20'
-                      : 'text-white/70 hover:text-white'
+                      : 'text-white/90 hover:text-white'
                   }`
                 }
                 style={({ isActive }) => ({
-                  color: isActive ? UOFW_COLORS.gold : 'rgba(255,255,255,0.7)'
+                  color: isActive ? '#FFFFFF' : 'rgba(255,255,255,0.9)'
                 })}
               >
                 {link.label}
@@ -107,12 +107,12 @@ export default function Layout() {
                     `px-4 py-2.5 rounded-lg text-sm font-medium transition-all ${
                       isActive
                         ? 'text-white'
-                        : 'text-white/70 hover:text-white'
+                        : 'text-white/90 hover:text-white'
                     }`
                   }
                   style={({ isActive }) => ({
                     backgroundColor: isActive ? 'rgba(255,255,255,0.15)' : undefined,
-                    color: isActive ? UOFW_COLORS.gold : 'rgba(255,255,255,0.7)'
+                    color: isActive ? '#FFFFFF' : 'rgba(255,255,255,0.9)'
                   })}
                 >
                   {link.label}
