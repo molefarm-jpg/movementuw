@@ -207,7 +207,7 @@ export default function MerchantCarousel() {
                     }
                   >
                     <Smartphone className="w-3.5 h-3.5" />
-                    Get the Social App
+                    Go to their website!
                     <ArrowUpRight className="w-3 h-3" />
                   </a>
                 </div>
