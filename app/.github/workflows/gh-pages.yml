@@ -29,10 +29,6 @@ jobs:
         working-directory: ./app
         timeout-minutes: 10
 
-      - name: Ensure SPA fallback
-        run: cp dist/index.html dist/404.html || true
-        working-directory: ./app
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
