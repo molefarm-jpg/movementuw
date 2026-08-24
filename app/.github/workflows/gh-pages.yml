@@ -8,29 +8,29 @@ permissions:
   contents: write
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - name: Setup Node
+        uses: actions/setup-node@v5
         with:
-          node-version: '20'
+          node-version: '24'
+          cache: 'npm'
 
-      - name: Set VITE_BASE for custom domain root
-        run: echo "VITE_BASE=/" >> $GITHUB_ENV
+      - name: Install dependencies
+        run: npm ci
 
-      - name: Install
-        run: npm install --prefer-offline --no-audit
-        working-directory: ./app
-
-      - name: Build
+      - name: Build site
         run: npm run build
-        working-directory: ./app
-        timeout-minutes: 10
 
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./app/dist
+          publish_dir: ./dist
+          publish_branch: gh-pages
+          force_orphan: true
+          cname: movementuw.college

@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
 import { Handshake, Download, Menu, X, AlertTriangle } from 'lucide-react';
 import { useModal } from '@/hooks/useModal';
-import { SITE_NAME, APP_DOWNLOAD_URL, UOFW_COLORS } from '@/lib/siteConfig';
+import { APP_DOWNLOAD_URL, UOFW_COLORS } from '@/lib/siteConfig';
 import PartnerModal from './PartnerModal';
 import RouteSeo from './RouteSeo';
 
