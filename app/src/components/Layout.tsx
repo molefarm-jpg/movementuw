@@ -30,9 +30,9 @@ export default function Layout() {
       <RouteSeo />
       {/* ========== HEADER ========== */}
       <header className="sticky top-0 z-40" style={{ backgroundColor: UDISTRICT_COLORS.purple, borderBottom: `3px solid ${UDISTRICT_COLORS.gold}` }}>
-        <div className="max-w-6xl mx-auto pl-0 pr-3 sm:pl-1 sm:pr-4 lg:pl-2 lg:pr-6 h-[68px] sm:h-16 grid grid-cols-[minmax(0,160px)_1fr_auto] sm:grid-cols-[minmax(0,220px)_1fr_auto] md:grid-cols-[minmax(0,320px)_1fr_auto] lg:grid-cols-[minmax(0,380px)_1fr_auto] xl:grid-cols-[minmax(0,440px)_1fr_auto] items-center gap-2">
+        <div className="max-w-6xl mx-auto pl-0 pr-3 sm:pl-1 sm:pr-4 lg:pl-2 lg:pr-6 h-[68px] sm:h-16 flex items-center gap-3">
           {/* Logo */}
-          <NavLink to="/" className="-ml-7 sm:-ml-8 md:-ml-12 lg:-ml-14 xl:-ml-[4.5rem] md:mr-4 lg:mr-5 flex items-center gap-2 sm:gap-2.5 shrink-0 min-w-0 max-w-[160px] sm:max-w-[220px] md:max-w-[320px] lg:max-w-[380px] xl:max-w-[440px] rounded-lg px-1 py-1" onClick={() => setMobileMenuOpen(false)}>
+          <NavLink to="/" className="-ml-8 sm:-ml-9 md:-ml-12 lg:-ml-14 xl:-ml-[4.5rem] mr-auto flex items-center gap-2.5 sm:gap-3 shrink-0 min-w-0 max-w-[180px] sm:max-w-[240px] md:max-w-[340px] lg:max-w-[400px] rounded-lg px-1 py-1" onClick={() => setMobileMenuOpen(false)}>
             <span
               aria-hidden="true"
               className="shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-md bg-white/20 border border-white/30 p-0.5 flex items-center justify-center"
@@ -43,7 +43,7 @@ export default function Layout() {
                 className="block w-full h-full object-contain opacity-100"
               />
             </span>
-            <div className="ml-0 sm:ml-0.5 min-w-0 text-left">
+            <div className="ml-0.5 sm:ml-1 min-w-0 text-left">
               <span className="block leading-none whitespace-nowrap text-[10px] sm:text-[11px] md:text-sm lg:text-[15px] xl:text-base font-extrabold tracking-tight" style={{ color: UDISTRICT_COLORS.gold }}>
                 The Movement
               </span>
@@ -54,7 +54,7 @@ export default function Layout() {
           </NavLink>
 
           {/* Desktop Nav */}
-          <nav className="hidden 2xl:flex items-center justify-start gap-2 pl-16 2xl:pl-20">
+          <nav className="hidden 2xl:flex items-center justify-start gap-2 ml-8">
             {NAV_LINKS.map((link) => (
               <NavLink
                 key={link.to}
@@ -76,7 +76,7 @@ export default function Layout() {
           </nav>
 
           {/* CTAs + Hamburger */}
-          <div className="flex items-center gap-2">
+          <div className="ml-2 sm:ml-3 flex items-center gap-2 shrink-0">
             <a
               href={APP_DOWNLOAD_URL}
               target="_blank"
