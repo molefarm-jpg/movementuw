@@ -1,8 +1,9 @@
-﻿import { useState } from 'react';
+﻿import { useMemo, useState } from 'react';
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
 import { Handshake, Download, Menu, X, AlertTriangle } from 'lucide-react';
 import { useModal } from '@/hooks/useModal';
-import { APP_DOWNLOAD_URL, APP_STORE_URLS, UDISTRICT_COLORS } from '@/lib/siteConfig';
+import { APP_STORE_URLS, UDISTRICT_COLORS } from '@/lib/siteConfig';
+import { detectMobilePlatform } from '@/lib/utils';
 import PartnerModal from './PartnerModal';
 import RouteSeo from './RouteSeo';
 
@@ -30,6 +31,10 @@ export default function Layout() {
   const { isPartnerOpen, openPartner, closePartner } = useModal();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const primaryAppStoreUrl = useMemo(() => {
+    const mobilePlatform = detectMobilePlatform();
+    return mobilePlatform === 'android' ? APP_STORE_URLS.google : APP_STORE_URLS.apple;
+  }, []);
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: '#F5F5F5' }}>
@@ -84,7 +89,7 @@ export default function Layout() {
           {/* CTAs + Hamburger */}
           <div className={HEADER_ACTIONS_CLASS}>
             <a
-              href={APP_DOWNLOAD_URL}
+              href={primaryAppStoreUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="hidden xl:flex items-center justify-center gap-2 h-10 min-w-[180px] px-6 text-xs font-bold leading-none whitespace-nowrap rounded-full hover:bg-white/20 active:scale-[0.98] transition-all"
@@ -92,17 +97,7 @@ export default function Layout() {
               onClick={() => console.log('[CLICK TRACK] Nav: Get the App')}
             >
               <Download className="w-3.5 h-3.5" />
-              Get the Social App - iPhone
-            </a>
-            <a
-              href={APP_STORE_URLS.google}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden 2xl:flex items-center justify-center gap-2 h-10 min-w-[208px] px-7 text-xs font-bold leading-none whitespace-nowrap rounded-full hover:bg-white/20 active:scale-[0.98] transition-all"
-              style={{ color: '#ffffff', border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.1)' }}
-            >
-              <Download className="w-3.5 h-3.5" />
-              Get the Social App - Android
+              Download the Movement Social App
             </a>
             <button
               onClick={openPartner}
@@ -151,26 +146,15 @@ export default function Layout() {
             </nav>
             <div className="grid grid-cols-2 gap-2 mt-3 pt-3" style={{ borderTop: `1px solid ${UDISTRICT_COLORS.gold}` }}>
               <a
-                href={APP_DOWNLOAD_URL}
+                href={primaryAppStoreUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-[1.25] flex items-center justify-center gap-2 h-10 px-4 text-white text-xs font-bold leading-none whitespace-nowrap rounded-full"
+                className="col-span-2 flex items-center justify-center gap-2 h-10 px-4 text-white text-xs font-bold leading-none whitespace-nowrap rounded-full"
                 style={{ backgroundColor: UDISTRICT_COLORS.gold }}
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <Download className="w-3.5 h-3.5" />
-                Get the Social App - iPhone
-              </a>
-              <a
-                href={APP_STORE_URLS.google}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex-[1.25] flex items-center justify-center gap-2 h-10 px-4 text-white text-xs font-bold leading-none whitespace-nowrap rounded-full"
-                style={{ backgroundColor: UDISTRICT_COLORS.gold }}
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <Download className="w-3.5 h-3.5" />
-                Get the Social App - Android
+                Download the Movement Social App
               </a>
               <button
                 onClick={() => { openPartner(); setMobileMenuOpen(false); }}
@@ -248,7 +232,7 @@ export default function Layout() {
               <h4 className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: '#FFFFFF' }}>Get Started</h4>
               <div className="flex flex-col gap-2">
                 <a
-                  href={APP_DOWNLOAD_URL}
+                  href={primaryAppStoreUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs font-medium hover:underline"
@@ -298,15 +282,15 @@ export default function Layout() {
           style={{ backgroundColor: UDISTRICT_COLORS.purple, borderTop: `3px solid ${UDISTRICT_COLORS.gold}` }}
         >
           <a
-            href={APP_DOWNLOAD_URL}
+            href={primaryAppStoreUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="flex-[1.25] flex items-center justify-center gap-2 h-10 px-4 text-white text-xs font-bold leading-none whitespace-nowrap rounded-full active:scale-[0.97] transition-all"
             style={{ backgroundColor: UDISTRICT_COLORS.gold }}
-            onClick={() => console.log('[CLICK TRACK] Mobile Bar: Get the Social App - iPhone')}
+            onClick={() => console.log('[CLICK TRACK] Mobile Bar: Get the Social App')}
           >
             <Download className="w-4 h-4" />
-            Get the Social App - iPhone
+            Download the Movement Social App
           </a>
           <button
             onClick={openPartner}
