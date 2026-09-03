@@ -159,7 +159,7 @@ export default function Layout() {
           <div className="max-w-5xl mx-auto flex items-center justify-center gap-2 text-center">
             <AlertTriangle className="w-3.5 h-3.5 shrink-0" style={{ color: UDISTRICT_COLORS.gold }} />
             <p className="text-[11px] sm:text-xs" style={{ color: UDISTRICT_COLORS.gold }}>
-              <span className="font-semibold text-white">All discounts are exclusively redeemable through the Social App, available for both iPhone and Android above.</span>
+              <span className="font-semibold text-white">All discounts are exclusively redeemable through the Movement's Social App, available for both iPhone and Android users.</span>
             </p>
           </div>
         </div>
