@@ -50,7 +50,7 @@ export default function Layout() {
                 key={link.to}
                 to={link.to}
                 className={({ isActive }) =>
-                  `px-3.5 py-1.5 rounded-full text-xs font-medium tracking-wide transition-all ${
+                  `px-3.5 py-1.5 rounded-full text-xs font-medium tracking-wide whitespace-nowrap transition-all ${
                     isActive
                       ? 'bg-white/20'
                       : 'text-white/90 hover:text-white'
@@ -108,7 +108,7 @@ export default function Layout() {
                   to={link.to}
                   onClick={() => setMobileMenuOpen(false)}
                   className={({ isActive }) =>
-                    `px-4 py-3 rounded-lg text-sm font-medium tracking-[0.01em] transition-all ${
+                    `px-4 py-3 rounded-lg text-sm font-medium tracking-[0.01em] whitespace-nowrap transition-all ${
                       isActive
                         ? 'text-white'
                         : 'text-white/90 hover:text-white'
