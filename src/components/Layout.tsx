@@ -25,9 +25,9 @@ export default function Layout() {
       <RouteSeo />
       {/* ========== HEADER ========== */}
       <header className="sticky top-0 z-40" style={{ backgroundColor: UDISTRICT_COLORS.purple, borderBottom: `3px solid ${UDISTRICT_COLORS.gold}` }}>
-        <div className="max-w-5xl mx-auto px-3 sm:px-4 lg:px-6 h-16 grid grid-cols-[minmax(0,350px)_1fr_auto] lg:grid-cols-[minmax(0,420px)_1fr_auto] items-center gap-3">
+        <div className="max-w-5xl mx-auto px-3 sm:px-4 lg:px-6 h-16 grid grid-cols-[minmax(0,220px)_1fr_auto] sm:grid-cols-[minmax(0,250px)_1fr_auto] md:grid-cols-[minmax(0,330px)_1fr_auto] lg:grid-cols-[minmax(0,420px)_1fr_auto] items-center gap-3">
           {/* Logo */}
-          <NavLink to="/" className="-ml-4 sm:-ml-5 md:-ml-6 lg:-ml-8 mr-4 lg:mr-6 flex items-center gap-2.5 sm:gap-3 shrink-0 min-w-0 max-w-[350px] md:max-w-[420px] rounded-lg px-1 py-1" onClick={() => setMobileMenuOpen(false)}>
+          <NavLink to="/" className="ml-0 md:-ml-5 lg:-ml-7 md:mr-4 lg:mr-6 flex items-center gap-2 sm:gap-2.5 shrink-0 min-w-0 max-w-[220px] sm:max-w-[250px] md:max-w-[330px] lg:max-w-[420px] rounded-lg px-1 py-1" onClick={() => setMobileMenuOpen(false)}>
             <span
               aria-hidden="true"
               className="shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-md bg-white/20 border border-white/30 p-0.5 flex items-center justify-center"
@@ -39,14 +39,14 @@ export default function Layout() {
               />
             </span>
             <div className="leading-none min-w-0">
-              <span className="block text-[10px] sm:text-[11px] md:text-sm lg:text-[15px] xl:text-base font-extrabold tracking-tight whitespace-nowrap" style={{ color: UDISTRICT_COLORS.gold }}>
+              <span className="block text-[11px] sm:text-xs md:text-sm lg:text-[15px] xl:text-base font-extrabold tracking-tight whitespace-nowrap" style={{ color: UDISTRICT_COLORS.gold }}>
                 The Movement in the U-District
               </span>
             </div>
           </NavLink>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center justify-start gap-2 pl-10 lg:pl-12">
+          <nav className="hidden md:flex items-center justify-start gap-2 pl-8 lg:pl-12">
             {NAV_LINKS.map((link) => (
               <NavLink
                 key={link.to}
