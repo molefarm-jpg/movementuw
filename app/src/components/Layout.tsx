@@ -219,7 +219,7 @@ export default function Layout() {
                     className="block w-full h-full object-contain opacity-100"
                   />
                 </span>
-                <span className="text-sm font-bold" style={{ color: UDISTRICT_COLORS.gold }}>The Movement in the U-District</span>
+                <span className="text-sm font-bold" style={{ color: '#FFFFFF' }}>The Movement in the U-District</span>
               </div>
               <p className="text-xs leading-relaxed" style={{ color: 'rgba(255,255,255,0.8)' }}>
                 Support Local, Save Daily: The Movement's U-District Student Guide to The District
