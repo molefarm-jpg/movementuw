@@ -76,7 +76,7 @@ export default function Layout() {
               href={APP_DOWNLOAD_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex items-center justify-center gap-2 h-10 px-5 text-xs font-bold leading-none whitespace-nowrap rounded-full hover:bg-white/20 active:scale-[0.98] transition-all"
+              className="hidden sm:flex items-center justify-center gap-2 h-10 min-w-[180px] px-6 text-xs font-bold leading-none whitespace-nowrap rounded-full hover:bg-white/20 active:scale-[0.98] transition-all"
               style={{ color: '#ffffff', border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.1)' }}
               onClick={() => console.log('[CLICK TRACK] Nav: Get the App')}
             >
@@ -133,7 +133,7 @@ export default function Layout() {
                 href={APP_DOWNLOAD_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 flex items-center justify-center gap-2 h-10 px-3 text-white text-xs font-bold leading-none whitespace-nowrap rounded-full"
+                className="flex-[1.25] flex items-center justify-center gap-2 h-10 px-4 text-white text-xs font-bold leading-none whitespace-nowrap rounded-full"
                 style={{ backgroundColor: UDISTRICT_COLORS.gold }}
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -279,7 +279,7 @@ export default function Layout() {
             href={APP_DOWNLOAD_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 flex items-center justify-center gap-2 h-10 px-3 text-white text-xs font-bold leading-none whitespace-nowrap rounded-full active:scale-[0.97] transition-all"
+            className="flex-[1.25] flex items-center justify-center gap-2 h-10 px-4 text-white text-xs font-bold leading-none whitespace-nowrap rounded-full active:scale-[0.97] transition-all"
             style={{ backgroundColor: UDISTRICT_COLORS.gold }}
             onClick={() => console.log('[CLICK TRACK] Mobile Bar: Get the Social App')}
           >
