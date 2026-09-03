@@ -1,12 +1,12 @@
 ﻿import { Download, Store, QrCode, ArrowRight } from 'lucide-react';
 import { useModal } from '@/hooks/useModal';
 import MerchantCarousel from '@/components/MerchantCarousel';
-import { SITE_NAME, APP_DOWNLOAD_URL, UOFW_COLORS } from '@/lib/siteConfig';
+import { SITE_NAME, APP_DOWNLOAD_URL, UDISTRICT_COLORS } from '@/lib/siteConfig';
 
 const STEPS = [
   {
     icon: Download,
-    iconColor: UOFW_COLORS.purple,
+    iconColor: UDISTRICT_COLORS.purple,
     iconBg: 'rgba(57,39,91,0.12)',
     step: 'Step 1',
     stepColor: 'text-uw-purple',
@@ -15,7 +15,7 @@ const STEPS = [
   },
   {
     icon: Store,
-    iconColor: UOFW_COLORS.gold,
+    iconColor: UDISTRICT_COLORS.gold,
     iconBg: 'rgba(142,99,42,0.12)',
     step: 'Step 2',
     stepColor: 'text-uw-gold-dark',
@@ -56,10 +56,10 @@ export default function Home() {
       <section className="pt-10 pb-8 max-w-3xl mx-auto">
         {/* Title */}
         <div className="px-4 sm:px-6 text-center mb-6">
-          <span className="text-[11px] font-bold uppercase tracking-widest mb-3 block" style={{ color: UOFW_COLORS.gold }}>
+          <span className="text-[11px] font-bold uppercase tracking-widest mb-3 block" style={{ color: UDISTRICT_COLORS.gold }}>
             Featured Partners
           </span>
-          <h1 className="text-[32px] sm:text-[48px] font-bold leading-[1.15] tracking-tight mb-3" style={{ color: UOFW_COLORS.purple }}>
+          <h1 className="text-[32px] sm:text-[48px] font-bold leading-[1.15] tracking-tight mb-3" style={{ color: UDISTRICT_COLORS.purple }}>
             Save on The Ave
           </h1>
           <p className="text-sm sm:text-base leading-relaxed max-w-md mx-auto" style={{ color: '#666' }}>
@@ -96,10 +96,10 @@ export default function Home() {
               className="h-16 w-16 rounded-lg border border-[#E8E8E6] bg-white p-1"
             />
             <div className="text-left">
-              <p className="text-[10px] font-bold uppercase tracking-[0.18em]" style={{ color: UOFW_COLORS.gold }}>
+              <p className="text-[10px] font-bold uppercase tracking-[0.18em]" style={{ color: UDISTRICT_COLORS.gold }}>
                 Scan to visit
               </p>
-              <p className="text-sm font-semibold" style={{ color: UOFW_COLORS.purple }}>
+              <p className="text-sm font-semibold" style={{ color: UDISTRICT_COLORS.purple }}>
                 The Movement
               </p>
               <p className="text-[11px]" style={{ color: '#666' }}>

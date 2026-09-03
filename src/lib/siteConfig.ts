@@ -8,7 +8,7 @@ export const APP_STORE_URLS = {
 
 export const APP_DOWNLOAD_URL = APP_STORE_URLS.apple;
 
-export const UOFW_COLORS = {
+export const UDISTRICT_COLORS = {
   purple: '#5a4fcf',
   gold: '#8E632A',
   white: '#FFFFFF',

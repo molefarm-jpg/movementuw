@@ -2,7 +2,7 @@
 import { Download, MapPin } from 'lucide-react';
 import { APP_DOWNLOAD_URL, SITE_NAME } from '@/lib/siteConfig';
 
-export default function UwStudentDiscountsAve() {
+export default function UDistrictStudentDiscountsAve() {
   return (
     <div>
       <section className="pt-10 pb-6 px-4 sm:px-6 max-w-3xl mx-auto text-center">

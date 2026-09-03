@@ -7,7 +7,7 @@ import UDistrict from '@/pages/UDistrict';
 import Merchants from '@/pages/Merchants';
 import Students from '@/pages/Students';
 import Community from '@/pages/Community';
-import UwStudentDiscountsAve from '@/pages/UwStudentDiscountsAve';
+import UDistrictStudentDiscountsAve from '@/pages/UDistrictStudentDiscountsAve';
 import UniversityDistrictSavingsGuide from '@/pages/UniversityDistrictSavingsGuide';
 
 export default function App() {
@@ -22,7 +22,7 @@ export default function App() {
             <Route path="/merchants" element={<Merchants />} />
             <Route path="/students" element={<Students />} />
             <Route path="/community" element={<Community />} />
-            <Route path="/u-district-student-discounts-the-ave" element={<UwStudentDiscountsAve />} />
+            <Route path="/u-district-student-discounts-the-ave" element={<UDistrictStudentDiscountsAve />} />
             <Route path="/university-district-student-savings-guide" element={<UniversityDistrictSavingsGuide />} />
           </Route>
         </Routes>
