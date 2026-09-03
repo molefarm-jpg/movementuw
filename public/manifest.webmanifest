@@ -4,8 +4,8 @@
   "description": "UW student discounts and deals on The Ave and across the University District.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#39275B",
-  "theme_color": "#39275B",
+  "background_color": "#5a4fcf",
+  "theme_color": "#5a4fcf",
   "icons": [
     {
       "src": "/media/the-movement-icon.svg",
