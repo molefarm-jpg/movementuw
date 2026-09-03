@@ -82,11 +82,11 @@ export default function Layout() {
               href={APP_STORE_URLS.google}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex items-center justify-center gap-1 h-10 min-w-[124px] px-3 text-[10px] font-bold leading-none rounded-full hover:bg-white/20 active:scale-[0.98] transition-all"
-              style={{ color: '#ffffff', border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.08)', whiteSpace: 'normal' }}
+              className="hidden sm:flex items-center justify-center gap-2 h-10 min-w-[180px] px-6 text-xs font-bold leading-none whitespace-nowrap rounded-full hover:bg-white/20 active:scale-[0.98] transition-all"
+              style={{ color: '#ffffff', border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.1)' }}
             >
-              <Download className="w-3.5 h-3.5 shrink-0" />
-              <span className="text-center leading-[1.05]">Get the Social App<br />- Android</span>
+              <Download className="w-3.5 h-3.5" />
+              Get the Social App - Android
             </a>
             <button
               onClick={openPartner}
@@ -149,12 +149,12 @@ export default function Layout() {
                 href={APP_STORE_URLS.google}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center h-10 px-2 text-white text-[10px] font-bold rounded-full"
-                style={{ backgroundColor: 'rgba(255,255,255,0.14)', border: `1.5px solid ${UDISTRICT_COLORS.gold}`, whiteSpace: 'normal' }}
+                className="flex-[1.25] flex items-center justify-center gap-2 h-10 px-4 text-white text-xs font-bold leading-none whitespace-nowrap rounded-full"
+                style={{ backgroundColor: UDISTRICT_COLORS.gold }}
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <Download className="w-3.5 h-3.5 mr-1 shrink-0" />
-                <span className="text-center leading-[1.05]">Get the Social App<br />- Android</span>
+                <Download className="w-3.5 h-3.5" />
+                Get the Social App - Android
               </a>
               <button
                 onClick={() => { openPartner(); setMobileMenuOpen(false); }}
