@@ -84,7 +84,7 @@ export default function Layout() {
               style={{ backgroundColor: UDISTRICT_COLORS.gold }}
             >
               <Handshake className="w-3.5 h-3.5" />
-              Partner
+              Partner with Us
             </button>
 
             {/* Mobile menu toggle */}
@@ -133,7 +133,7 @@ export default function Layout() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <Download className="w-3.5 h-3.5" />
-                Get the App
+                Get the Social App
               </a>
               <button
                 onClick={() => { openPartner(); setMobileMenuOpen(false); }}
@@ -258,10 +258,10 @@ export default function Layout() {
             rel="noopener noreferrer"
             className="flex-1 flex items-center justify-center gap-2 h-10 text-white text-xs font-bold rounded-full active:scale-[0.97] transition-all"
             style={{ backgroundColor: UDISTRICT_COLORS.gold }}
-            onClick={() => console.log('[CLICK TRACK] Mobile Bar: Get the App')}
+            onClick={() => console.log('[CLICK TRACK] Mobile Bar: Get the Social App')}
           >
             <Download className="w-4 h-4" />
-            Get the App
+            Get the Social App
           </a>
           <button
             onClick={openPartner}
@@ -269,7 +269,7 @@ export default function Layout() {
             style={{ color: UDISTRICT_COLORS.gold, border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.1)' }}
           >
             <Handshake className="w-3.5 h-3.5" />
-            Partner
+            Partner with Us
           </button>
         </div>
 
