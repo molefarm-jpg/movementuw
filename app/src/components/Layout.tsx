@@ -30,7 +30,7 @@ export default function Layout() {
       <RouteSeo />
       {/* ========== HEADER ========== */}
       <header className="sticky top-0 z-40" style={{ backgroundColor: UDISTRICT_COLORS.purple, borderBottom: `3px solid ${UDISTRICT_COLORS.gold}` }}>
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 h-14 grid grid-cols-[auto_1fr_auto] items-center gap-3">
           {/* Logo */}
           <NavLink to="/" className="flex items-center gap-3 shrink-0 min-w-0" onClick={() => setMobileMenuOpen(false)}>
             <span
@@ -49,7 +49,7 @@ export default function Layout() {
           </NavLink>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-2 ml-4 lg:ml-6">
+          <nav className="hidden md:flex items-center justify-center gap-2">
             {NAV_LINKS.map((link) => (
               <NavLink
                 key={link.to}
