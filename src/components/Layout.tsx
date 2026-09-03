@@ -25,12 +25,12 @@ export default function Layout() {
       <RouteSeo />
       {/* ========== HEADER ========== */}
       <header className="sticky top-0 z-40" style={{ backgroundColor: UDISTRICT_COLORS.purple, borderBottom: `3px solid ${UDISTRICT_COLORS.gold}` }}>
-        <div className="max-w-5xl mx-auto px-3 sm:px-4 lg:px-6 h-16 grid grid-cols-[minmax(0,auto)_1fr_auto] items-center gap-3">
+        <div className="max-w-5xl mx-auto px-3 sm:px-4 lg:px-6 h-16 grid grid-cols-[minmax(0,252px)_1fr_auto] lg:grid-cols-[minmax(0,290px)_1fr_auto] items-center gap-3">
           {/* Logo */}
-          <NavLink to="/" className="ml-0 flex items-center gap-2 sm:gap-3 shrink-0 min-w-0 max-w-[252px] md:max-w-[300px] xl:max-w-[340px]" onClick={() => setMobileMenuOpen(false)}>
+          <NavLink to="/" className="ml-0 flex items-center gap-2.5 sm:gap-3 shrink-0 min-w-0 max-w-[252px] md:max-w-[280px] rounded-lg px-1 py-1" onClick={() => setMobileMenuOpen(false)}>
             <span
               aria-hidden="true"
-              className="shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-md bg-white/15 border border-white/25 p-0.5 flex items-center justify-center"
+              className="shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-md bg-white/20 border border-white/30 p-0.5 flex items-center justify-center"
             >
               <img
                 src="/media/movement-m-logo-v2.png"
@@ -38,17 +38,18 @@ export default function Layout() {
                 className="block w-full h-full object-contain opacity-100"
               />
             </span>
-            <div className="leading-none min-w-0">
-              <span className="block md:hidden text-[11px] sm:text-xs font-bold tracking-tight leading-[1.1]" style={{ color: UDISTRICT_COLORS.gold }}>
-                <span className="block">The Movement</span>
-                <span className="block">in the U-District</span>
+            <div className="leading-tight min-w-0">
+              <span className="block text-[13px] sm:text-sm lg:text-[15px] font-extrabold tracking-tight" style={{ color: UDISTRICT_COLORS.gold }}>
+                The Movement
               </span>
-              <span className="hidden md:block text-sm lg:text-base xl:text-[17px] font-extrabold tracking-tight whitespace-nowrap" style={{ color: UDISTRICT_COLORS.gold }}>The Movement in the U-District</span>
+              <span className="block text-[11px] sm:text-xs lg:text-[13px] font-semibold tracking-tight" style={{ color: UDISTRICT_COLORS.gold }}>
+                in the U-District
+              </span>
             </div>
           </NavLink>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center justify-center gap-2 pl-8 lg:pl-10">
+          <nav className="hidden md:flex items-center justify-center gap-2 pl-6 lg:pl-8">
             {NAV_LINKS.map((link) => (
               <NavLink
                 key={link.to}
