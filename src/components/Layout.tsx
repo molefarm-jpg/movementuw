@@ -30,10 +30,14 @@ export default function Layout() {
           <NavLink to="/" className="flex items-center gap-2 shrink-0" onClick={() => setMobileMenuOpen(false)}>
             <span
               aria-hidden="true"
-              className="shrink-0 w-9 h-9 rounded-md flex items-center justify-center text-xs font-black tracking-wide"
-              style={{ color: '#FFFFFF', backgroundColor: '#1A2440', border: `1px solid ${UOFW_COLORS.gold}` }}
+              className="shrink-0 w-9 h-9 rounded-md overflow-hidden"
+              style={{ backgroundColor: 'rgba(255,255,255,0.1)', border: `1px solid ${UOFW_COLORS.gold}` }}
             >
-              TM
+              <img
+                src="/media/movement-m-logo.png"
+                alt=""
+                className="w-full h-full object-cover opacity-90 mix-blend-screen"
+              />
             </span>
             <div className="leading-tight">
               <span className="text-sm font-bold" style={{ color: UOFW_COLORS.gold }}>The Movement at the UofW</span>
@@ -181,10 +185,14 @@ export default function Layout() {
               <div className="flex items-center gap-2 mb-2">
                 <span
                   aria-hidden="true"
-                  className="w-5 h-5 rounded-sm flex items-center justify-center text-[9px] font-black leading-none"
-                  style={{ color: '#FFFFFF', backgroundColor: '#1A2440', border: `1px solid ${UOFW_COLORS.gold}` }}
+                  className="w-5 h-5 rounded-sm overflow-hidden"
+                  style={{ backgroundColor: 'rgba(255,255,255,0.1)', border: `1px solid ${UOFW_COLORS.gold}` }}
                 >
-                  TM
+                  <img
+                    src="/media/movement-m-logo.png"
+                    alt=""
+                    className="w-full h-full object-cover opacity-90 mix-blend-screen"
+                  />
                 </span>
                 <span className="text-sm font-bold" style={{ color: UOFW_COLORS.gold }}>The Movement at the UofW</span>
               </div>
