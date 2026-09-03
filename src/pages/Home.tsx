@@ -80,14 +80,14 @@ export default function Home() {
         {/* QR card below carousel */}
         <div className="flex flex-col items-center justify-center gap-4 mt-6">
           <a
-            href="https://movementuw.college/"
+            href="https://hello.movement.college/"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex items-center gap-3 rounded-2xl border border-[#E8E8E6] bg-white px-4 py-3 shadow-sm transition-all hover:shadow-md"
             aria-label="Open The Movement website"
           >
             <img
-              src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&format=png&data=https%3A%2F%2Fmovementuw.college%2F"
+              src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&format=png&data=https%3A%2F%2Fhello.movement.college%2F"
               alt="QR code to open The Movement website"
               className="h-16 w-16 rounded-lg border border-[#E8E8E6] bg-white p-1"
             />
@@ -99,7 +99,7 @@ export default function Home() {
                 The Movement
               </p>
               <p className="text-[11px]" style={{ color: '#666' }}>
-                movementuw.college
+                hello.movement.college
               </p>
             </div>
           </a>

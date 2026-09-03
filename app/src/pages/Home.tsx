@@ -77,7 +77,33 @@ export default function Home() {
         {/* Merchant Carousel */}
         <MerchantCarousel />
 
-        {/* App install handled by persistent mobile bottom bar */}
+        {/* QR card below carousel */}
+        <div className="flex flex-col items-center justify-center gap-4 mt-6">
+          <a
+            href="https://hello.movement.college/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-3 rounded-2xl border border-[#E8E8E6] bg-white px-4 py-3 shadow-sm transition-all hover:shadow-md"
+            aria-label="Open The Movement website"
+          >
+            <img
+              src="https://api.qrserver.com/v1/create-qr-code/?size=120x120&format=png&data=https%3A%2F%2Fhello.movement.college%2F"
+              alt="QR code to open The Movement website"
+              className="h-16 w-16 rounded-lg border border-[#E8E8E6] bg-white p-1"
+            />
+            <div className="text-left">
+              <p className="text-[10px] font-bold uppercase tracking-[0.18em]" style={{ color: UDISTRICT_COLORS.gold }}>
+                Scan to visit
+              </p>
+              <p className="text-sm font-semibold" style={{ color: UDISTRICT_COLORS.purple }}>
+                The Movement
+              </p>
+              <p className="text-[11px]" style={{ color: '#666' }}>
+                hello.movement.college
+              </p>
+            </div>
+          </a>
+        </div>
       </section>
 
       {/* ========== HOW IT WORKS ========== */}
