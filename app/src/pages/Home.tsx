@@ -37,7 +37,7 @@ const FEATURES = [
   {
     title: 'For Students',
     description: `Unlock exclusive discounts at your favorite spots on The Ave. From coffee to haircuts, save every day with ${SITE_NAME} Social App.`,
-    note: 'Use the persistent download button at the bottom of the screen to install the app.',
+    note: 'On your phone use the persistent download button at the bottom of the screen to install the app.',
   },
   {
     title: 'For Merchants',
