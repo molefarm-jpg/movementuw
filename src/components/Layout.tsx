@@ -44,7 +44,7 @@ export default function Layout() {
           </NavLink>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-2">
+          <nav className="hidden md:flex items-center gap-2 ml-4 lg:ml-6">
             {NAV_LINKS.map((link) => (
               <NavLink
                 key={link.to}
