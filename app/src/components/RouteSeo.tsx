@@ -123,6 +123,7 @@ export default function RouteSeo() {
     upsertMeta('name', 'description', seo.description);
     upsertMeta('name', 'keywords', seo.keywords);
     upsertMeta('name', 'robots', 'index,follow');
+    upsertMeta('name', 'theme-color', '#5a4fcf');
 
     upsertMeta('property', 'og:type', 'website');
     upsertMeta('property', 'og:site_name', SITE_NAME);

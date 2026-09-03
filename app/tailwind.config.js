@@ -39,7 +39,7 @@ module.exports = {
           foreground: "hsl(var(--card-foreground))",
         },
         uw: {
-          purple: '#4B2E83',
+          purple: '#5a4fcf',
           'purple-light': '#5A3A96',
           gold: '#B7A57A',
           'gold-light': '#C9B99A',
