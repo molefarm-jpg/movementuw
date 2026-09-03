@@ -30,9 +30,9 @@ export default function Layout() {
       <RouteSeo />
       {/* ========== HEADER ========== */}
       <header className="sticky top-0 z-40" style={{ backgroundColor: UDISTRICT_COLORS.purple, borderBottom: `3px solid ${UDISTRICT_COLORS.gold}` }}>
-        <div className="max-w-5xl mx-auto px-3 sm:px-4 lg:px-6 h-16 grid grid-cols-[minmax(0,292px)_1fr_auto] lg:grid-cols-[minmax(0,340px)_1fr_auto] items-center gap-3">
+        <div className="max-w-5xl mx-auto px-3 sm:px-4 lg:px-6 h-16 grid grid-cols-[minmax(0,320px)_1fr_auto] lg:grid-cols-[minmax(0,390px)_1fr_auto] items-center gap-3">
           {/* Logo */}
-          <NavLink to="/" className="-ml-2 sm:-ml-3 md:-ml-4 lg:-ml-5 flex items-center gap-2.5 sm:gap-3 shrink-0 min-w-0 max-w-[292px] md:max-w-[340px] rounded-lg px-1 py-1" onClick={() => setMobileMenuOpen(false)}>
+          <NavLink to="/" className="-ml-3 sm:-ml-4 md:-ml-5 lg:-ml-6 flex items-center gap-2.5 sm:gap-3 shrink-0 min-w-0 max-w-[320px] md:max-w-[390px] rounded-lg px-1 py-1" onClick={() => setMobileMenuOpen(false)}>
             <span
               aria-hidden="true"
               className="shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-md bg-white/20 border border-white/30 p-0.5 flex items-center justify-center"
@@ -44,14 +44,14 @@ export default function Layout() {
               />
             </span>
             <div className="leading-none min-w-0">
-              <span className="block text-[10px] sm:text-[11px] md:text-sm lg:text-[15px] font-extrabold tracking-tight whitespace-nowrap" style={{ color: UDISTRICT_COLORS.gold }}>
+              <span className="block text-[10px] sm:text-[11px] md:text-sm lg:text-[15px] xl:text-base font-extrabold tracking-tight whitespace-nowrap" style={{ color: UDISTRICT_COLORS.gold }}>
                 The Movement in the U-District
               </span>
             </div>
           </NavLink>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center justify-center gap-2 pl-6 lg:pl-8">
+          <nav className="hidden md:flex items-center justify-start gap-2 pl-8 lg:pl-10">
             {NAV_LINKS.map((link) => (
               <NavLink
                 key={link.to}
