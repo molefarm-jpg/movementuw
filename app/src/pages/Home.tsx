@@ -1,7 +1,9 @@
-﻿import { Download, Store, QrCode, ArrowRight } from 'lucide-react';
+﻿import { useMemo } from 'react';
+import { Download, Store, QrCode, ArrowRight } from 'lucide-react';
 import { useModal } from '@/hooks/useModal';
 import MerchantCarousel from '@/components/MerchantCarousel';
-import { SITE_NAME, UDISTRICT_COLORS } from '@/lib/siteConfig';
+import { APP_STORE_URLS, SITE_NAME, UDISTRICT_COLORS } from '@/lib/siteConfig';
+import { detectMobilePlatform } from '@/lib/utils';
 
 const STEPS = [
   {
@@ -49,6 +51,14 @@ const FEATURES = [
 
 export default function Home() {
   const { openPartner } = useModal();
+  const { primaryAppStoreUrl, isDownloadEnabled } = useMemo(() => {
+    const mobilePlatform = detectMobilePlatform();
+    return {
+      primaryAppStoreUrl: mobilePlatform === 'android' ? APP_STORE_URLS.google : APP_STORE_URLS.apple,
+      isDownloadEnabled: mobilePlatform === 'android' || mobilePlatform === 'ios',
+    };
+  }, []);
+
   return (
     <div>
       <section className="px-4 sm:px-6 pt-5">
@@ -147,7 +157,20 @@ export default function Home() {
                   {f.cta} <ArrowRight className="w-3 h-3" />
                 </button>
               ) : (
-                <p className="text-sm text-[#6B6B6B] leading-relaxed">{f.note}</p>
+                <>
+                  <p className="text-sm text-[#6B6B6B] leading-relaxed mb-3">{f.note}</p>
+                  <a
+                    href={isDownloadEnabled ? primaryAppStoreUrl : undefined}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-disabled={!isDownloadEnabled}
+                    tabIndex={isDownloadEnabled ? 0 : -1}
+                    className={`inline-flex items-center gap-1.5 text-xs font-semibold text-uw-purple hover:underline ${isDownloadEnabled ? '' : 'opacity-50 cursor-not-allowed pointer-events-none'}`}
+                  >
+                    Get the Social App
+                    <ArrowRight className="w-3 h-3" />
+                  </a>
+                </>
               )}
             </div>
           ))}
