@@ -1,0 +1,9 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">The Movement Brand Mark</title>
+  <desc id="desc">Custom The Movement brand mark with TM lettering on a navy tile.</desc>
+  <rect width="1200" height="630" fill="#F5F5F5"/>
+  <rect x="330" y="135" width="540" height="360" rx="36" fill="#1A2440"/>
+  <rect x="330.75" y="135.75" width="538.5" height="358.5" rx="35.25" stroke="#E8B63E" stroke-width="1.5"/>
+  <text x="600" y="355" text-anchor="middle" fill="#FFFFFF" font-size="170" font-family="Inter, Segoe UI, Arial, sans-serif" font-weight="800" letter-spacing="8">TM</text>
+  <text x="600" y="545" text-anchor="middle" fill="#1A2440" font-size="44" font-family="Inter, Segoe UI, Arial, sans-serif" font-weight="700" letter-spacing="2">THE MOVEMENT</text>
+</svg>

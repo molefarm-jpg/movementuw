@@ -1,7 +1,5 @@
-Place the PNG file `Washington-Huskies-logo-500x300.png` here.
+The default brand asset is the local SVG file below.
 
-Path: /public/media/Washington-Huskies-logo-500x300.png
+Path: /public/media/the-movement-mark.svg
 
-After copying the file, reload the dev server or refresh the browser preview to see the logo in the header and footer.
-
-If you want me to copy the file from your desktop, upload it into this workspace or tell me where to find it and I can add it for you.
+This mark is used in SEO/social metadata and can be replaced with any original, owned brand image.

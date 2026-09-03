@@ -8,9 +8,9 @@
   "theme_color": "#39275B",
   "icons": [
     {
-      "src": "/media/Washington-Huskies-logo-500x300.png",
-      "sizes": "500x300",
-      "type": "image/png",
+      "src": "/media/the-movement-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
       "purpose": "any maskable"
     }
   ]

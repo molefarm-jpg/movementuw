@@ -9,7 +9,7 @@ type SeoConfig = {
 
 const SITE_NAME = 'The Movement at the UofW';
 const SITE_URL = 'https://movementuw.college';
-const DEFAULT_IMAGE_URL = `${SITE_URL}/media/Washington-Huskies-logo-500x300.png`;
+const DEFAULT_IMAGE_URL = `${SITE_URL}/media/the-movement-mark.svg`;
 
 const ROUTE_SEO: Record<string, SeoConfig> = {
   '/': {

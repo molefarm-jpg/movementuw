@@ -28,7 +28,13 @@ export default function Layout() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
           {/* Logo */}
           <NavLink to="/" className="flex items-center gap-2 shrink-0" onClick={() => setMobileMenuOpen(false)}>
-            <img src="/media/Washington-Huskies-logo-500x300.png" alt="The Movement logo" className="shrink-0 w-10 h-6 object-contain" />
+            <span
+              aria-hidden="true"
+              className="shrink-0 w-9 h-9 rounded-md flex items-center justify-center text-xs font-black tracking-wide"
+              style={{ color: '#FFFFFF', backgroundColor: '#1A2440', border: `1px solid ${UOFW_COLORS.gold}` }}
+            >
+              TM
+            </span>
             <div className="leading-tight">
               <span className="text-sm font-bold" style={{ color: UOFW_COLORS.gold }}>The Movement at the UofW</span>
             </div>
@@ -173,7 +179,13 @@ export default function Layout() {
             {/* Brand */}
             <div>
               <div className="flex items-center gap-2 mb-2">
-                <img src="/media/Washington-Huskies-logo-500x300.png" alt="The Movement logo" className="w-5 h-5 object-contain" />
+                <span
+                  aria-hidden="true"
+                  className="w-5 h-5 rounded-sm flex items-center justify-center text-[9px] font-black leading-none"
+                  style={{ color: '#FFFFFF', backgroundColor: '#1A2440', border: `1px solid ${UOFW_COLORS.gold}` }}
+                >
+                  TM
+                </span>
                 <span className="text-sm font-bold" style={{ color: UOFW_COLORS.gold }}>The Movement at the UofW</span>
               </div>
               <p className="text-xs leading-relaxed" style={{ color: 'rgba(255,255,255,0.8)' }}>
