@@ -119,7 +119,7 @@ export default function Layout() {
               style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
-              {mobileMenuOpen ? <X className="w-5 h-5" style={{ color: UDISTRICT_COLORS.gold }} /> : <Menu className="w-5 h-5" style={{ color: UDISTRICT_COLORS.gold }} />}
+              {mobileMenuOpen ? <X className="w-5 h-5" style={{ color: '#FFFFFF' }} /> : <Menu className="w-5 h-5" style={{ color: '#FFFFFF' }} />}
             </button>
           </div>
         </div>
