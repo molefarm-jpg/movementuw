@@ -147,7 +147,7 @@ export default function Home() {
                   {f.cta} <ArrowRight className="w-3 h-3" />
                 </button>
               ) : (
-                <p className="text-xs text-[#6B6B6B]">{f.note}</p>
+                <p className="text-sm text-[#6B6B6B] leading-relaxed">{f.note}</p>
               )}
             </div>
           ))}
