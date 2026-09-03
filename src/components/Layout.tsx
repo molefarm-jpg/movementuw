@@ -30,12 +30,12 @@ export default function Layout() {
           <NavLink to="/" className="flex items-center gap-2 shrink-0" onClick={() => setMobileMenuOpen(false)}>
             <span
               aria-hidden="true"
-              className="shrink-0 w-9 h-9 overflow-hidden"
+              className="shrink-0 w-9 h-9 rounded-md bg-white/10 border border-white/15 p-0.5"
             >
               <img
                 src="/media/movement-m-logo-v2.png"
                 alt=""
-                className="w-full h-full object-cover opacity-95 mix-blend-darken contrast-110 saturate-125"
+                className="w-full h-full object-contain opacity-100"
               />
             </span>
             <div className="leading-tight">
@@ -184,12 +184,12 @@ export default function Layout() {
               <div className="flex items-center gap-2 mb-2">
                 <span
                   aria-hidden="true"
-                  className="w-5 h-5 overflow-hidden"
+                  className="w-5 h-5 rounded-sm bg-white/10 border border-white/15 p-[1px]"
                 >
                   <img
                     src="/media/movement-m-logo-v2.png"
                     alt=""
-                    className="w-full h-full object-cover opacity-95 mix-blend-darken contrast-110 saturate-125"
+                    className="w-full h-full object-contain opacity-100"
                   />
                 </span>
                 <span className="text-sm font-bold" style={{ color: UOFW_COLORS.gold }}>The Movement at the UofW</span>
