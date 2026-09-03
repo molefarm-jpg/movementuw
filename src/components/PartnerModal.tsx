@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { X, Send, CheckCircle } from 'lucide-react';
 import { SITE_NAME } from '@/lib/siteConfig';
 
@@ -82,7 +82,7 @@ export default function PartnerModal({ open, onClose }: PartnerModalProps) {
         ) : (
           <form onSubmit={handleSubmit} className="px-6 py-5 space-y-4">
             <p className="text-xs text-[#6B6B6B] leading-relaxed -mt-1 mb-1">
-              {`Join ${SITE_NAME} and reach thousands of UofW students on The Ave. Tell us about your business and the student offer you would like to activate.`}
+              {`Join ${SITE_NAME} and reach thousands of U-District students on The Ave. Tell us about your business and the student offer you would like to activate.`}
             </p>
 
             <div>
@@ -135,7 +135,7 @@ export default function PartnerModal({ open, onClose }: PartnerModalProps) {
                 rows={3}
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
-                placeholder="Tell us about your business and why UofW students would love it..."
+                placeholder="Tell us about your business and why U-District students would love it..."
                 className="w-full px-3 py-2 text-sm rounded-lg border border-[#E8E8E6] bg-white text-[#1A1A1A] placeholder:text-[#C4C4C4] focus:outline-none focus:border-uw-purple focus:ring-1 focus:ring-uw-purple/20 transition-all resize-none"
               />
             </div>
@@ -153,3 +153,4 @@ export default function PartnerModal({ open, onClose }: PartnerModalProps) {
     </div>
   );
 }
+

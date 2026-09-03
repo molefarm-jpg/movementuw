@@ -1,7 +1,7 @@
-{
-  "name": "The Movement at the UofW",
+﻿{
+  "name": "The Movement at the U-District",
   "short_name": "The Movement",
-  "description": "UW student discounts and deals on The Ave and across the University District.",
+  "description": "U-District student discounts and deals on The Ave and across the University District.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#5a4fcf",
@@ -15,3 +15,4 @@
     }
   ]
 }
+

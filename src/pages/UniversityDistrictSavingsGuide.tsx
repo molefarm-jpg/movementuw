@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+﻿import { Link } from 'react-router-dom';
 import { Compass, Download } from 'lucide-react';
 import { APP_DOWNLOAD_URL } from '@/lib/siteConfig';
 
@@ -7,13 +7,13 @@ export default function UniversityDistrictSavingsGuide() {
     <div>
       <section className="pt-10 pb-6 px-4 sm:px-6 max-w-3xl mx-auto text-center">
         <span className="text-[11px] font-bold uppercase tracking-widest text-uw-purple mb-3 block">
-          UW Seattle Guide
+          U-District Seattle Guide
         </span>
         <h1 className="text-[32px] sm:text-[48px] font-bold text-[#1A1A1A] leading-[1.15] tracking-tight mb-4">
           University District Student <span className="text-uw-purple">Savings Guide</span>
         </h1>
         <p className="text-sm sm:text-base text-[#6B6B6B] leading-relaxed max-w-lg mx-auto mb-6">
-          Use this UW-focused savings guide to find student discounts across the University District, including The Ave,
+          Use this U-District-focused savings guide to find student discounts across the University District, including The Ave,
           Wallingford, Montlake, Roosevelt, and University Village.
         </p>
         <a
@@ -66,8 +66,8 @@ export default function UniversityDistrictSavingsGuide() {
         <div className="rounded-xl border border-[#E8E8E6] p-6 sm:p-8">
           <h2 className="text-base font-semibold text-[#1A1A1A] mb-3">Related guides</h2>
           <div className="space-y-2">
-            <Link to="/uw-student-discounts-the-ave" className="block text-sm font-semibold text-uw-purple hover:underline">
-              UW Student Discounts on The Ave
+            <Link to="/u-district-student-discounts-the-ave" className="block text-sm font-semibold text-uw-purple hover:underline">
+              U-District Student Discounts on The Ave
             </Link>
             <Link to="/students" className="block text-sm font-semibold text-uw-purple hover:underline">
               Student benefits overview
@@ -78,3 +78,5 @@ export default function UniversityDistrictSavingsGuide() {
     </div>
   );
 }
+
+

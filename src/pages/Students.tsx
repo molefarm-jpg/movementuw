@@ -1,4 +1,4 @@
-import { Smartphone, Tag, QrCode, Bell, Shield } from 'lucide-react';
+﻿import { Smartphone, Tag, QrCode, Bell, Shield } from 'lucide-react';
 import { APP_DISPLAY_NAME, APP_STORE_URLS, SITE_NAME, APP_DOWNLOAD_URL } from '@/lib/siteConfig';
 
 const BENEFITS = [
@@ -9,7 +9,7 @@ const BENEFITS = [
   },
   {
     icon: QrCode,
-    title: 'Digital UofW Student ID',
+    title: 'Digital U-District Student ID',
     description: `Verify your student status once inside ${SITE_NAME} Social App, then show your digital ID at any partner merchant to redeem instantly.`,
   },
   {
@@ -20,7 +20,7 @@ const BENEFITS = [
   {
     icon: Shield,
     title: 'Always Free',
-    description: `${SITE_NAME} Social App is 100% free for students. No subscriptions, no fees, no catches — just verified savings on The Ave.`,
+    description: `${SITE_NAME} Social App is 100% free for students. No subscriptions, no fees, no catches â€” just verified savings on The Ave.`,
   },
 ];
 
@@ -114,7 +114,7 @@ export default function Students() {
           {[
             {
               q: `Is ${SITE_NAME} Social App free?`,
-              a: 'Yes — 100% free for all currently enrolled students. Just verify your status with your .edu email inside the app.',
+              a: 'Yes â€” 100% free for all currently enrolled students. Just verify your status with your .edu email inside the app.',
             },
             {
               q: 'Is the app the only way to redeem discounts?',
@@ -142,3 +142,4 @@ export default function Students() {
     </div>
   );
 }
+

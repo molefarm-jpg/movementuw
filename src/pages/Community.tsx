@@ -1,21 +1,21 @@
-import { Heart, MessageCircle, Star, Users } from 'lucide-react';
+﻿import { Heart, MessageCircle, Star, Users } from 'lucide-react';
 import { SITE_NAME } from '@/lib/siteConfig';
 
 const TESTIMONIALS = [
   {
     name: 'Alex R.',
-    role: 'UofW Junior',
-    text: `I use ${SITE_NAME} Social App almost every day. The discounts at One Bite Cafe and Mama Grande's are only available through the app — I have saved over $40 this quarter alone.`,
+    role: 'U-District Junior',
+    text: `I use ${SITE_NAME} Social App almost every day. The discounts at One Bite Cafe and Mama Grande's are only available through the app â€” I have saved over $40 this quarter alone.`,
   },
   {
     name: 'Jordan M.',
-    role: 'UofW Sophomore',
+    role: 'U-District Sophomore',
     text: `As a student on a budget, every dollar counts. ${SITE_NAME} Social App is the only way to unlock these discounts. It makes supporting local businesses so easy.`,
   },
   {
     name: 'Priya S.',
-    role: 'UofW Senior',
-    text: `I love that I can just pull up ${SITE_NAME} Social App and show my digital student ID. No fumbling for my UofW student ID — all the discounts are right there in one place.`,
+    role: 'U-District Senior',
+    text: `I love that I can just pull up ${SITE_NAME} Social App and show my digital student ID. No fumbling for my U-District student ID â€” all the discounts are right there in one place.`,
   },
 ];
 
@@ -31,7 +31,7 @@ export default function Community() {
           A movement built by <span className="text-uw-purple">students</span>, for <span className="text-uw-purple">students.</span>
         </h1>
         <p className="text-sm sm:text-base text-[#6B6B6B] leading-relaxed max-w-lg mx-auto">
-          {`${SITE_NAME} is more than discounts — it is a community of UofW students supporting local businesses through one shared app. Join thousands of UofW students already saving on The Ave. Download the Social App to be part of it.`}
+          {`${SITE_NAME} is more than discounts â€” it is a community of U-District students supporting local businesses through one shared app. Join thousands of U-District students already saving on The Ave. Download the Social App to be part of it.`}
         </p>
       </section>
 
@@ -72,7 +72,7 @@ export default function Community() {
       {/* Testimonials */}
       <section className="px-4 sm:px-6 max-w-3xl mx-auto pb-16">
         <h2 className="text-base font-semibold text-[#1A1A1A] mb-5 text-center">
-          What UofW students are saying
+          What U-District students are saying
         </h2>
         <div className="space-y-4">
           {TESTIMONIALS.map((t) => (
@@ -109,13 +109,14 @@ export default function Community() {
             Join the community
           </h2>
           <p className="text-sm text-[#6B6B6B] max-w-md mx-auto mb-4">
-            {`Help us grow ${SITE_NAME} at UofW. Download the Social App, share your favorite discounts, suggest new merchants, and bring your friends along.`}
+            {`Help us grow ${SITE_NAME} at U-District. Download the Social App, share your favorite discounts, suggest new merchants, and bring your friends along.`}
           </p>
           <p className="text-xs text-[#9E9E9E]">
-            Have a story to share? Reach out — we would love to feature you.
+            Have a story to share? Reach out â€” we would love to feature you.
           </p>
         </div>
       </section>
     </div>
   );
 }
+

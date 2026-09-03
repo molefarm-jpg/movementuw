@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { CheckCircle, Heart, MessageCircle, Send, Star, Users, X } from 'lucide-react';
 import { SITE_NAME } from '@/lib/siteConfig';
 
@@ -22,18 +22,18 @@ const INITIAL_STORY_FORM = {
 const TESTIMONIALS = [
   {
     name: 'Alex R.',
-    role: 'UofW Junior',
-    text: `I use ${SITE_NAME} Social App almost every day. The discounts at One Bite Cafe and Mama Grande's are only available through the app — I have saved over $40 this quarter alone.`,
+    role: 'U-District Junior',
+    text: `I use ${SITE_NAME} Social App almost every day. The discounts at One Bite Cafe and Mama Grande's are only available through the app â€” I have saved over $40 this quarter alone.`,
   },
   {
     name: 'Jordan M.',
-    role: 'UofW Sophomore',
+    role: 'U-District Sophomore',
     text: `As a student on a budget, every dollar counts. ${SITE_NAME} Social App is the only way to unlock these discounts. It makes supporting local businesses so easy.`,
   },
   {
     name: 'Priya S.',
-    role: 'UofW Senior',
-    text: `I love that I can just pull up ${SITE_NAME} Social App and show my digital student ID. No fumbling for my UofW student ID — all the discounts are right there in one place.`,
+    role: 'U-District Senior',
+    text: `I love that I can just pull up ${SITE_NAME} Social App and show my digital student ID. No fumbling for my U-District student ID â€” all the discounts are right there in one place.`,
   },
 ];
 
@@ -88,7 +88,7 @@ export default function Community() {
     formData.append('audience', storyForm.audience);
     formData.append('email', storyForm.email);
     formData.append('message', storyForm.message);
-    formData.append('_subject', 'Community story submission for MovementUW webmaster');
+    formData.append('_subject', 'Community story submission for MovementU-District webmaster');
     formData.append('_template', 'table');
     formData.append('_captcha', 'true');
     formData.append('_honey', '');
@@ -138,7 +138,7 @@ export default function Community() {
           A movement built by <span className="text-uw-purple">students</span>, for <span className="text-uw-purple">students.</span>
         </h1>
         <p className="text-sm sm:text-base text-[#6B6B6B] leading-relaxed max-w-lg mx-auto">
-          {`${SITE_NAME} is more than discounts — it is a community of UofW students supporting local businesses through one shared app. Join thousands of UofW students already saving on The Ave. Download the Social App to be part of it.`}
+          {`${SITE_NAME} is more than discounts â€” it is a community of U-District students supporting local businesses through one shared app. Join thousands of U-District students already saving on The Ave. Download the Social App to be part of it.`}
         </p>
       </section>
 
@@ -179,7 +179,7 @@ export default function Community() {
       {/* Testimonials */}
       <section className="px-4 sm:px-6 max-w-3xl mx-auto pb-16">
         <h2 className="text-base font-semibold text-[#1A1A1A] mb-5 text-center">
-          What UofW students are saying
+          What U-District students are saying
         </h2>
         <div className="space-y-4">
           {TESTIMONIALS.map((t) => (
@@ -217,7 +217,7 @@ export default function Community() {
               Share your comment
             </h2>
             <p className="text-sm text-white/85 max-w-xl mx-auto">
-              Submit your experience with {SITE_NAME}. Comments are not published automatically. Please note - every submission is emailed to the MovementUW webmaster and held for review before approval.
+              Submit your experience with {SITE_NAME}. Comments are not published automatically. Please note - every submission is emailed to the MovementU-District webmaster and held for review before approval.
             </p>
           </div>
 
@@ -248,7 +248,7 @@ export default function Community() {
                   required
                   value={form.role}
                   onChange={(event) => setForm((current) => ({ ...current, role: event.target.value }))}
-                  placeholder="Example: UofW Junior"
+                  placeholder="Example: U-District Junior"
                   className="w-full h-11 px-3 text-sm rounded-lg border border-[#E8E8E6] bg-white text-[#1A1A1A] placeholder:text-[#C4C4C4] focus:outline-none focus:border-uw-purple focus:ring-1 focus:ring-uw-purple/20 transition-all"
                 />
               </div>
@@ -263,7 +263,7 @@ export default function Community() {
                 required
                 value={form.email}
                 onChange={(event) => setForm((current) => ({ ...current, email: event.target.value }))}
-                placeholder="Your UofW or preferred contact email"
+                placeholder="Your U-District or preferred contact email"
                 className="w-full h-11 px-3 text-sm rounded-lg border border-[#E8E8E6] bg-white text-[#1A1A1A] placeholder:text-[#C4C4C4] focus:outline-none focus:border-uw-purple focus:ring-1 focus:ring-uw-purple/20 transition-all"
               />
             </div>
@@ -362,7 +362,7 @@ export default function Community() {
             Join the community
           </h2>
           <p className="text-sm text-[#6B6B6B] max-w-md mx-auto mb-4">
-            {`Help us grow ${SITE_NAME} at UofW. Download the Social App, share your favorite discounts, suggest new merchants, and bring your friends along.`}
+            {`Help us grow ${SITE_NAME} at U-District. Download the Social App, share your favorite discounts, suggest new merchants, and bring your friends along.`}
           </p>
           <p className="text-sm font-bold text-[#1A1A1A]">
             Have a story to share? Reach out{' '}
@@ -373,7 +373,7 @@ export default function Community() {
             >
               HERE
             </button>{' '}
-            — we would love to feature you.
+            â€” we would love to feature you.
           </p>
         </div>
       </section>
@@ -404,7 +404,7 @@ export default function Community() {
                   Your message was sent
                 </p>
                 <p className="text-xs text-[#6B6B6B] max-w-xs">
-                  The MovementUW webmaster received your story submission and can review it for a possible feature.
+                  The MovementU-District webmaster received your story submission and can review it for a possible feature.
                 </p>
                 <button
                   onClick={handleStoryDialogClose}
@@ -418,7 +418,7 @@ export default function Community() {
                 <input type="text" name="_honey" value="" onChange={() => undefined} className="hidden" tabIndex={-1} autoComplete="off" />
 
                 <p className="text-xs text-[#6B6B6B] leading-relaxed -mt-1 mb-1">
-                  Tell us what you want featured. Students and merchants can both use this form, and your message will be sent directly to the MovementUW webmaster for review.
+                  Tell us what you want featured. Students and merchants can both use this form, and your message will be sent directly to the MovementU-District webmaster for review.
                 </p>
 
                 <div>
@@ -499,3 +499,4 @@ export default function Community() {
     </div>
   );
 }
+

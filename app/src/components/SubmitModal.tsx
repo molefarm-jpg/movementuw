@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { X, Send, CheckCircle } from 'lucide-react';
 import { SITE_NAME } from '@/lib/siteConfig';
 
@@ -111,7 +111,7 @@ export default function SubmitModal({ open, onClose }: SubmitModalProps) {
                 rows={3}
                 value={form.offerDetails}
                 onChange={(e) => setForm({ ...form, offerDetails: e.target.value })}
-                placeholder="What discount should they offer UofW students?"
+                placeholder="What discount should they offer U-District students?"
                 className="w-full px-3 py-2 text-sm rounded-lg border border-[#E8E8E6] bg-white text-[#1A1A1A] placeholder:text-[#C4C4C4] focus:outline-none focus:border-uw-purple focus:ring-1 focus:ring-uw-purple/20 transition-all resize-none"
               />
             </div>
@@ -129,3 +129,4 @@ export default function SubmitModal({ open, onClose }: SubmitModalProps) {
     </div>
   );
 }
+

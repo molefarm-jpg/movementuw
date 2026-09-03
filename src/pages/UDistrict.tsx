@@ -1,4 +1,4 @@
-import { MapPin, GraduationCap, Download } from 'lucide-react';
+﻿import { MapPin, GraduationCap, Download } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { SITE_NAME, APP_DOWNLOAD_URL } from '@/lib/siteConfig';
 
@@ -13,7 +13,7 @@ const MERCHANTS_ON_THE_AVE = [
   'Jewel of India',
 ];
 
-export default function UofW() {
+export default function UDistrict() {
   return (
     <div>
       {/* Hero */}
@@ -24,13 +24,13 @@ export default function UofW() {
           </div>
         </div>
         <span className="text-[11px] font-bold uppercase tracking-widest text-uw-purple mb-3 block">
-          UofW
+          U-District
         </span>
         <h1 className="text-[32px] sm:text-[48px] font-bold text-[#1A1A1A] leading-[1.15] tracking-tight mb-4">
-          {`${SITE_NAME} at `}<span className="text-uw-purple">UofW.</span>
+          {`${SITE_NAME} at `}<span className="text-uw-purple">U-District.</span>
         </h1>
         <p className="text-sm sm:text-base text-[#6B6B6B] leading-relaxed max-w-lg mx-auto mb-6">
-          {`The official ${SITE_NAME} hub for UofW. Explore student discounts at Maison Blanc Salon, One Bite Cafe, Mama Grande's Cafe, and other local favorites across The Ave, Wallingford, Montlake, University Village, and Roosevelt.`}
+          {`The official ${SITE_NAME} hub for U-District. Explore student discounts at Maison Blanc Salon, One Bite Cafe, Mama Grande's Cafe, and other local favorites across The Ave, Wallingford, Montlake, University Village, and Roosevelt.`}
         </p>
         <a
           href={APP_DOWNLOAD_URL}
@@ -53,7 +53,7 @@ export default function UofW() {
             </h2>
           </div>
           <p className="text-sm text-[#6B6B6B] leading-relaxed mb-5">
-            {`University Way NE, locally known as "The Ave" or University Way, is the heart of student life near UofW. The Movement is activating student discounts at trusted local businesses like Maison Blanc Salon, One Bite Cafe, and Mama Grande's Cafe, plus growing merchant options across The Ave, Wallingford, Montlake, University Village, and Roosevelt.`}
+            {`University Way NE, locally known as "The Ave" or University Way, is the heart of student life near U-District. The Movement is activating student discounts at trusted local businesses like Maison Blanc Salon, One Bite Cafe, and Mama Grande's Cafe, plus growing merchant options across The Ave, Wallingford, Montlake, University Village, and Roosevelt.`}
           </p>
 
           <h3 className="text-xs font-semibold uppercase tracking-wider text-[#9E9E9E] mb-3">
@@ -72,17 +72,17 @@ export default function UofW() {
         </div>
       </section>
 
-      {/* How it works at UofW */}
+      {/* How it works at U-District */}
       <section className="px-4 sm:px-6 max-w-3xl mx-auto pb-16">
         <h2 className="text-base font-semibold text-[#1A1A1A] mb-5">
-          How it works at UofW
+          How it works at U-District
         </h2>
         <div className="space-y-4">
           {[
             {
               step: '1',
               title: `Download ${SITE_NAME} Social App`,
-              desc: 'Available free on iOS and Android. Sign up with your UofW email to verify your student status.',
+              desc: 'Available free on iOS and Android. Sign up with your U-District email to verify your student status.',
             },
             {
               step: '2',
@@ -116,14 +116,14 @@ export default function UofW() {
       <section className="px-4 sm:px-6 max-w-3xl mx-auto pb-16">
         <div className="rounded-xl border border-[#E8E8E6] p-6 sm:p-8">
           <h2 className="text-base font-semibold text-[#1A1A1A] mb-3">
-            UW discount guides
+            U-District discount guides
           </h2>
           <p className="text-sm text-[#6B6B6B] leading-relaxed mb-4">
             Explore detailed student savings guides for The Ave and the wider University District.
           </p>
           <div className="space-y-2">
-            <Link to="/uw-student-discounts-the-ave" className="block text-sm font-semibold text-uw-purple hover:underline">
-              UW Student Discounts on The Ave
+            <Link to="/u-district-student-discounts-the-ave" className="block text-sm font-semibold text-uw-purple hover:underline">
+              U-District Student Discounts on The Ave
             </Link>
             <Link to="/university-district-student-savings-guide" className="block text-sm font-semibold text-uw-purple hover:underline">
               University District Student Savings Guide
@@ -134,3 +134,4 @@ export default function UofW() {
     </div>
   );
 }
+

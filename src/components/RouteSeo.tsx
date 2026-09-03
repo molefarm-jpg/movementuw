@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+﻿import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 type SeoConfig = {
@@ -7,66 +7,66 @@ type SeoConfig = {
   keywords: string;
 };
 
-const SITE_NAME = 'The Movement at the UofW';
+const SITE_NAME = 'The Movement at the U-District';
 const SITE_URL = 'https://movementuw.college';
 const DEFAULT_IMAGE_URL = `${SITE_URL}/media/the-movement-mark.svg`;
 
 const ROUTE_SEO: Record<string, SeoConfig> = {
   '/': {
-    title: 'The Movement | UW Student Discounts in Seattle',
+    title: 'The Movement | U-District Student Discounts in Seattle',
     description:
-      'Discover verified UW student discounts on The Ave and in Seattle’s University District. Save at local businesses with The Movement Social App.',
+      'Discover verified U-District student discounts on The Ave and in Seattleâ€™s University District. Save at local businesses with The Movement Social App.',
     keywords:
-      'The Movement, UW student discounts Seattle, The Ave deals, University District discounts, student app Seattle',
+      'The Movement, U-District student discounts Seattle, The Ave deals, University District discounts, student app Seattle',
   },
   '/about': {
-    title: 'About The Movement | UW Student Savings in Seattle',
+    title: 'About The Movement | U-District Student Savings in Seattle',
     description:
-      'Learn how The Movement helps UW students save in Seattle while supporting local businesses across the University District and The Ave.',
+      'Learn how The Movement helps U-District students save in Seattle while supporting local businesses across the University District and The Ave.',
     keywords:
-      'The Movement UW, UW student savings Seattle, University District student discounts, local business student platform',
+      'The Movement U-District, U-District student savings Seattle, University District student discounts, local business student platform',
   },
-  '/uofw': {
-    title: 'Maison Blanc Salon, One Bite Cafe, Mama Grande’s Cafe | UW Student Discounts',
+  '/u-district': {
+    title: 'Maison Blanc Salon, One Bite Cafe, Mama Grandeâ€™s Cafe | U-District Student Discounts',
     description:
-      'Find verified student deals at Maison Blanc Salon, One Bite Cafe, Mama Grande’s Cafe, and more on The Ave and across Seattle’s University District.',
+      'Find verified student deals at Maison Blanc Salon, One Bite Cafe, Mama Grandeâ€™s Cafe, and more on The Ave and across Seattleâ€™s University District.',
     keywords:
-      'Maison Blanc Salon, One Bite Cafe, Mama Grande’s Cafe, UW student discounts, The Ave student deals, U District discount app, Seattle student savings',
+      'Maison Blanc Salon, One Bite Cafe, Mama Grandeâ€™s Cafe, U-District student discounts, The Ave student deals, U District discount app, Seattle student savings',
   },
   '/merchants': {
-    title: 'Maison Blanc Salon, One Bite Cafe & More | UW Student Deals',
+    title: 'Maison Blanc Salon, One Bite Cafe & More | U-District Student Deals',
     description:
-      'Explore local student offers from Maison Blanc Salon, One Bite Cafe, Mama Grande’s Cafe, and other University District businesses with The Movement.',
+      'Explore local student offers from Maison Blanc Salon, One Bite Cafe, Mama Grandeâ€™s Cafe, and other University District businesses with The Movement.',
     keywords:
-      'Maison Blanc Salon, One Bite Cafe, Mama Grande’s Cafe, UW student discount program, Seattle student offers, The Ave merchant promotions, U District student marketing',
+      'Maison Blanc Salon, One Bite Cafe, Mama Grandeâ€™s Cafe, U-District student discount program, Seattle student offers, The Ave merchant promotions, U District student marketing',
   },
   '/students': {
-    title: 'UW Seattle Student Deals | Save on The Ave',
+    title: 'U-District Seattle Student Deals | Save on The Ave',
     description:
-      'Get exclusive UW student deals in Seattle with The Movement. Verify your student status, unlock offers, and save on food, services, and local shopping.',
+      'Get exclusive U-District student deals in Seattle with The Movement. Verify your student status, unlock offers, and save on food, services, and local shopping.',
     keywords:
-      'UW Seattle student deals, University of Washington discounts, The Ave student savings, Seattle student app offers',
+      'U-District Seattle student deals, University of Washington discounts, The Ave student savings, Seattle student app offers',
   },
   '/community': {
-    title: 'UW Student Community & Local Deals | The Movement',
+    title: 'U-District Student Community & Local Deals | The Movement',
     description:
-      'Support local businesses and save with the UW student community in Seattle. Discover verified deals and community-powered savings.',
+      'Support local businesses and save with the U-District student community in Seattle. Discover verified deals and community-powered savings.',
     keywords:
-      'UW student community, Seattle student discounts, local business support UW, student savings community',
+      'U-District student community, Seattle student discounts, local business support U-District, student savings community',
   },
-  '/uw-student-discounts-the-ave': {
-    title: 'The Ave Student Discounts | UW Seattle Deals',
+  '/u-district-student-discounts-the-ave': {
+    title: 'The Ave Student Discounts | U-District Seattle Deals',
     description:
-      'Find the best UW student discounts on The Ave and across the U District. Save on coffee, food, services, and local shopping with verified offers.',
+      'Find the best U-District student discounts on The Ave and across the U District. Save on coffee, food, services, and local shopping with verified offers.',
     keywords:
-      'The Ave student discounts, UW Seattle deals, U District discounts, University Way student offers, Seattle student savings',
+      'The Ave student discounts, U-District Seattle deals, U District discounts, University Way student offers, Seattle student savings',
   },
   '/university-district-student-savings-guide': {
-    title: 'University District Student Savings Guide | UW Seattle',
+    title: 'University District Student Savings Guide | U-District Seattle',
     description:
       'Explore student savings in the University District with The Movement. Find local deals, dining offers, and ways to save on The Ave.',
     keywords:
-      'University District student savings, UW Seattle deals, The Ave discounts, U District student offers',
+      'University District student savings, U-District Seattle deals, The Ave discounts, U District student offers',
   },
 };
 
@@ -164,3 +164,5 @@ export default function RouteSeo() {
 
   return null;
 }
+
+

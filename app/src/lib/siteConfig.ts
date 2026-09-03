@@ -1,4 +1,4 @@
-export const SITE_NAME = 'The Movement';
+﻿export const SITE_NAME = 'The Movement';
 
 export const APP_DISPLAY_NAME = 'The Movement Social App';
 export const APP_STORE_URLS = {
@@ -17,7 +17,7 @@ export const UOFW_COLORS = {
 };
 
 /*
-  UofW color usage guidelines:
+  U-District color usage guidelines:
   - Purple #5a4fcf may be used for headlines and body copy text.
   - Gold #8E632A may be used for headlines only, not for body copy.
   - White may be used for headlines against Purple #5a4fcf, not for body copy.
@@ -25,3 +25,4 @@ export const UOFW_COLORS = {
 */
 
 // Add other site-wide constants here later (e.g., brand, contact)
+

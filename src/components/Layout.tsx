@@ -1,4 +1,4 @@
-import { useState } from 'react';
+﻿import { useState } from 'react';
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
 import { Handshake, Download, Menu, X, AlertTriangle } from 'lucide-react';
 import { useModal } from '@/hooks/useModal';
@@ -9,7 +9,7 @@ import RouteSeo from './RouteSeo';
 const NAV_LINKS = [
   { to: '/', label: 'Home' },
   { to: '/about', label: 'About' },
-  { to: '/uofw', label: 'UofW' },
+  { to: '/u-district', label: 'U-District' },
   { to: '/merchants', label: 'Merchants' },
   { to: '/students', label: 'Students' },
   { to: '/community', label: 'Community' },
@@ -39,7 +39,7 @@ export default function Layout() {
               />
             </span>
             <div className="leading-tight">
-              <span className="text-sm font-bold" style={{ color: UOFW_COLORS.gold }}>The Movement at the UofW</span>
+              <span className="text-sm font-bold" style={{ color: UOFW_COLORS.gold }}>The Movement at the U-District</span>
             </div>
           </NavLink>
 
@@ -192,10 +192,10 @@ export default function Layout() {
                     className="w-full h-full object-contain opacity-100"
                   />
                 </span>
-                <span className="text-sm font-bold" style={{ color: UOFW_COLORS.gold }}>The Movement at the UofW</span>
+                <span className="text-sm font-bold" style={{ color: UOFW_COLORS.gold }}>The Movement at the U-District</span>
               </div>
               <p className="text-xs leading-relaxed" style={{ color: 'rgba(255,255,255,0.8)' }}>
-                Support Local, Save Daily: The Movement's UofW Student Guide to The District
+                Support Local, Save Daily: The Movement's U-District Student Guide to The District
               </p>
             </div>
 
@@ -242,7 +242,7 @@ export default function Layout() {
           </div>
 
           <div className="pt-4 text-center text-[11px]" style={{ borderTop: `1px solid ${UOFW_COLORS.gold}`, color: 'rgba(255,255,255,0.6)' }}>
-            {`The Movement at the UofW — Built for UofW students. Not officially affiliated with UofW.`}
+            {`The Movement at the U-District â€” Built for U-District students. Not officially affiliated with U-District.`}
           </div>
         </div>
       </footer>
@@ -278,3 +278,5 @@ export default function Layout() {
     </div>
   );
 }
+
+

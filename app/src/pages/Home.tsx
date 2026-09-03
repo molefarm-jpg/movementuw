@@ -1,4 +1,4 @@
-import { Download, Store, QrCode, ArrowRight } from 'lucide-react';
+﻿import { Download, Store, QrCode, ArrowRight } from 'lucide-react';
 import { useModal } from '@/hooks/useModal';
 import MerchantCarousel from '@/components/MerchantCarousel';
 import { SITE_NAME, APP_DOWNLOAD_URL, UOFW_COLORS } from '@/lib/siteConfig';
@@ -29,7 +29,7 @@ const STEPS = [
     step: 'Step 3',
     stepColor: 'text-emerald-600',
     title: 'Scan & redeem instantly',
-    description: 'Show your digital UofW student ID at checkout and save every time.',
+    description: 'Show your digital U-District student ID at checkout and save every time.',
   },
 ];
 
@@ -42,7 +42,7 @@ const FEATURES = [
   },
   {
     title: 'For Merchants',
-    description: `Drive foot traffic from thousands of UofW students. Join ${SITE_NAME} and activate your student discount in minutes.`,
+    description: `Drive foot traffic from thousands of U-District students. Join ${SITE_NAME} and activate your student discount in minutes.`,
     cta: 'Partner with Us',
     action: 'partner',
   },
@@ -63,7 +63,7 @@ export default function Home() {
             Save on The Ave
           </h1>
           <p className="text-sm sm:text-base leading-relaxed max-w-md mx-auto" style={{ color: '#666' }}>
-            {`Exclusive student discounts activated by The Movement in the UofW University District - The Ave, Wallingford, Montlake, University Village, and Roosevelt.`}
+            {`Exclusive student discounts activated by The Movement in the U-District University District - The Ave, Wallingford, Montlake, University Village, and Roosevelt.`}
           </p>
         </div>
 
@@ -147,7 +147,7 @@ export default function Home() {
             Ready to start saving?
           </h2>
           <p className="text-sm text-white/70 max-w-md mx-auto mb-5">
-            {`Join thousands of UofW students already saving on The Ave with ${SITE_NAME}.`}
+            {`Join thousands of U-District students already saving on The Ave with ${SITE_NAME}.`}
           </p>
           <a
             href={APP_DOWNLOAD_URL}
@@ -164,3 +164,4 @@ export default function Home() {
     </div>
   );
 }
+

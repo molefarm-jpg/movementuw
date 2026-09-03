@@ -1,4 +1,4 @@
-import { Target, Users, TrendingUp, Heart } from 'lucide-react';
+﻿import { Target, Users, TrendingUp, Heart } from 'lucide-react';
 import { useState } from 'react';
 import { SITE_NAME } from '@/lib/siteConfig';
 
@@ -7,7 +7,7 @@ const VALUES = [
     icon: Target,
     title: 'Our Mission',
     description:
-      `${SITE_NAME} connects college students with exclusive discounts from local merchants through our social app. Every offer on this hub is only redeemable via the app — creating a verified, win-win ecosystem that drives foot traffic to businesses while helping students save.`,
+      `${SITE_NAME} connects college students with exclusive discounts from local merchants through our social app. Every offer on this hub is only redeemable via the app â€” creating a verified, win-win ecosystem that drives foot traffic to businesses while helping students save.`,
   },
   {
     icon: Users,
@@ -19,13 +19,13 @@ const VALUES = [
     icon: TrendingUp,
     title: 'For Merchants',
     description:
-      `Local businesses gain access to a loyal, engaged customer base of thousands of college students through ${SITE_NAME} Social App. No upfront costs, no complicated setup — just activate your discount and watch verified student foot traffic grow.`,
+      `Local businesses gain access to a loyal, engaged customer base of thousands of college students through ${SITE_NAME} Social App. No upfront costs, no complicated setup â€” just activate your discount and watch verified student foot traffic grow.`,
   },
   {
     icon: Heart,
     title: 'Community First',
     description:
-      `We are building more than a discount platform. ${SITE_NAME} strengthens the bond between students and their local community, keeping dollars circulating within the neighborhoods that matter most — all through a single, trusted app.`,
+      `We are building more than a discount platform. ${SITE_NAME} strengthens the bond between students and their local community, keeping dollars circulating within the neighborhoods that matter most â€” all through a single, trusted app.`,
   },
 ];
 
@@ -71,7 +71,7 @@ export default function About() {
           Building bridges between <span className="text-uw-purple">students</span> and <span className="text-uw-purple">local business.</span>
         </h1>
         <p className="text-sm sm:text-base text-[#6B6B6B] leading-relaxed max-w-lg mx-auto">
-          {`${SITE_NAME} is a student discount activation platform. Every offer on this hub is exclusively available and redeemable through ${SITE_NAME} Social App — the only way to verify your student status and claim these deals.`}
+          {`${SITE_NAME} is a student discount activation platform. Every offer on this hub is exclusively available and redeemable through ${SITE_NAME} Social App â€” the only way to verify your student status and claim these deals.`}
         </p>
       </section>
 
@@ -98,8 +98,8 @@ export default function About() {
 
           <h4 className="text-sm font-semibold mb-2">Patents & Technical Links</h4>
           <ul className="list-disc list-inside text-xs text-[#6B6B6B] mb-4">
-            <li><a href="https://patents.google.com/patent/US20060276171" className="underline text-uw-purple">US20060276171 — Virtual currency</a></li>
-            <li><a href="https://www.google.com/patents/CA2621108A1" className="underline text-uw-purple">CA2621108A1 — Applications in social networks / transactions</a></li>
+            <li><a href="https://patents.google.com/patent/US20060276171" className="underline text-uw-purple">US20060276171 â€” Virtual currency</a></li>
+            <li><a href="https://www.google.com/patents/CA2621108A1" className="underline text-uw-purple">CA2621108A1 â€” Applications in social networks / transactions</a></li>
           </ul>
 
           <h4 className="text-sm font-semibold mb-2">Video & Media</h4>
@@ -140,7 +140,7 @@ export default function About() {
             </div>
             <div>
               <p className="text-2xl sm:text-3xl font-bold text-uw-purple">1</p>
-              <p className="text-[11px] text-[#9E9E9E] mt-1">Campus — UofW</p>
+              <p className="text-[11px] text-[#9E9E9E] mt-1">Campus â€” U-District</p>
             </div>
           </div>
         </div>
@@ -163,7 +163,7 @@ export default function About() {
                   aria-expanded={openIndex === idx}
                 >
                   <span className="text-sm font-semibold text-[#1A1A1A]">{item.title}</span>
-                  <span className="text-uw-purple text-lg">{openIndex === idx ? '−' : '+'}</span>
+                  <span className="text-uw-purple text-lg">{openIndex === idx ? 'âˆ’' : '+'}</span>
                 </button>
 
                 <div className={`${openIndex === idx ? 'block' : 'hidden'} px-4 pb-4 text-sm text-[#6B6B6B]`}>{item.content}</div>
@@ -179,7 +179,7 @@ export default function About() {
         <h2 className="text-xl font-bold text-[#1A1A1A] mb-4">Welcome to the all-new platform from The Movement</h2>
 
         <p className="text-sm text-[#6B6B6B] leading-relaxed mb-4">
-          The Movement is a collaboration between technologists and top economists and political scientists. It is the world's first fully-integrated social network, cryptocurrency and transactions-infused marketplace, crowdsourced worker, transportation, education, judicial and political system — uniquely of the people, by the people, for the people.
+          The Movement is a collaboration between technologists and top economists and political scientists. It is the world's first fully-integrated social network, cryptocurrency and transactions-infused marketplace, crowdsourced worker, transportation, education, judicial and political system â€” uniquely of the people, by the people, for the people.
         </p>
 
         <h3 className="text-base font-semibold text-[#1A1A1A] mb-2">Help launch a groundbreaking social platform</h3>
@@ -212,3 +212,4 @@ export default function About() {
     </div>
   );
 }
+

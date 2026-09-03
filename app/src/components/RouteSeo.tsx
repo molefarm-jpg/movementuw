@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+﻿import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
 type SeoConfig = {
@@ -7,66 +7,66 @@ type SeoConfig = {
   keywords: string;
 };
 
-const SITE_NAME = 'The Movement at the UofW';
+const SITE_NAME = 'The Movement at the U-District';
 const SITE_URL = 'https://movementuw.college';
 const DEFAULT_IMAGE_URL = `${SITE_URL}/media/the-movement-mark.svg`;
 
 const ROUTE_SEO: Record<string, SeoConfig> = {
   '/': {
-    title: 'UofW Student Discounts on The Ave | The Movement at UW Seattle',
+    title: 'U-District Student Discounts on The Ave | The Movement at U-District Seattle',
     description:
       'Discover exclusive University of Washington student discounts on The Ave and across the U District. Download The Movement Social App, verify student ID, and save daily.',
     keywords:
-      'University of Washington student discounts, UofW discounts, The Ave deals, University District deals, UW student app',
+      'University of Washington student discounts, U-District discounts, The Ave deals, University District deals, U-District student app',
   },
   '/about': {
-    title: 'About The Movement at UofW | Student Savings + Local Growth',
+    title: 'About The Movement at U-District | Student Savings + Local Growth',
     description:
-      'Learn how The Movement helps University of Washington students save money while helping Seattle-area merchants reach the UofW campus community.',
+      'Learn how The Movement helps University of Washington students save money while helping Seattle-area merchants reach the U-District campus community.',
     keywords:
-      'about The Movement, UofW student savings, University of Washington community, student discount platform',
+      'about The Movement, U-District student savings, University of Washington community, student discount platform',
   },
-  '/uofw': {
-    title: 'University of Washington Discount Hub | The Movement UofW',
+  '/u-district': {
+    title: 'University of Washington Discount Hub | The Movement U-District',
     description:
-      'Your UofW hub for student deals on The Ave, Wallingford, Montlake, Roosevelt, and University Village. Find local merchants and redeem discounts instantly.',
+      'Your U-District hub for student deals on The Ave, Wallingford, Montlake, Roosevelt, and University Village. Find local merchants and redeem discounts instantly.',
     keywords:
-      'UofW discount hub, UW Seattle student discounts, The Ave merchants, University Way NE deals',
+      'U-District discount hub, U-District Seattle student discounts, The Ave merchants, University Way NE deals',
   },
   '/merchants': {
-    title: 'For Merchants: Reach UW Students in Seattle | The Movement',
+    title: 'For Merchants: Reach U-District Students in Seattle | The Movement',
     description:
       'Grow foot traffic from University of Washington students. Partner with The Movement to offer verified student discounts in the U District and The Ave.',
     keywords:
-      'UofW merchant marketing, student discount marketing, University District business promotions, partner with The Movement',
+      'U-District merchant marketing, student discount marketing, University District business promotions, partner with The Movement',
   },
   '/students': {
-    title: 'For Students: UW Seattle Deals & Discounts | The Movement',
+    title: 'For Students: U-District Seattle Deals & Discounts | The Movement',
     description:
-      'UW students get exclusive local discounts with The Movement Social App. Browse offers, show your digital student ID, and save at participating University District businesses.',
+      'U-District students get exclusive local discounts with The Movement Social App. Browse offers, show your digital student ID, and save at participating University District businesses.',
     keywords:
-      'UofW student deals, University of Washington discounts, Seattle student savings, digital student ID discounts',
+      'U-District student deals, University of Washington discounts, Seattle student savings, digital student ID discounts',
   },
   '/community': {
-    title: 'Community Impact in U District Seattle | The Movement at UW',
+    title: 'Community Impact in U District Seattle | The Movement at U-District',
     description:
-      'See how The Movement supports local businesses and helps UofW students save while strengthening the University District community.',
+      'See how The Movement supports local businesses and helps U-District students save while strengthening the University District community.',
     keywords:
-      'UofW community, University District support local, Seattle student community, local business support UW',
+      'U-District community, University District support local, Seattle student community, local business support U-District',
   },
-  '/uw-student-discounts-the-ave': {
-    title: 'UW Student Discounts on The Ave | 2026 Savings Guide',
+  '/u-district-student-discounts-the-ave': {
+    title: 'U-District Student Discounts on The Ave | 2026 Savings Guide',
     description:
-      'Find UW student discounts on The Ave with this practical guide. Learn where to look, how to redeem with The Movement Social App, and how to save more each week.',
+      'Find U-District student discounts on The Ave with this practical guide. Learn where to look, how to redeem with The Movement Social App, and how to save more each week.',
     keywords:
-      'UW student discounts The Ave, University Way discounts, Seattle student deals, U District savings guide',
+      'U-District student discounts The Ave, University Way discounts, Seattle student deals, U District savings guide',
   },
   '/university-district-student-savings-guide': {
-    title: 'University District Student Savings Guide | UW Seattle',
+    title: 'University District Student Savings Guide | U-District Seattle',
     description:
-      'A complete University District savings guide for UW students, including The Ave, Wallingford, Montlake, Roosevelt, and University Village.',
+      'A complete University District savings guide for U-District students, including The Ave, Wallingford, Montlake, Roosevelt, and University Village.',
     keywords:
-      'University District student discounts, UW Seattle savings guide, U District deals, University Village student deals',
+      'University District student discounts, U-District Seattle savings guide, U District deals, University Village student deals',
   },
 };
 
@@ -163,3 +163,5 @@ export default function RouteSeo() {
 
   return null;
 }
+
+
