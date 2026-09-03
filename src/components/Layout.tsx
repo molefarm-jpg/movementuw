@@ -25,9 +25,9 @@ export default function Layout() {
       <RouteSeo />
       {/* ========== HEADER ========== */}
       <header className="sticky top-0 z-40" style={{ backgroundColor: UDISTRICT_COLORS.purple, borderBottom: `3px solid ${UDISTRICT_COLORS.gold}` }}>
-        <div className="max-w-6xl mx-auto pl-1 pr-3 sm:pl-2 sm:pr-4 lg:pl-3 lg:pr-6 h-16 grid grid-cols-[minmax(0,220px)_1fr_auto] sm:grid-cols-[minmax(0,250px)_1fr_auto] md:grid-cols-[minmax(0,300px)_1fr_auto] lg:grid-cols-[minmax(0,360px)_1fr_auto] xl:grid-cols-[minmax(0,460px)_1fr_auto] items-center gap-3">
+        <div className="max-w-6xl mx-auto pl-1 pr-3 sm:pl-2 sm:pr-4 lg:pl-3 lg:pr-6 h-16 grid grid-cols-[minmax(0,220px)_1fr_auto] sm:grid-cols-[minmax(0,250px)_1fr_auto] md:grid-cols-[minmax(0,320px)_1fr_auto] lg:grid-cols-[minmax(0,380px)_1fr_auto] xl:grid-cols-[minmax(0,440px)_1fr_auto] items-center gap-2.5">
           {/* Logo */}
-          <NavLink to="/" className="-ml-2 sm:-ml-3 md:-ml-6 lg:-ml-8 xl:-ml-14 md:mr-4 lg:mr-6 flex items-center gap-2 sm:gap-2.5 shrink-0 min-w-0 max-w-[220px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[360px] xl:max-w-[460px] rounded-lg px-1 py-1" onClick={() => setMobileMenuOpen(false)}>
+          <NavLink to="/" className="-ml-4 sm:-ml-5 md:-ml-9 lg:-ml-11 xl:-ml-16 md:mr-3 lg:mr-4 flex items-center gap-1.5 sm:gap-2 shrink-0 min-w-0 max-w-[220px] sm:max-w-[250px] md:max-w-[320px] lg:max-w-[380px] xl:max-w-[440px] rounded-lg px-1 py-1" onClick={() => setMobileMenuOpen(false)}>
             <span
               aria-hidden="true"
               className="shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-md bg-white/20 border border-white/30 p-0.5 flex items-center justify-center"
@@ -38,18 +38,18 @@ export default function Layout() {
                 className="block w-full h-full object-contain opacity-100"
               />
             </span>
-            <div className="-ml-0.5 sm:-ml-1 leading-[1.05] min-w-0">
-              <span className="block text-[11px] sm:text-xs md:text-sm lg:text-[15px] xl:text-base font-extrabold tracking-tight" style={{ color: UDISTRICT_COLORS.gold }}>
+            <div className="-ml-1 sm:-ml-1.5 min-w-0 w-[128px] sm:w-[142px] md:w-[162px] lg:w-[176px] text-left">
+              <span className="block leading-none text-[11px] sm:text-xs md:text-sm lg:text-[15px] xl:text-base font-extrabold tracking-tight" style={{ color: UDISTRICT_COLORS.gold }}>
                 The Movement
               </span>
-              <span className="block text-[10px] sm:text-[11px] md:text-xs lg:text-sm xl:text-[15px] font-bold tracking-tight" style={{ color: UDISTRICT_COLORS.gold }}>
+              <span className="block mt-0.5 leading-none text-[10px] sm:text-[11px] md:text-xs lg:text-sm xl:text-[15px] font-bold tracking-tight" style={{ color: UDISTRICT_COLORS.gold }}>
                 in the U-District
               </span>
             </div>
           </NavLink>
 
           {/* Desktop Nav */}
-          <nav className="hidden xl:flex items-center justify-start gap-2 pl-12 xl:pl-14">
+          <nav className="hidden 2xl:flex items-center justify-start gap-2 pl-12 2xl:pl-14">
             {NAV_LINKS.map((link) => (
               <NavLink
                 key={link.to}
@@ -76,7 +76,7 @@ export default function Layout() {
               href={APP_DOWNLOAD_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden lg:flex items-center justify-center gap-2 h-10 min-w-[180px] px-6 text-xs font-bold leading-none whitespace-nowrap rounded-full hover:bg-white/20 active:scale-[0.98] transition-all"
+              className="hidden xl:flex items-center justify-center gap-2 h-10 min-w-[180px] px-6 text-xs font-bold leading-none whitespace-nowrap rounded-full hover:bg-white/20 active:scale-[0.98] transition-all"
               style={{ color: '#ffffff', border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.1)' }}
               onClick={() => console.log('[CLICK TRACK] Nav: Get the App')}
             >
@@ -87,7 +87,7 @@ export default function Layout() {
               href={APP_STORE_URLS.google}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden xl:flex items-center justify-center gap-2 h-10 min-w-[208px] px-7 text-xs font-bold leading-none whitespace-nowrap rounded-full hover:bg-white/20 active:scale-[0.98] transition-all"
+              className="hidden 2xl:flex items-center justify-center gap-2 h-10 min-w-[208px] px-7 text-xs font-bold leading-none whitespace-nowrap rounded-full hover:bg-white/20 active:scale-[0.98] transition-all"
               style={{ color: '#ffffff', border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.1)' }}
             >
               <Download className="w-3.5 h-3.5" />
@@ -95,7 +95,7 @@ export default function Layout() {
             </a>
             <button
               onClick={openPartner}
-              className="hidden lg:flex items-center justify-center gap-1.5 h-9 px-4 text-white text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full active:scale-[0.97] transition-all"
+              className="hidden xl:flex items-center justify-center gap-1.5 h-9 px-4 text-white text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full active:scale-[0.97] transition-all"
               style={{ backgroundColor: UDISTRICT_COLORS.gold }}
             >
               <Handshake className="w-3.5 h-3.5" />
@@ -104,7 +104,7 @@ export default function Layout() {
 
             {/* Mobile menu toggle */}
             <button
-              className="xl:hidden p-2 rounded-lg transition-colors"
+              className="2xl:hidden p-2 rounded-lg transition-colors"
               style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
@@ -115,7 +115,7 @@ export default function Layout() {
 
         {/* Mobile Nav Dropdown */}
         {mobileMenuOpen && (
-          <div className="xl:hidden px-4 py-3" style={{ backgroundColor: 'rgba(255,255,255,0.05)', borderTop: `1px solid ${UDISTRICT_COLORS.gold}` }}>
+          <div className="2xl:hidden px-4 py-3" style={{ backgroundColor: 'rgba(255,255,255,0.05)', borderTop: `1px solid ${UDISTRICT_COLORS.gold}` }}>
             <nav className="flex flex-col gap-1.5">
               {NAV_LINKS.map((link) => (
                 <NavLink
