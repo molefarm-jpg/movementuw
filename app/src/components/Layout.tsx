@@ -50,10 +50,10 @@ export default function Layout() {
               />
             </span>
             <div className={BRAND_TEXT_WRAP_CLASS}>
-              <span className="block leading-none whitespace-nowrap text-[10px] sm:text-[11px] md:text-sm lg:text-[15px] xl:text-base font-extrabold tracking-tight" style={{ color: UDISTRICT_COLORS.gold }}>
+              <span className="block leading-none whitespace-nowrap text-[10px] sm:text-[11px] md:text-sm lg:text-[15px] xl:text-base font-extrabold tracking-tight" style={{ color: '#FFFFFF' }}>
                 The Movement
               </span>
-              <span className="block mt-0.5 leading-none whitespace-nowrap text-[9px] sm:text-[10px] md:text-xs lg:text-sm xl:text-[15px] font-bold tracking-tight" style={{ color: UDISTRICT_COLORS.gold }}>
+              <span className="block mt-0.5 leading-none whitespace-nowrap text-[9px] sm:text-[10px] md:text-xs lg:text-sm xl:text-[15px] font-bold tracking-tight" style={{ color: '#FFFFFF' }}>
                 in the U-District
               </span>
             </div>
