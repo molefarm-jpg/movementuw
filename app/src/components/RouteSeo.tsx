@@ -15,19 +15,19 @@ const ROUTE_SEO: Record<string, SeoConfig> = {
   '/': {
     title: 'U-District Student Discounts on The Ave | The Movement in the U-District Seattle',
     description:
-      'Discover exclusive University of Washington student discounts on The Ave and across the U District. Download The Movement Social App, verify student ID, and save daily.',
+      'Discover exclusive U-District student discounts on The Ave and across the U District. Download The Movement Social App, verify student ID, and save daily.',
     keywords:
-      'University of Washington student discounts, U-District discounts, The Ave deals, University District deals, U-District student app',
+      'U-District student discounts, U-District deals, The Ave deals, University District deals, U-District student app',
   },
   '/about': {
     title: 'About The Movement in the U-District | Student Savings + Local Growth',
     description:
-      'Learn how The Movement helps University of Washington students save money while helping Seattle-area merchants reach the U-District campus community.',
+      'Learn how The Movement helps U-District students save money while helping Seattle-area merchants reach the U-District community.',
     keywords:
-      'about The Movement, U-District student savings, University of Washington community, student discount platform',
+      'about The Movement, U-District student savings, U-District community, student discount platform',
   },
   '/u-district': {
-    title: 'University of Washington Discount Hub | The Movement U-District',
+    title: 'U-District Discount Hub | The Movement U-District',
     description:
       'Your U-District hub for student deals on The Ave, Wallingford, Montlake, Roosevelt, and University Village. Find local merchants and redeem discounts instantly.',
     keywords:
@@ -36,7 +36,7 @@ const ROUTE_SEO: Record<string, SeoConfig> = {
   '/merchants': {
     title: 'For Merchants: Reach U-District Students in Seattle | The Movement',
     description:
-      'Grow foot traffic from University of Washington students. Partner with The Movement to offer verified student discounts in the U District and The Ave.',
+      'Grow foot traffic from U-District students. Partner with The Movement to offer verified student discounts in the U District and The Ave.',
     keywords:
       'U-District merchant marketing, student discount marketing, University District business promotions, partner with The Movement',
   },
@@ -45,7 +45,7 @@ const ROUTE_SEO: Record<string, SeoConfig> = {
     description:
       'U-District students get exclusive local discounts with The Movement Social App. Browse offers, show your digital student ID, and save at participating University District businesses.',
     keywords:
-      'U-District student deals, University of Washington discounts, Seattle student savings, digital student ID discounts',
+      'U-District student deals, U-District discounts, Seattle student savings, digital student ID discounts',
   },
   '/community': {
     title: 'Community Impact in U District Seattle | The Movement in the U-District',

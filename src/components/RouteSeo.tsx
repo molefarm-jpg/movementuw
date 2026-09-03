@@ -45,7 +45,7 @@ const ROUTE_SEO: Record<string, SeoConfig> = {
     description:
       'Get exclusive U-District student deals in Seattle with The Movement. Verify your student status, unlock offers, and save on food, services, and local shopping.',
     keywords:
-      'U-District Seattle student deals, University of Washington discounts, The Ave student savings, Seattle student app offers',
+      'U-District Seattle student deals, U-District discounts, The Ave student savings, Seattle student app offers',
   },
   '/community': {
     title: 'U-District Student Community & Local Deals | The Movement',
