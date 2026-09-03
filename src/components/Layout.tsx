@@ -25,9 +25,9 @@ export default function Layout() {
       <RouteSeo />
       {/* ========== HEADER ========== */}
       <header className="sticky top-0 z-40" style={{ backgroundColor: UDISTRICT_COLORS.purple, borderBottom: `3px solid ${UDISTRICT_COLORS.gold}` }}>
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 h-14 grid grid-cols-[auto_1fr_auto] items-center gap-3">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 h-14 grid grid-cols-[minmax(0,auto)_1fr_auto] items-center gap-3">
           {/* Logo */}
-          <NavLink to="/" className="flex items-center gap-3 shrink-0 min-w-0" onClick={() => setMobileMenuOpen(false)}>
+          <NavLink to="/" className="flex items-center gap-3 shrink-0 min-w-0 max-w-[240px] lg:max-w-[300px]" onClick={() => setMobileMenuOpen(false)}>
             <span
               aria-hidden="true"
               className="shrink-0 w-9 h-9 rounded-md bg-white/10 border border-white/15 p-0.5 flex items-center justify-center"
@@ -44,7 +44,7 @@ export default function Layout() {
           </NavLink>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center justify-center gap-2">
+          <nav className="hidden md:flex items-center justify-center gap-2 pl-3 lg:pl-5">
             {NAV_LINKS.map((link) => (
               <NavLink
                 key={link.to}
@@ -71,7 +71,7 @@ export default function Layout() {
               href={APP_DOWNLOAD_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex items-center justify-center gap-2 h-10 min-w-[180px] px-6 text-xs font-bold leading-none whitespace-nowrap rounded-full hover:bg-white/20 active:scale-[0.98] transition-all"
+              className="hidden lg:flex items-center justify-center gap-2 h-10 min-w-[180px] px-6 text-xs font-bold leading-none whitespace-nowrap rounded-full hover:bg-white/20 active:scale-[0.98] transition-all"
               style={{ color: '#ffffff', border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.1)' }}
               onClick={() => console.log('[CLICK TRACK] Nav: Get the App')}
             >
@@ -82,7 +82,7 @@ export default function Layout() {
               href={APP_STORE_URLS.google}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex items-center justify-center gap-2 h-10 min-w-[208px] px-7 text-xs font-bold leading-none whitespace-nowrap rounded-full hover:bg-white/20 active:scale-[0.98] transition-all"
+              className="hidden xl:flex items-center justify-center gap-2 h-10 min-w-[208px] px-7 text-xs font-bold leading-none whitespace-nowrap rounded-full hover:bg-white/20 active:scale-[0.98] transition-all"
               style={{ color: '#ffffff', border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.1)' }}
             >
               <Download className="w-3.5 h-3.5" />
@@ -90,7 +90,7 @@ export default function Layout() {
             </a>
             <button
               onClick={openPartner}
-              className="hidden sm:flex items-center justify-center gap-1.5 h-9 px-4 text-white text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full active:scale-[0.97] transition-all"
+              className="hidden lg:flex items-center justify-center gap-1.5 h-9 px-4 text-white text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full active:scale-[0.97] transition-all"
               style={{ backgroundColor: UDISTRICT_COLORS.gold }}
             >
               <Handshake className="w-3.5 h-3.5" />
