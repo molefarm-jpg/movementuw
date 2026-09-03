@@ -31,9 +31,12 @@ export default function Layout() {
   const { isPartnerOpen, openPartner, closePartner } = useModal();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
-  const primaryAppStoreUrl = useMemo(() => {
+  const { primaryAppStoreUrl, isDownloadEnabled } = useMemo(() => {
     const mobilePlatform = detectMobilePlatform();
-    return mobilePlatform === 'android' ? APP_STORE_URLS.google : APP_STORE_URLS.apple;
+    return {
+      primaryAppStoreUrl: mobilePlatform === 'android' ? APP_STORE_URLS.google : APP_STORE_URLS.apple,
+      isDownloadEnabled: mobilePlatform === 'android' || mobilePlatform === 'ios',
+    };
   }, []);
 
   return (
@@ -89,10 +92,12 @@ export default function Layout() {
           {/* CTAs + Hamburger */}
           <div className={HEADER_ACTIONS_CLASS}>
             <a
-              href={primaryAppStoreUrl}
+              href={isDownloadEnabled ? primaryAppStoreUrl : undefined}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden xl:flex items-center justify-center gap-2 h-10 min-w-[180px] px-6 text-xs font-bold leading-none whitespace-nowrap rounded-full hover:bg-white/20 active:scale-[0.98] transition-all"
+              aria-disabled={!isDownloadEnabled}
+              tabIndex={isDownloadEnabled ? 0 : -1}
+              className={`hidden xl:flex items-center justify-center gap-2 h-10 min-w-[180px] px-6 text-xs font-bold leading-none whitespace-nowrap rounded-full transition-all ${isDownloadEnabled ? 'hover:bg-white/20 active:scale-[0.98]' : 'opacity-50 cursor-not-allowed pointer-events-none'}`}
               style={{ color: '#ffffff', border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.1)' }}
               onClick={() => console.log('[CLICK TRACK] Nav: Download Social App')}
             >
@@ -146,10 +151,12 @@ export default function Layout() {
             </nav>
             <div className="grid grid-cols-2 gap-2 mt-3 pt-3" style={{ borderTop: `1px solid ${UDISTRICT_COLORS.gold}` }}>
               <a
-                href={primaryAppStoreUrl}
+                href={isDownloadEnabled ? primaryAppStoreUrl : undefined}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="col-span-2 flex items-center justify-center gap-2 h-10 px-4 text-white text-xs font-bold leading-none whitespace-nowrap rounded-full"
+                aria-disabled={!isDownloadEnabled}
+                tabIndex={isDownloadEnabled ? 0 : -1}
+                className={`col-span-2 flex items-center justify-center gap-2 h-10 px-4 text-white text-xs font-bold leading-none whitespace-nowrap rounded-full ${isDownloadEnabled ? '' : 'opacity-50 cursor-not-allowed pointer-events-none'}`}
                 style={{ backgroundColor: UDISTRICT_COLORS.gold }}
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -272,10 +279,12 @@ export default function Layout() {
           style={{ backgroundColor: UDISTRICT_COLORS.purple, borderTop: `3px solid ${UDISTRICT_COLORS.gold}` }}
         >
           <a
-            href={primaryAppStoreUrl}
+            href={isDownloadEnabled ? primaryAppStoreUrl : undefined}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-[1.25] flex items-center justify-center gap-2 h-10 px-4 text-white text-xs font-bold leading-none whitespace-nowrap rounded-full active:scale-[0.97] transition-all"
+            aria-disabled={!isDownloadEnabled}
+            tabIndex={isDownloadEnabled ? 0 : -1}
+            className={`flex-[1.25] flex items-center justify-center gap-2 h-10 px-4 text-white text-xs font-bold leading-none whitespace-nowrap rounded-full transition-all ${isDownloadEnabled ? 'active:scale-[0.97]' : 'opacity-50 cursor-not-allowed pointer-events-none'}`}
             style={{ backgroundColor: UDISTRICT_COLORS.gold }}
             onClick={() => console.log('[CLICK TRACK] Mobile Bar: Download Social App')}
           >
