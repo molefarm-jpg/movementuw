@@ -15,6 +15,12 @@ const NAV_LINKS = [
   { to: '/community', label: 'Community' },
 ];
 
+const HEADER_ROW_CLASS = 'max-w-6xl mx-auto pl-0 pr-3 sm:pl-1 sm:pr-4 lg:pl-2 lg:pr-6 h-[68px] sm:h-16 flex items-center gap-3';
+const BRAND_LINK_CLASS = '-ml-8 sm:-ml-9 md:-ml-12 lg:-ml-14 xl:-ml-[4.5rem] mr-auto flex items-center gap-2.5 sm:gap-3 shrink-0 min-w-0 max-w-[180px] sm:max-w-[240px] md:max-w-[340px] lg:max-w-[400px] rounded-lg px-1 py-1';
+const BRAND_TEXT_WRAP_CLASS = 'ml-0.5 sm:ml-1 min-w-0 text-left';
+const DESKTOP_NAV_CLASS = 'hidden 2xl:flex items-center justify-start gap-2 ml-8';
+const HEADER_ACTIONS_CLASS = 'ml-2 sm:ml-3 flex items-center gap-2 shrink-0';
+
 export default function Layout() {
   const { isPartnerOpen, openPartner, closePartner } = useModal();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -25,9 +31,9 @@ export default function Layout() {
       <RouteSeo />
       {/* ========== HEADER ========== */}
       <header className="sticky top-0 z-40" style={{ backgroundColor: UDISTRICT_COLORS.purple, borderBottom: `3px solid ${UDISTRICT_COLORS.gold}` }}>
-        <div className="max-w-6xl mx-auto pl-0 pr-3 sm:pl-1 sm:pr-4 lg:pl-2 lg:pr-6 h-[68px] sm:h-16 flex items-center gap-3">
+        <div className={HEADER_ROW_CLASS}>
           {/* Logo */}
-          <NavLink to="/" className="-ml-8 sm:-ml-9 md:-ml-12 lg:-ml-14 xl:-ml-[4.5rem] mr-auto flex items-center gap-2.5 sm:gap-3 shrink-0 min-w-0 max-w-[180px] sm:max-w-[240px] md:max-w-[340px] lg:max-w-[400px] rounded-lg px-1 py-1" onClick={() => setMobileMenuOpen(false)}>
+          <NavLink to="/" className={BRAND_LINK_CLASS} onClick={() => setMobileMenuOpen(false)}>
             <span
               aria-hidden="true"
               className="shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-md bg-white/20 border border-white/30 p-0.5 flex items-center justify-center"
@@ -38,7 +44,7 @@ export default function Layout() {
                 className="block w-full h-full object-contain opacity-100"
               />
             </span>
-            <div className="ml-0.5 sm:ml-1 min-w-0 text-left">
+            <div className={BRAND_TEXT_WRAP_CLASS}>
               <span className="block leading-none whitespace-nowrap text-[10px] sm:text-[11px] md:text-sm lg:text-[15px] xl:text-base font-extrabold tracking-tight" style={{ color: UDISTRICT_COLORS.gold }}>
                 The Movement
               </span>
@@ -49,7 +55,7 @@ export default function Layout() {
           </NavLink>
 
           {/* Desktop Nav */}
-          <nav className="hidden 2xl:flex items-center justify-start gap-2 ml-8">
+          <nav className={DESKTOP_NAV_CLASS}>
             {NAV_LINKS.map((link) => (
               <NavLink
                 key={link.to}
@@ -71,7 +77,7 @@ export default function Layout() {
           </nav>
 
           {/* CTAs + Hamburger */}
-          <div className="ml-2 sm:ml-3 flex items-center gap-2 shrink-0">
+          <div className={HEADER_ACTIONS_CLASS}>
             <a
               href={APP_DOWNLOAD_URL}
               target="_blank"
