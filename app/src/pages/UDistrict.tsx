@@ -30,7 +30,7 @@ export default function UDistrict() {
           {`${SITE_NAME} at `}<span className="text-uw-purple">U-District.</span>
         </h1>
         <p className="text-sm sm:text-base text-[#6B6B6B] leading-relaxed max-w-lg mx-auto mb-6">
-          {`The official ${SITE_NAME} hub for U-District. Exclusive student discounts activated by The Movement in the U-District University District - The Ave, Wallingford, Montlake, University Village, and Roosevelt.`}
+          {`The official ${SITE_NAME} hub for U-District. Exclusive student discounts activated by The Movement in the U-District - The Ave, Wallingford, Montlake, University Village, and Roosevelt.`}
         </p>
         <a
           href={APP_DOWNLOAD_URL}
@@ -53,7 +53,7 @@ export default function UDistrict() {
             </h2>
           </div>
           <p className="text-sm text-[#6B6B6B] leading-relaxed mb-5">
-            {`University Way NE, locally known as "The Ave" or University Way, is the heart of student life near U-District. The U-District University District includes The Ave, Wallingford, Montlake, University Village, and Roosevelt, and The Movement is activating merchants across the area to offer exclusive discounts to U-District student ID holders.`}
+            {`University Way NE, locally known as "The Ave" or University Way, is the heart of student life near U-District. The U-District includes The Ave, Wallingford, Montlake, University Village, and Roosevelt, and The Movement is activating merchants across the area to offer exclusive discounts to U-District student ID holders.`}
           </p>
 
           <h3 className="text-xs font-semibold uppercase tracking-wider text-[#9E9E9E] mb-3">

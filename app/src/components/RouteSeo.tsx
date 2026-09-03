@@ -7,20 +7,20 @@ type SeoConfig = {
   keywords: string;
 };
 
-const SITE_NAME = 'The Movement at the U-District';
+const SITE_NAME = 'The Movement in the U-District';
 const SITE_URL = 'https://movementuw.college';
 const DEFAULT_IMAGE_URL = `${SITE_URL}/media/the-movement-mark.svg`;
 
 const ROUTE_SEO: Record<string, SeoConfig> = {
   '/': {
-    title: 'U-District Student Discounts on The Ave | The Movement at U-District Seattle',
+    title: 'U-District Student Discounts on The Ave | The Movement in the U-District Seattle',
     description:
       'Discover exclusive University of Washington student discounts on The Ave and across the U District. Download The Movement Social App, verify student ID, and save daily.',
     keywords:
       'University of Washington student discounts, U-District discounts, The Ave deals, University District deals, U-District student app',
   },
   '/about': {
-    title: 'About The Movement at U-District | Student Savings + Local Growth',
+    title: 'About The Movement in the U-District | Student Savings + Local Growth',
     description:
       'Learn how The Movement helps University of Washington students save money while helping Seattle-area merchants reach the U-District campus community.',
     keywords:
@@ -48,7 +48,7 @@ const ROUTE_SEO: Record<string, SeoConfig> = {
       'U-District student deals, University of Washington discounts, Seattle student savings, digital student ID discounts',
   },
   '/community': {
-    title: 'Community Impact in U District Seattle | The Movement at U-District',
+    title: 'Community Impact in U District Seattle | The Movement in the U-District',
     description:
       'See how The Movement supports local businesses and helps U-District students save while strengthening the University District community.',
     keywords:

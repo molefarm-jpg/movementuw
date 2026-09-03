@@ -63,7 +63,7 @@ export default function Home() {
             Save on The Ave
           </h1>
           <p className="text-sm sm:text-base leading-relaxed max-w-md mx-auto" style={{ color: '#666' }}>
-            {`Exclusive student discounts activated by The Movement in the U-District University District - The Ave, Wallingford, Montlake, University Village, and Roosevelt.`}
+            {`Exclusive student discounts activated by The Movement in the U-District - The Ave, Wallingford, Montlake, University Village, and Roosevelt.`}
           </p>
         </div>
 

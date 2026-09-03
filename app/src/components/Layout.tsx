@@ -32,19 +32,19 @@ export default function Layout() {
       <header className="sticky top-0 z-40" style={{ backgroundColor: UOFW_COLORS.purple, borderBottom: `3px solid ${UOFW_COLORS.gold}` }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
           {/* Logo */}
-          <NavLink to="/" className="flex items-center gap-2 shrink-0" onClick={() => setMobileMenuOpen(false)}>
+          <NavLink to="/" className="flex items-center gap-1 shrink-0 min-w-0" onClick={() => setMobileMenuOpen(false)}>
             <span
               aria-hidden="true"
-              className="shrink-0 w-9 h-9 rounded-md bg-white/10 border border-white/15 p-0.5"
+              className="shrink-0 w-9 h-9 rounded-md bg-white/10 border border-white/15 p-0.5 flex items-center justify-center"
             >
               <img
                 src="/media/movement-m-logo-v2.png"
                 alt=""
-                className="w-full h-full object-contain opacity-100"
+                className="block w-full h-full object-contain opacity-100"
               />
             </span>
-            <div className="leading-tight">
-              <span className="text-sm font-bold" style={{ color: UOFW_COLORS.gold }}>The Movement at the U-District</span>
+            <div className="leading-none min-w-0 -ml-1">
+              <span className="block text-[13px] sm:text-sm font-bold tracking-tight whitespace-nowrap truncate" style={{ color: UOFW_COLORS.gold }}>The Movement in the U-District</span>
             </div>
           </NavLink>
 
@@ -189,15 +189,15 @@ export default function Layout() {
               <div className="flex items-center gap-2 mb-2">
                 <span
                   aria-hidden="true"
-                  className="w-5 h-5 rounded-sm bg-white/10 border border-white/15 p-[1px]"
+                  className="w-5 h-5 rounded-sm bg-white/10 border border-white/15 p-[1px] flex items-center justify-center"
                 >
                   <img
                     src="/media/movement-m-logo-v2.png"
                     alt=""
-                    className="w-full h-full object-contain opacity-100"
+                    className="block w-full h-full object-contain opacity-100"
                   />
                 </span>
-                <span className="text-sm font-bold" style={{ color: UOFW_COLORS.gold }}>The Movement at the U-District</span>
+                <span className="text-sm font-bold" style={{ color: UOFW_COLORS.gold }}>The Movement in the U-District</span>
               </div>
               <p className="text-xs leading-relaxed" style={{ color: 'rgba(255,255,255,0.8)' }}>
                 Support Local, Save Daily: The Movement's U-District Student Guide to The District
@@ -265,7 +265,7 @@ export default function Layout() {
           </div>
 
           <div className="pt-4 text-center text-[11px]" style={{ borderTop: `1px solid ${UOFW_COLORS.gold}`, color: 'rgba(255,255,255,0.6)' }}>
-            {`The Movement at the U-District â€” Built for U-District students. Not officially affiliated with U-District.`}
+            {`The Movement in the U-District â€” Built for U-District students. Not officially affiliated with U-District.`}
           </div>
         </div>
       </footer>

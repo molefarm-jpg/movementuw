@@ -7,7 +7,7 @@ type SeoConfig = {
   keywords: string;
 };
 
-const SITE_NAME = 'The Movement at the U-District';
+const SITE_NAME = 'The Movement in the U-District';
 const SITE_URL = 'https://movementuw.college';
 const DEFAULT_IMAGE_URL = `${SITE_URL}/media/the-movement-mark.svg`;
 
