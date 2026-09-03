@@ -27,7 +27,7 @@ export default function Layout() {
       <header className="sticky top-0 z-40" style={{ backgroundColor: UDISTRICT_COLORS.purple, borderBottom: `3px solid ${UDISTRICT_COLORS.gold}` }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 h-14 grid grid-cols-[minmax(0,auto)_1fr_auto] items-center gap-3">
           {/* Logo */}
-          <NavLink to="/" className="flex items-center gap-3 shrink-0 min-w-0 max-w-[240px] lg:max-w-[300px]" onClick={() => setMobileMenuOpen(false)}>
+          <NavLink to="/" className="flex items-center gap-3 shrink-0 min-w-0 max-w-[320px] xl:max-w-[360px]" onClick={() => setMobileMenuOpen(false)}>
             <span
               aria-hidden="true"
               className="shrink-0 w-9 h-9 rounded-md bg-white/10 border border-white/15 p-0.5 flex items-center justify-center"
@@ -39,7 +39,7 @@ export default function Layout() {
               />
             </span>
             <div className="leading-none min-w-0">
-              <span className="block text-base sm:text-lg font-bold tracking-tight whitespace-nowrap truncate" style={{ color: UDISTRICT_COLORS.gold }}>The Movement in the U-District</span>
+              <span className="block text-sm lg:text-base font-bold tracking-tight whitespace-nowrap" style={{ color: UDISTRICT_COLORS.gold }}>The Movement in the U-District</span>
             </div>
           </NavLink>
 
