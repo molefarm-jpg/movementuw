@@ -264,7 +264,7 @@ export default function Layout() {
           </div>
 
           <div className="pt-4 text-center text-[11px]" style={{ borderTop: `1px solid ${UDISTRICT_COLORS.gold}`, color: '#FFFFFF' }}>
-            {`The Movement in the U-District â€” Built for U-District students. Not officially affiliated with U-District.`}
+            {`The Movement in the U-District is a webpage for U-District students and merchant discounts in the area. It's not officially affiliated with U-District or the University of Washington in any way.`}
           </div>
         </div>
       </footer>
