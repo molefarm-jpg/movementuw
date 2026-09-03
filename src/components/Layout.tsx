@@ -33,7 +33,7 @@ export default function Layout() {
               className="shrink-0 w-9 h-9 overflow-hidden"
             >
               <img
-                src="/media/movement-m-logo.png"
+                src="/media/movement-m-logo-v2.png"
                 alt=""
                 className="w-full h-full object-cover opacity-95 mix-blend-darken contrast-110 saturate-125"
               />
@@ -187,7 +187,7 @@ export default function Layout() {
                   className="w-5 h-5 overflow-hidden"
                 >
                   <img
-                    src="/media/movement-m-logo.png"
+                    src="/media/movement-m-logo-v2.png"
                     alt=""
                     className="w-full h-full object-cover opacity-95 mix-blend-darken contrast-110 saturate-125"
                   />
