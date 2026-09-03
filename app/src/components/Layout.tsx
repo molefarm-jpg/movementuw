@@ -43,9 +43,12 @@ export default function Layout() {
                 className="block w-full h-full object-contain opacity-100"
               />
             </span>
-            <div className="leading-none min-w-0">
-              <span className="block text-[11px] sm:text-xs md:text-sm lg:text-[15px] xl:text-base font-extrabold tracking-tight whitespace-nowrap" style={{ color: UDISTRICT_COLORS.gold }}>
-                The Movement in the U-District
+            <div className="leading-[1.05] min-w-0">
+              <span className="block text-[11px] sm:text-xs md:text-sm lg:text-[15px] xl:text-base font-extrabold tracking-tight" style={{ color: UDISTRICT_COLORS.gold }}>
+                The Movement
+              </span>
+              <span className="block text-[10px] sm:text-[11px] md:text-xs lg:text-sm xl:text-[15px] font-bold tracking-tight" style={{ color: UDISTRICT_COLORS.gold }}>
+                in the U-District
               </span>
             </div>
           </NavLink>
