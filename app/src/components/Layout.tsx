@@ -90,6 +90,7 @@ export default function Layout() {
               className="hidden sm:flex items-center justify-center gap-1 h-10 min-w-[124px] px-3 text-[10px] font-bold leading-none rounded-full hover:bg-white/20 active:scale-[0.98] transition-all"
               style={{ color: '#ffffff', border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.08)', whiteSpace: 'normal' }}
             >
+              <Download className="w-3.5 h-3.5 shrink-0" />
               <span className="text-center leading-[1.05]">Get the Social App<br />- Android</span>
             </a>
             <button
@@ -157,6 +158,7 @@ export default function Layout() {
                 style={{ backgroundColor: 'rgba(255,255,255,0.14)', border: `1.5px solid ${UDISTRICT_COLORS.gold}`, whiteSpace: 'normal' }}
                 onClick={() => setMobileMenuOpen(false)}
               >
+                <Download className="w-3.5 h-3.5 mr-1 shrink-0" />
                 <span className="text-center leading-[1.05]">Get the Social App<br />- Android</span>
               </a>
               <button
