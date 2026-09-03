@@ -216,21 +216,21 @@ export default function Layout() {
                 </span>
                 <span className="text-sm font-bold" style={{ color: '#FFFFFF' }}>The Movement in the U-District</span>
               </div>
-              <p className="text-xs leading-relaxed" style={{ color: 'rgba(255,255,255,0.8)' }}>
+              <p className="text-xs leading-relaxed" style={{ color: '#FFFFFF' }}>
                 Support Local, Save Daily: The Movement's U-District Student Guide to The District
               </p>
             </div>
 
             {/* Quick Links */}
             <div>
-              <h4 className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: UDISTRICT_COLORS.gold }}>Explore</h4>
+              <h4 className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: '#FFFFFF' }}>Explore</h4>
               <div className="flex flex-col gap-2">
                 {NAV_LINKS.map((link) => (
                   <NavLink
                     key={link.to}
                     to={link.to}
                     className="text-xs transition-colors hover:opacity-100" 
-                    style={{ color: 'rgba(255,255,255,0.7)' }}
+                    style={{ color: '#FFFFFF' }}
                   >
                     {link.label}
                   </NavLink>
@@ -240,14 +240,14 @@ export default function Layout() {
 
             {/* CTA Column */}
             <div>
-              <h4 className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: UDISTRICT_COLORS.gold }}>Get Started</h4>
+              <h4 className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: '#FFFFFF' }}>Get Started</h4>
               <div className="flex flex-col gap-2">
                 <a
                   href={APP_DOWNLOAD_URL}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-xs font-medium hover:underline"
-                  style={{ color: UDISTRICT_COLORS.gold }}
+                  style={{ color: '#FFFFFF' }}
                   onClick={() => console.log('[CLICK TRACK] Footer: Get the App')}
                 >
                   Get the Social App
@@ -255,7 +255,7 @@ export default function Layout() {
                 <button
                   onClick={openPartner}
                   className="text-xs font-medium hover:underline text-left"
-                  style={{ color: UDISTRICT_COLORS.gold }}
+                  style={{ color: '#FFFFFF' }}
                 >
                   Partner with Us
                 </button>
@@ -263,7 +263,7 @@ export default function Layout() {
             </div>
           </div>
 
-          <div className="pt-4 text-center text-[11px]" style={{ borderTop: `1px solid ${UDISTRICT_COLORS.gold}`, color: 'rgba(255,255,255,0.6)' }}>
+          <div className="pt-4 text-center text-[11px]" style={{ borderTop: `1px solid ${UDISTRICT_COLORS.gold}`, color: '#FFFFFF' }}>
             {`The Movement in the U-District â€” Built for U-District students. Not officially affiliated with U-District.`}
           </div>
         </div>
