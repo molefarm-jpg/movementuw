@@ -2,7 +2,7 @@
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
 import { Handshake, Download, Menu, X, AlertTriangle } from 'lucide-react';
 import { useModal } from '@/hooks/useModal';
-import { APP_DOWNLOAD_URL, UDISTRICT_COLORS } from '@/lib/siteConfig';
+import { APP_DOWNLOAD_URL, APP_STORE_URLS, UDISTRICT_COLORS } from '@/lib/siteConfig';
 import PartnerModal from './PartnerModal';
 import RouteSeo from './RouteSeo';
 
@@ -78,6 +78,15 @@ export default function Layout() {
               <Download className="w-3.5 h-3.5" />
               Get the Social App
             </a>
+            <a
+              href={APP_STORE_URLS.google}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hidden sm:flex items-center justify-center gap-1 h-10 min-w-[124px] px-3 text-[10px] font-bold leading-none rounded-full hover:bg-white/20 active:scale-[0.98] transition-all"
+              style={{ color: '#ffffff', border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.08)', whiteSpace: 'normal' }}
+            >
+              <span className="text-center leading-[1.05]">Get the Social App<br />- Android</span>
+            </a>
             <button
               onClick={openPartner}
               className="hidden sm:flex items-center justify-center gap-1.5 h-9 px-4 text-white text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full active:scale-[0.97] transition-all"
@@ -123,7 +132,7 @@ export default function Layout() {
                 </NavLink>
               ))}
             </nav>
-            <div className="flex gap-2 mt-3 pt-3" style={{ borderTop: `1px solid ${UDISTRICT_COLORS.gold}` }}>
+            <div className="grid grid-cols-2 gap-2 mt-3 pt-3" style={{ borderTop: `1px solid ${UDISTRICT_COLORS.gold}` }}>
               <a
                 href={APP_DOWNLOAD_URL}
                 target="_blank"
@@ -135,9 +144,19 @@ export default function Layout() {
                 <Download className="w-3.5 h-3.5" />
                 Get the Social App
               </a>
+              <a
+                href={APP_STORE_URLS.google}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center h-10 px-2 text-white text-[10px] font-bold rounded-full"
+                style={{ backgroundColor: 'rgba(255,255,255,0.14)', border: `1.5px solid ${UDISTRICT_COLORS.gold}`, whiteSpace: 'normal' }}
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <span className="text-center leading-[1.05]">Get the Social App<br />- Android</span>
+              </a>
               <button
                 onClick={() => { openPartner(); setMobileMenuOpen(false); }}
-                className="flex-1 flex items-center justify-center gap-1.5 h-9 px-2 text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full"
+                className="col-span-2 flex items-center justify-center gap-1.5 h-9 px-2 text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full"
                 style={{ color: UDISTRICT_COLORS.gold, border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.05)' }}
               >
                 <Handshake className="w-3.5 h-3.5" />
