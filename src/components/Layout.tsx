@@ -20,7 +20,7 @@ const HEADER_ROW_CLASS = 'max-w-6xl mx-auto pl-0 pr-3 sm:pl-1 sm:pr-4 lg:pl-2 lg
 const BRAND_LINK_CLASS = '-ml-8 sm:-ml-9 md:-ml-12 lg:-ml-14 xl:-ml-[4.5rem] mr-auto flex items-center gap-2.5 sm:gap-3 shrink-0 min-w-0 max-w-[180px] sm:max-w-[240px] md:max-w-[340px] lg:max-w-[400px] rounded-lg px-1 py-1';
 const BRAND_TEXT_WRAP_CLASS = 'ml-0.5 sm:ml-1 min-w-0 text-left';
 const DESKTOP_NAV_CLASS = 'hidden xl:flex items-center justify-start gap-2 ml-8';
-const HEADER_ACTIONS_CLASS = 'ml-2 sm:ml-3 flex items-center gap-2 shrink-0';
+const HEADER_ACTIONS_CLASS = 'ml-auto flex items-center justify-center gap-1.5 sm:gap-2 shrink-0';
 
 export default function Layout() {
   const { isPartnerOpen, openPartner, closePartner } = useModal();
@@ -92,7 +92,7 @@ export default function Layout() {
               rel="noopener noreferrer"
               aria-disabled={!isDownloadEnabled}
               tabIndex={isDownloadEnabled ? 0 : -1}
-              className={`hidden xl:flex items-center justify-center gap-2 h-10 min-w-[180px] px-6 text-xs font-bold leading-none whitespace-nowrap rounded-full transition-all ${isDownloadEnabled ? 'hover:bg-white/20 active:scale-[0.98]' : 'opacity-50 cursor-not-allowed pointer-events-none'}`}
+              className={`flex items-center justify-center gap-1.5 sm:gap-2 h-9 sm:h-10 px-3 sm:px-6 text-[10px] sm:text-xs font-bold leading-none whitespace-nowrap rounded-full transition-all ${isDownloadEnabled ? 'hover:bg-white/20 active:scale-[0.98]' : 'opacity-50 cursor-not-allowed pointer-events-none'}`}
               style={{ color: '#ffffff', border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.1)' }}
               onClick={() => console.log('[CLICK TRACK] Nav: Download Social App')}
             >
@@ -101,7 +101,7 @@ export default function Layout() {
             </a>
             <button
               onClick={openPartner}
-              className="hidden xl:flex items-center justify-center gap-1.5 h-9 px-4 text-white text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full active:scale-[0.97] transition-all"
+              className="flex items-center justify-center gap-1.5 h-9 px-3 sm:px-4 text-white text-[10px] sm:text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full active:scale-[0.97] transition-all"
               style={{ backgroundColor: UDISTRICT_COLORS.gold }}
             >
               <Handshake className="w-3.5 h-3.5" />
@@ -144,29 +144,6 @@ export default function Layout() {
                 </NavLink>
               ))}
             </nav>
-            <div className="grid grid-cols-2 gap-2 mt-3 pt-3" style={{ borderTop: `1px solid ${UDISTRICT_COLORS.gold}` }}>
-              <a
-                href={isDownloadEnabled ? primaryAppStoreUrl : undefined}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-disabled={!isDownloadEnabled}
-                tabIndex={isDownloadEnabled ? 0 : -1}
-                className={`col-span-2 flex items-center justify-center gap-2 h-10 px-4 text-white text-xs font-bold leading-none whitespace-nowrap rounded-full ${isDownloadEnabled ? '' : 'opacity-50 cursor-not-allowed pointer-events-none'}`}
-                style={{ backgroundColor: UDISTRICT_COLORS.gold }}
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <Download className="w-3.5 h-3.5" />
-                Download the Movement Social App
-              </a>
-              <button
-                onClick={() => { openPartner(); setMobileMenuOpen(false); }}
-                className="col-span-2 flex items-center justify-center gap-1.5 h-9 px-2 text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full"
-                style={{ color: UDISTRICT_COLORS.gold, border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.05)' }}
-              >
-                <Handshake className="w-3.5 h-3.5" />
-                Partner with Us
-              </button>
-            </div>
           </div>
         )}
       </header>
