@@ -32,7 +32,7 @@ export default function Layout() {
       <header className="sticky top-0 z-40" style={{ backgroundColor: UOFW_COLORS.purple, borderBottom: `3px solid ${UOFW_COLORS.gold}` }}>
         <div className="max-w-5xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
           {/* Logo */}
-          <NavLink to="/" className="flex items-center gap-1 shrink-0 min-w-0" onClick={() => setMobileMenuOpen(false)}>
+          <NavLink to="/" className="flex items-center gap-3 shrink-0 min-w-0" onClick={() => setMobileMenuOpen(false)}>
             <span
               aria-hidden="true"
               className="shrink-0 w-9 h-9 rounded-md bg-white/10 border border-white/15 p-0.5 flex items-center justify-center"
@@ -43,8 +43,8 @@ export default function Layout() {
                 className="block w-full h-full object-contain opacity-100"
               />
             </span>
-            <div className="leading-none min-w-0 -ml-1">
-              <span className="block text-[13px] sm:text-sm font-bold tracking-tight whitespace-nowrap truncate" style={{ color: UOFW_COLORS.gold }}>The Movement in the U-District</span>
+            <div className="leading-none min-w-0">
+              <span className="block text-base sm:text-lg font-bold tracking-tight whitespace-nowrap truncate" style={{ color: UOFW_COLORS.gold }}>The Movement in the U-District</span>
             </div>
           </NavLink>
 
