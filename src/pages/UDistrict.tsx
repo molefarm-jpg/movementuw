@@ -1,6 +1,6 @@
-﻿import { MapPin, GraduationCap, Download } from 'lucide-react';
+﻿import { MapPin, GraduationCap } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { SITE_NAME, APP_DOWNLOAD_URL } from '@/lib/siteConfig';
+import { SITE_NAME } from '@/lib/siteConfig';
 
 const MERCHANTS_ON_THE_AVE = [
   'Maison Blanc Salon',
@@ -32,15 +32,6 @@ export default function UDistrict() {
         <p className="text-sm sm:text-base text-[#6B6B6B] leading-relaxed max-w-lg mx-auto mb-6">
           {`The official ${SITE_NAME} hub for U-District. Explore student discounts at Maison Blanc Salon, One Bite Cafe, Mama Grande's Cafe, and other local favorites across The Ave, Wallingford, Montlake, University Village, and Roosevelt.`}
         </p>
-        <a
-          href={APP_DOWNLOAD_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-uw-purple text-white font-bold text-sm rounded-full hover:bg-uw-purple-light active:scale-[0.97] transition-all"
-        >
-          <Download className="w-4 h-4" />
-          Get the Social App
-        </a>
       </section>
 
       {/* The Ave Focus */}

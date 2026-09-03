@@ -1,7 +1,7 @@
 ﻿import { Download, Store, QrCode, ArrowRight } from 'lucide-react';
 import { useModal } from '@/hooks/useModal';
 import MerchantCarousel from '@/components/MerchantCarousel';
-import { SITE_NAME, APP_DOWNLOAD_URL, UDISTRICT_COLORS } from '@/lib/siteConfig';
+import { SITE_NAME, UDISTRICT_COLORS } from '@/lib/siteConfig';
 
 const STEPS = [
   {
@@ -37,8 +37,7 @@ const FEATURES = [
   {
     title: 'For Students',
     description: `Unlock exclusive discounts at your favorite spots on The Ave. From coffee to haircuts, save every day with ${SITE_NAME} Social App.`,
-    cta: 'Get the Social App',
-    href: APP_DOWNLOAD_URL,
+    note: 'Use the persistent download button at the bottom of the screen to install the app.',
   },
   {
     title: 'For Merchants',
@@ -78,19 +77,7 @@ export default function Home() {
         {/* Merchant Carousel */}
         <MerchantCarousel />
 
-        {/* App download pill below carousel */}
-        <div className="flex justify-center mt-6">
-          <a
-            href={APP_DOWNLOAD_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-5 py-2.5 bg-uw-purple text-white text-xs font-bold rounded-full hover:bg-uw-purple-light active:scale-[0.97] transition-all"
-            onClick={() => console.log('[CLICK TRACK] Home: Download App')}
-          >
-            <Download className="w-3.5 h-3.5" />
-            Get the Social App
-          </a>
-        </div>
+        {/* App install handled by persistent mobile bottom bar */}
       </section>
 
       {/* ========== HOW IT WORKS ========== */}
@@ -126,22 +113,15 @@ export default function Home() {
             >
               <h3 className="text-base font-semibold text-[#1A1A1A] mb-2">{f.title}</h3>
               <p className="text-sm text-[#6B6B6B] leading-relaxed mb-4">{f.description}</p>
-              {'href' in f && f.href ? (
-                <a
-                  href={f.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-uw-purple hover:underline"
-                >
-                  {f.cta} <ArrowRight className="w-3 h-3" />
-                </a>
-              ) : (
+              {'action' in f && f.action === 'partner' ? (
                 <button
                   onClick={openPartner}
                   className="inline-flex items-center gap-1.5 text-xs font-semibold text-uw-purple hover:underline"
                 >
                   {f.cta} <ArrowRight className="w-3 h-3" />
                 </button>
+              ) : (
+                <p className="text-xs text-[#6B6B6B]">{f.note}</p>
               )}
             </div>
           ))}
@@ -157,16 +137,13 @@ export default function Home() {
           <p className="text-sm text-white/70 max-w-md mx-auto mb-5">
             {`Join thousands of U-District students already saving on The Ave with ${SITE_NAME}.`}
           </p>
-          <a
-            href={APP_DOWNLOAD_URL}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={openPartner}
             className="inline-flex items-center gap-2 px-6 py-3 bg-uw-gold text-uw-purple font-bold text-sm rounded-full hover:bg-uw-gold-light active:scale-[0.97] transition-all"
-            onClick={() => console.log('[CLICK TRACK] CTA Banner: Download')}
           >
-            <Download className="w-4 h-4" />
-            Get the App
-          </a>
+            Partner with Us
+            <ArrowRight className="w-4 h-4" />
+          </button>
         </div>
       </section>
     </div>

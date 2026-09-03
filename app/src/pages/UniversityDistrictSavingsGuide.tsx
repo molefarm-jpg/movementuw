@@ -1,6 +1,5 @@
 ﻿import { Link } from 'react-router-dom';
-import { Compass, Download } from 'lucide-react';
-import { APP_DOWNLOAD_URL } from '@/lib/siteConfig';
+import { Compass } from 'lucide-react';
 
 export default function UniversityDistrictSavingsGuide() {
   return (
@@ -16,15 +15,6 @@ export default function UniversityDistrictSavingsGuide() {
           Use this U-District-focused savings guide to find student discounts across the University District, including The Ave,
           Wallingford, Montlake, Roosevelt, and University Village.
         </p>
-        <a
-          href={APP_DOWNLOAD_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-uw-purple text-white font-bold text-sm rounded-full hover:bg-uw-purple-light active:scale-[0.97] transition-all"
-        >
-          <Download className="w-4 h-4" />
-          Get the Social App
-        </a>
       </section>
 
       <section className="px-4 sm:px-6 max-w-3xl mx-auto pb-12">

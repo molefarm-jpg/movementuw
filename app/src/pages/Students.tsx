@@ -1,5 +1,5 @@
-﻿import { Smartphone, Tag, QrCode, Bell, Shield } from 'lucide-react';
-import { APP_DISPLAY_NAME, APP_STORE_URLS, SITE_NAME, APP_DOWNLOAD_URL } from '@/lib/siteConfig';
+﻿import { Tag, QrCode, Bell, Shield } from 'lucide-react';
+import { SITE_NAME } from '@/lib/siteConfig';
 
 const BENEFITS = [
   {
@@ -35,56 +35,9 @@ export default function Students() {
         <h1 className="text-[32px] sm:text-[48px] font-bold text-[#1A1A1A] leading-[1.15] tracking-tight mb-4">
           Your student ID just got <span className="text-uw-purple">more valuable.</span>
         </h1>
-          <p className="text-sm sm:text-base text-[#6B6B6B] leading-relaxed max-w-lg mx-auto mb-6">
+        <p className="text-sm sm:text-base text-[#6B6B6B] leading-relaxed max-w-lg mx-auto">
           {`The Social App is the only way to verify your student status and claim the merchant offers on this hub. Download the Social App, verify your enrollment, and start saving on The Ave today.`}
         </p>
-        <a
-          href={APP_DOWNLOAD_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-6 py-3 bg-uw-purple text-white font-bold text-sm rounded-full hover:bg-uw-purple-light active:scale-[0.97] transition-all"
-        >
-          <Smartphone className="w-4 h-4" />
-          Get the Social App
-        </a>
-      </section>
-
-      {/* Download links */}
-      <section className="px-4 sm:px-6 max-w-3xl mx-auto mb-12">
-        <div className="bg-[#F9F9F7] rounded-2xl p-6 sm:p-8">
-          <h2 className="text-base font-semibold text-[#1A1A1A] mb-3">
-            Download {APP_DISPLAY_NAME}
-          </h2>
-          <p className="text-sm text-[#6B6B6B] leading-relaxed mb-4">
-            Students can download {APP_DISPLAY_NAME} through the official app stores for iOS and Android:
-          </p>
-          <ul className="space-y-2 text-sm text-[#6B6B6B]">
-            <li>
-              <strong>Apple App Store:</strong>{' '}
-              <a
-                href={APP_STORE_URLS.apple}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-uw-purple font-semibold hover:underline"
-              >
-                here
-              </a>
-              .
-            </li>
-            <li>
-              <strong>Google Play Store:</strong>{' '}
-              <a
-                href={APP_STORE_URLS.google}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-uw-purple font-semibold hover:underline"
-              >
-                here
-              </a>
-              .
-            </li>
-          </ul>
-        </div>
       </section>
 
       {/* Benefits */}

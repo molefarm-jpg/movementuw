@@ -88,17 +88,6 @@ export default function Layout() {
 
           {/* CTAs + Hamburger */}
           <div className={HEADER_ACTIONS_CLASS}>
-            <a
-              href={primaryAppStoreUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hidden xl:flex items-center justify-center gap-2 h-10 min-w-[180px] px-6 text-xs font-bold leading-none whitespace-nowrap rounded-full hover:bg-white/20 active:scale-[0.98] transition-all"
-              style={{ color: '#ffffff', border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.1)' }}
-              onClick={() => console.log('[CLICK TRACK] Nav: Get the App')}
-            >
-              <Download className="w-3.5 h-3.5" />
-              Download the Movement Social App
-            </a>
             <button
               onClick={openPartner}
               className="hidden xl:flex items-center justify-center gap-1.5 h-9 px-4 text-white text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full active:scale-[0.97] transition-all"
@@ -144,21 +133,10 @@ export default function Layout() {
                 </NavLink>
               ))}
             </nav>
-            <div className="grid grid-cols-2 gap-2 mt-3 pt-3" style={{ borderTop: `1px solid ${UDISTRICT_COLORS.gold}` }}>
-              <a
-                href={primaryAppStoreUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="col-span-2 flex items-center justify-center gap-2 h-10 px-4 text-white text-xs font-bold leading-none whitespace-nowrap rounded-full"
-                style={{ backgroundColor: UDISTRICT_COLORS.gold }}
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                <Download className="w-3.5 h-3.5" />
-                Download the Movement Social App
-              </a>
+            <div className="mt-3 pt-3" style={{ borderTop: `1px solid ${UDISTRICT_COLORS.gold}` }}>
               <button
                 onClick={() => { openPartner(); setMobileMenuOpen(false); }}
-                className="col-span-2 flex items-center justify-center gap-1.5 h-9 px-2 text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full"
+                className="w-full flex items-center justify-center gap-1.5 h-9 px-2 text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full"
                 style={{ color: UDISTRICT_COLORS.gold, border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.05)' }}
               >
                 <Handshake className="w-3.5 h-3.5" />
@@ -231,16 +209,6 @@ export default function Layout() {
             <div>
               <h4 className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: '#FFFFFF' }}>Get Started</h4>
               <div className="flex flex-col gap-2">
-                <a
-                  href={primaryAppStoreUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xs font-medium hover:underline"
-                  style={{ color: '#FFFFFF' }}
-                  onClick={() => console.log('[CLICK TRACK] Footer: Get the App')}
-                >
-                  Get the Social App
-                </a>
                 <button
                   onClick={openPartner}
                   className="text-xs font-medium hover:underline text-left"
@@ -287,7 +255,7 @@ export default function Layout() {
             rel="noopener noreferrer"
             className="flex-[1.25] flex items-center justify-center gap-2 h-10 px-4 text-white text-xs font-bold leading-none whitespace-nowrap rounded-full active:scale-[0.97] transition-all"
             style={{ backgroundColor: UDISTRICT_COLORS.gold }}
-            onClick={() => console.log('[CLICK TRACK] Mobile Bar: Get the Social App')}
+            onClick={() => console.log('[CLICK TRACK] Mobile Bar: Download Social App')}
           >
             <Download className="w-4 h-4" />
             Download the Movement Social App
