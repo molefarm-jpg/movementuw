@@ -30,9 +30,9 @@ export default function Layout() {
       <RouteSeo />
       {/* ========== HEADER ========== */}
       <header className="sticky top-0 z-40" style={{ backgroundColor: UDISTRICT_COLORS.purple, borderBottom: `3px solid ${UDISTRICT_COLORS.gold}` }}>
-        <div className="max-w-5xl mx-auto px-4 sm:px-6 h-14 grid grid-cols-[minmax(0,auto)_1fr_auto] items-center gap-3">
+        <div className="max-w-5xl mx-auto px-3 sm:px-4 lg:px-6 h-14 grid grid-cols-[minmax(0,auto)_1fr_auto] items-center gap-3">
           {/* Logo */}
-          <NavLink to="/" className="-ml-3 sm:-ml-5 flex items-center gap-3 shrink-0 min-w-0 max-w-[320px] xl:max-w-[360px]" onClick={() => setMobileMenuOpen(false)}>
+          <NavLink to="/" className="-ml-2 sm:-ml-3 md:-ml-5 lg:-ml-6 flex items-center gap-3 shrink-0 min-w-0 max-w-[320px] xl:max-w-[360px] overflow-hidden" onClick={() => setMobileMenuOpen(false)}>
             <span
               aria-hidden="true"
               className="shrink-0 w-9 h-9 rounded-md bg-white/10 border border-white/15 p-0.5 flex items-center justify-center"
@@ -49,7 +49,7 @@ export default function Layout() {
           </NavLink>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center justify-center gap-2 pl-6 lg:pl-8">
+          <nav className="hidden md:flex items-center justify-center gap-2 pl-8 lg:pl-10">
             {NAV_LINKS.map((link) => (
               <NavLink
                 key={link.to}
