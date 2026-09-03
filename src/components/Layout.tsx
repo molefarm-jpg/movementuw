@@ -25,9 +25,9 @@ export default function Layout() {
       <RouteSeo />
       {/* ========== HEADER ========== */}
       <header className="sticky top-0 z-40" style={{ backgroundColor: UDISTRICT_COLORS.purple, borderBottom: `3px solid ${UDISTRICT_COLORS.gold}` }}>
-        <div className="max-w-5xl mx-auto px-3 sm:px-4 lg:px-6 h-16 grid grid-cols-[minmax(0,220px)_1fr_auto] sm:grid-cols-[minmax(0,250px)_1fr_auto] md:grid-cols-[minmax(0,300px)_1fr_auto] lg:grid-cols-[minmax(0,460px)_1fr_auto] items-center gap-3">
+        <div className="max-w-6xl mx-auto px-3 sm:px-4 lg:px-6 h-16 grid grid-cols-[minmax(0,220px)_1fr_auto] sm:grid-cols-[minmax(0,250px)_1fr_auto] md:grid-cols-[minmax(0,300px)_1fr_auto] lg:grid-cols-[minmax(0,360px)_1fr_auto] xl:grid-cols-[minmax(0,460px)_1fr_auto] items-center gap-3">
           {/* Logo */}
-          <NavLink to="/" className="ml-0 md:-ml-4 lg:-ml-8 md:mr-5 lg:mr-8 flex items-center gap-2 sm:gap-2.5 shrink-0 min-w-0 max-w-[220px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[460px] rounded-lg px-1 py-1" onClick={() => setMobileMenuOpen(false)}>
+          <NavLink to="/" className="ml-0 md:-ml-4 lg:-ml-6 xl:-ml-10 md:mr-5 lg:mr-8 flex items-center gap-2 sm:gap-2.5 shrink-0 min-w-0 max-w-[220px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[360px] xl:max-w-[460px] rounded-lg px-1 py-1" onClick={() => setMobileMenuOpen(false)}>
             <span
               aria-hidden="true"
               className="shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-md bg-white/20 border border-white/30 p-0.5 flex items-center justify-center"
@@ -46,7 +46,7 @@ export default function Layout() {
           </NavLink>
 
           {/* Desktop Nav */}
-          <nav className="hidden lg:flex items-center justify-start gap-2 pl-12 xl:pl-14">
+          <nav className="hidden xl:flex items-center justify-start gap-2 pl-12 xl:pl-14">
             {NAV_LINKS.map((link) => (
               <NavLink
                 key={link.to}
@@ -101,7 +101,7 @@ export default function Layout() {
 
             {/* Mobile menu toggle */}
             <button
-              className="lg:hidden p-2 rounded-lg transition-colors"
+              className="xl:hidden p-2 rounded-lg transition-colors"
               style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
@@ -112,7 +112,7 @@ export default function Layout() {
 
         {/* Mobile Nav Dropdown */}
         {mobileMenuOpen && (
-          <div className="lg:hidden px-4 py-3" style={{ backgroundColor: 'rgba(255,255,255,0.05)', borderTop: `1px solid ${UDISTRICT_COLORS.gold}` }}>
+          <div className="xl:hidden px-4 py-3" style={{ backgroundColor: 'rgba(255,255,255,0.05)', borderTop: `1px solid ${UDISTRICT_COLORS.gold}` }}>
             <nav className="flex flex-col gap-1.5">
               {NAV_LINKS.map((link) => (
                 <NavLink
