@@ -39,6 +39,14 @@
 }
 
 @layer components {
+  button,
+  input[type='button'],
+  input[type='submit'],
+  a[class*='inline-flex'],
+  a[class*='rounded-full'] {
+    white-space: nowrap;
+  }
+
   .scrollbar-hide {
     -ms-overflow-style: none;
     scrollbar-width: none;
