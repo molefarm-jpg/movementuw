@@ -186,17 +186,7 @@ export default function Layout() {
           <div className="max-w-5xl mx-auto flex items-center justify-center gap-2 text-center">
             <AlertTriangle className="w-3.5 h-3.5 shrink-0" style={{ color: UDISTRICT_COLORS.gold }} />
             <p className="text-[11px] sm:text-xs" style={{ color: UDISTRICT_COLORS.gold }}>
-              <span className="font-semibold">{`All discounts are exclusively redeemable through the Social App.`}</span>{' '}
-              <a
-                href={APP_DOWNLOAD_URL}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-semibold underline transition-colors hover:opacity-80"
-                style={{ color: UDISTRICT_COLORS.gold }}
-                onClick={() => console.log('[CLICK TRACK] Notice: Download')}
-              >
-                Download now to access.
-              </a>
+              <span className="font-semibold">All discounts are exclusively redeemable through the Social App, available for both iPhone and Android above.</span>
             </p>
           </div>
         </div>
