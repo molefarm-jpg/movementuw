@@ -76,7 +76,7 @@ export default function Layout() {
               href={APP_DOWNLOAD_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex items-center gap-1.5 h-8 px-3 text-xs font-medium rounded-full transition-all"
+              className="hidden sm:flex items-center justify-center gap-1.5 h-9 px-4 text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full transition-all"
               style={{ color: '#ffffff', border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.1)' }}
               onClick={() => console.log('[CLICK TRACK] Nav: Get the App')}
             >
@@ -85,7 +85,7 @@ export default function Layout() {
             </a>
             <button
               onClick={openPartner}
-              className="hidden sm:flex items-center gap-1.5 h-8 px-4 text-white text-xs font-medium rounded-full active:scale-[0.97] transition-all"
+              className="hidden sm:flex items-center justify-center gap-1.5 h-9 px-4 text-white text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full active:scale-[0.97] transition-all"
               style={{ backgroundColor: UDISTRICT_COLORS.gold }}
             >
               <Handshake className="w-3.5 h-3.5" />
@@ -133,7 +133,7 @@ export default function Layout() {
                 href={APP_DOWNLOAD_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 flex items-center justify-center gap-2 h-9 text-white text-xs font-medium rounded-full"
+                className="flex-1 flex items-center justify-center gap-1.5 h-9 px-2 text-white text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full"
                 style={{ backgroundColor: UDISTRICT_COLORS.gold }}
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -142,7 +142,7 @@ export default function Layout() {
               </a>
               <button
                 onClick={() => { openPartner(); setMobileMenuOpen(false); }}
-                className="flex-1 flex items-center justify-center gap-2 h-9 text-xs font-medium rounded-full"
+                className="flex-1 flex items-center justify-center gap-1.5 h-9 px-2 text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full"
                 style={{ color: UDISTRICT_COLORS.gold, border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.05)' }}
               >
                 <Handshake className="w-3.5 h-3.5" />
@@ -279,7 +279,7 @@ export default function Layout() {
             href={APP_DOWNLOAD_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 flex items-center justify-center gap-2 h-10 text-white text-xs font-bold rounded-full active:scale-[0.97] transition-all"
+            className="flex-1 flex items-center justify-center gap-1.5 h-10 px-2 text-white text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full active:scale-[0.97] transition-all"
             style={{ backgroundColor: UDISTRICT_COLORS.gold }}
             onClick={() => console.log('[CLICK TRACK] Mobile Bar: Get the Social App')}
           >
@@ -288,7 +288,7 @@ export default function Layout() {
           </a>
           <button
             onClick={openPartner}
-            className="flex items-center justify-center gap-2 h-10 px-4 text-xs font-medium rounded-full active:scale-[0.97] transition-all"
+            className="flex items-center justify-center gap-1.5 h-10 px-4 text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full active:scale-[0.97] transition-all"
             style={{ color: UDISTRICT_COLORS.gold, border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.1)' }}
           >
             <Handshake className="w-3.5 h-3.5" />
