@@ -52,6 +52,14 @@ export default function Home() {
   const { openPartner } = useModal();
   return (
     <div>
+      <section className="px-4 sm:px-6 pt-5">
+        <div className="mx-auto max-w-3xl rounded-xl border border-[#E8E8E6] bg-[#F9F9F7] px-4 py-2.5 text-center">
+          <p className="text-[12px] sm:text-[13px] leading-relaxed" style={{ color: '#4A4A4A' }}>
+            An independent student discount directory for the U-District community &mdash; not affiliated with or endorsed by the University of Washington.
+          </p>
+        </div>
+      </section>
+
       {/* ========== HERO + CAROUSEL ========== */}
       <section className="pt-10 pb-8 max-w-3xl mx-auto">
         {/* Title */}
