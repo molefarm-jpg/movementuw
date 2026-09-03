@@ -158,7 +158,7 @@ export default function Home() {
                 </button>
               ) : (
                 <>
-                  <p className="text-sm text-[#6B6B6B] leading-relaxed mb-3">{f.note}</p>
+                  <p className="text-sm text-[#6B6B6B] leading-relaxed mb-4">{f.note}</p>
                   <a
                     href={isDownloadEnabled ? primaryAppStoreUrl : undefined}
                     target="_blank"
