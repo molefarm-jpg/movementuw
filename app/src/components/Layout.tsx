@@ -87,7 +87,7 @@ export default function Layout() {
               href={APP_STORE_URLS.google}
               target="_blank"
               rel="noopener noreferrer"
-              className="hidden sm:flex items-center justify-center gap-2 h-10 min-w-[180px] px-6 text-xs font-bold leading-none whitespace-nowrap rounded-full hover:bg-white/20 active:scale-[0.98] transition-all"
+              className="hidden sm:flex items-center justify-center gap-2 h-10 min-w-[208px] px-7 text-xs font-bold leading-none whitespace-nowrap rounded-full hover:bg-white/20 active:scale-[0.98] transition-all"
               style={{ color: '#ffffff', border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.1)' }}
             >
               <Download className="w-3.5 h-3.5" />
