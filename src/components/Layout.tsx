@@ -76,7 +76,7 @@ export default function Layout() {
               onClick={() => console.log('[CLICK TRACK] Nav: Get the App')}
             >
               <Download className="w-3.5 h-3.5" />
-              Get the Social App
+              Get the Social App - iPhone
             </a>
             <a
               href={APP_STORE_URLS.google}
@@ -142,7 +142,7 @@ export default function Layout() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <Download className="w-3.5 h-3.5" />
-                Get the Social App
+                Get the Social App - iPhone
               </a>
               <a
                 href={APP_STORE_URLS.google}
@@ -277,10 +277,10 @@ export default function Layout() {
             rel="noopener noreferrer"
             className="flex-[1.25] flex items-center justify-center gap-2 h-10 px-4 text-white text-xs font-bold leading-none whitespace-nowrap rounded-full active:scale-[0.97] transition-all"
             style={{ backgroundColor: UDISTRICT_COLORS.gold }}
-            onClick={() => console.log('[CLICK TRACK] Mobile Bar: Get the Social App')}
+            onClick={() => console.log('[CLICK TRACK] Mobile Bar: Get the Social App - iPhone')}
           >
             <Download className="w-4 h-4" />
-            Get the Social App
+            Get the Social App - iPhone
           </a>
           <button
             onClick={openPartner}
