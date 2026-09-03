@@ -25,9 +25,9 @@ export default function Layout() {
       <RouteSeo />
       {/* ========== HEADER ========== */}
       <header className="sticky top-0 z-40" style={{ backgroundColor: UDISTRICT_COLORS.purple, borderBottom: `3px solid ${UDISTRICT_COLORS.gold}` }}>
-        <div className="max-w-6xl mx-auto pl-1 pr-3 sm:pl-2 sm:pr-4 lg:pl-3 lg:pr-6 h-16 grid grid-cols-[minmax(0,220px)_1fr_auto] sm:grid-cols-[minmax(0,250px)_1fr_auto] md:grid-cols-[minmax(0,320px)_1fr_auto] lg:grid-cols-[minmax(0,380px)_1fr_auto] xl:grid-cols-[minmax(0,440px)_1fr_auto] items-center gap-2.5">
+        <div className="max-w-6xl mx-auto pl-1 pr-3 sm:pl-2 sm:pr-4 lg:pl-3 lg:pr-6 h-[68px] sm:h-16 grid grid-cols-[minmax(0,160px)_1fr_auto] sm:grid-cols-[minmax(0,220px)_1fr_auto] md:grid-cols-[minmax(0,320px)_1fr_auto] lg:grid-cols-[minmax(0,380px)_1fr_auto] xl:grid-cols-[minmax(0,440px)_1fr_auto] items-center gap-2">
           {/* Logo */}
-          <NavLink to="/" className="-ml-4 sm:-ml-5 md:-ml-9 lg:-ml-11 xl:-ml-16 md:mr-3 lg:mr-4 flex items-center gap-1.5 sm:gap-2 shrink-0 min-w-0 max-w-[220px] sm:max-w-[250px] md:max-w-[320px] lg:max-w-[380px] xl:max-w-[440px] rounded-lg px-1 py-1" onClick={() => setMobileMenuOpen(false)}>
+          <NavLink to="/" className="-ml-1 sm:-ml-2 md:-ml-6 lg:-ml-8 xl:-ml-12 md:mr-3 lg:mr-4 flex items-center gap-1.5 sm:gap-2 shrink-0 min-w-0 max-w-[160px] sm:max-w-[220px] md:max-w-[320px] lg:max-w-[380px] xl:max-w-[440px] rounded-lg px-1 py-1" onClick={() => setMobileMenuOpen(false)}>
             <span
               aria-hidden="true"
               className="shrink-0 w-9 h-9 md:w-10 md:h-10 rounded-md bg-white/20 border border-white/30 p-0.5 flex items-center justify-center"
@@ -38,11 +38,11 @@ export default function Layout() {
                 className="block w-full h-full object-contain opacity-100"
               />
             </span>
-            <div className="-ml-1 sm:-ml-1.5 min-w-0 w-[128px] sm:w-[142px] md:w-[162px] lg:w-[176px] text-left">
-              <span className="block leading-none text-[11px] sm:text-xs md:text-sm lg:text-[15px] xl:text-base font-extrabold tracking-tight" style={{ color: UDISTRICT_COLORS.gold }}>
+            <div className="-ml-0.5 sm:-ml-1 min-w-0 text-left">
+              <span className="block leading-none whitespace-nowrap text-[10px] sm:text-[11px] md:text-sm lg:text-[15px] xl:text-base font-extrabold tracking-tight" style={{ color: UDISTRICT_COLORS.gold }}>
                 The Movement
               </span>
-              <span className="block mt-0.5 leading-none text-[10px] sm:text-[11px] md:text-xs lg:text-sm xl:text-[15px] font-bold tracking-tight" style={{ color: UDISTRICT_COLORS.gold }}>
+              <span className="block mt-0.5 leading-none whitespace-nowrap text-[9px] sm:text-[10px] md:text-xs lg:text-sm xl:text-[15px] font-bold tracking-tight" style={{ color: UDISTRICT_COLORS.gold }}>
                 in the U-District
               </span>
             </div>
