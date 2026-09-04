@@ -177,24 +177,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ========== CTA BANNER ========== */}
-      <section className="px-4 sm:px-6 max-w-3xl mx-auto pb-16">
-        <div className="bg-gradient-to-br from-uw-purple to-uw-purple-dark rounded-2xl p-6 sm:p-8 text-center">
-          <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">
-            Ready to start saving?
-          </h2>
-          <p className="text-sm text-white/70 max-w-md mx-auto mb-5">
-            {`Join thousands of U-District students already saving on The Ave with ${SITE_NAME}.`}
-          </p>
-          <button
-            onClick={openPartner}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-uw-gold text-uw-purple font-bold text-sm rounded-full hover:bg-uw-gold-light active:scale-[0.97] transition-all"
-          >
-            Partner with Us
-            <ArrowRight className="w-4 h-4" />
-          </button>
-        </div>
-      </section>
     </div>
   );
 }
