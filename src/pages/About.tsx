@@ -107,7 +107,7 @@ export default function About() {
             </div>
             <div>
               <p className="text-2xl sm:text-3xl font-bold text-uw-purple">1</p>
-              <p className="text-[11px] text-[#9E9E9E] mt-1">Campus â€” U-District</p>
+              <p className="text-[11px] text-[#9E9E9E] mt-1">Campuses U-District</p>
             </div>
           </div>
         </div>
