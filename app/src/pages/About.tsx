@@ -101,9 +101,6 @@ export default function About() {
             <li><a href="https://www.google.com/patents/CA2621108A1" className="underline text-uw-purple">CA2621108A1 â€” Applications in social networks / transactions</a></li>
           </ul>
 
-          <h4 className="text-sm font-semibold mb-2">Video & Media</h4>
-          <p className="text-xs text-[#6B6B6B] leading-relaxed mb-3">No video file was publicly linked on the front page. However, we're always looking for content. So if you provide a video URL (YouTube, Vimeo, or MP4), I can embed it here. Please contact the webmaster at jon.waite@sales.movement.college for more information.</p>
-          <p className="text-xs text-[#6B6B6B] leading-relaxed">For media requests, contact the webmaster at jon.waite@sales.movement.college.</p>
         </div>
       </section>
 
