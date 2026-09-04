@@ -71,7 +71,7 @@ export default function About() {
           Building bridges between <span className="text-uw-purple">students</span> and <span className="text-uw-purple">local business.</span>
         </h1>
         <p className="text-sm sm:text-base text-[#6B6B6B] leading-relaxed max-w-lg mx-auto">
-          {`${SITE_NAME} is a student discount activation platform. Every offer on this hub is exclusively available and redeemable through ${SITE_NAME} Social App, which--along with your student ID--is the way to claim these deals. So, download The Movement's Social App today and start saving!`}
+          {`${SITE_NAME} is a student discount activation platform. Every offer on this hub is exclusively available and redeemable through ${SITE_NAME} Social App, which—along with your student ID—is the way to claim these deals. So, download The Movement's Social App today and start saving!`}
         </p>
       </section>
 
