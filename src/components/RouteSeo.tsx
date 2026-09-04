@@ -15,7 +15,7 @@ const ROUTE_SEO: Record<string, SeoConfig> = {
   '/': {
     title: 'The Movement | U-District Student Discounts in Seattle',
     description:
-      'Discover verified U-District student discounts on The Ave and in Seattleâ€™s University District. Save at local businesses with The Movement Social App.',
+      'Discover verified U-District student discounts on The Ave and in Seattle’s University District. Save at local businesses with The Movement Social App.',
     keywords:
       'The Movement, U-District student discounts Seattle, The Ave deals, University District discounts, student app Seattle',
   },
@@ -27,18 +27,18 @@ const ROUTE_SEO: Record<string, SeoConfig> = {
       'The Movement U-District, U-District student savings Seattle, University District student discounts, local business student platform',
   },
   '/u-district': {
-    title: 'Maison Blanc Salon, One Bite Cafe, Mama Grandeâ€™s Cafe | U-District Student Discounts',
+    title: 'Maison Blanc Salon, One Bite Cafe, Mama Grande’s Cafe | U-District Student Discounts',
     description:
-      'Find verified student deals at Maison Blanc Salon, One Bite Cafe, Mama Grandeâ€™s Cafe, and more on The Ave and across Seattleâ€™s University District.',
+      'Find verified student deals at Maison Blanc Salon, One Bite Cafe, Mama Grande’s Cafe, and more on The Ave and across Seattle’s University District.',
     keywords:
-      'Maison Blanc Salon, One Bite Cafe, Mama Grandeâ€™s Cafe, U-District student discounts, The Ave student deals, U District discount app, Seattle student savings',
+      'Maison Blanc Salon, One Bite Cafe, Mama Grande’s Cafe, U-District student discounts, The Ave student deals, U District discount app, Seattle student savings',
   },
   '/merchants': {
     title: 'Maison Blanc Salon, One Bite Cafe & More | U-District Student Deals',
     description:
-      'Explore local student offers from Maison Blanc Salon, One Bite Cafe, Mama Grandeâ€™s Cafe, and other University District businesses with The Movement.',
+      'Explore local student offers from Maison Blanc Salon, One Bite Cafe, Mama Grande’s Cafe, and other University District businesses with The Movement.',
     keywords:
-      'Maison Blanc Salon, One Bite Cafe, Mama Grandeâ€™s Cafe, U-District student discount program, Seattle student offers, The Ave merchant promotions, U District student marketing',
+      'Maison Blanc Salon, One Bite Cafe, Mama Grande’s Cafe, U-District student discount program, Seattle student offers, The Ave merchant promotions, U District student marketing',
   },
   '/students': {
     title: 'U-District Seattle Student Deals | Save on The Ave',

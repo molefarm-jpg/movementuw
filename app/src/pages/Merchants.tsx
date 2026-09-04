@@ -29,7 +29,7 @@ import { useModal } from '@/hooks/useModal';
 import { SITE_NAME, APP_DOWNLOAD_URL } from '@/lib/siteConfig';
 
 
-/* â”€â”€â”€â”€â”€ VALUE PROPS â”€â”€â”€â”€â”€ */
+/* VALUE PROPS */
 const VALUE_PROPS = [
   {
     icon: Store,
@@ -53,7 +53,7 @@ const VALUE_PROPS = [
   },
 ];
 
-/* â”€â”€â”€â”€â”€ PROCESS STEPS â”€â”€â”€â”€â”€ */
+/* PROCESS STEPS */
 const PROCESS_STEPS = [
   {
     step: '1',
@@ -81,7 +81,7 @@ const PROCESS_STEPS = [
   },
 ];
 
-/* â”€â”€â”€â”€â”€ FAQ â”€â”€â”€â”€â”€ */
+/* FAQ */
 const FAQS = [
   {
     q: 'How much does it cost to list my business?',
@@ -89,19 +89,19 @@ const FAQS = [
   },
   {
     q: 'How quickly can I go live?',
-    a: 'Most merchants go live within 24â€“48 hours of their onboarding call. We handle the profile setup and app integration for you.',
+    a: 'Most merchants go live within 24–48 hours of their onboarding call. We handle the profile setup and app integration for you.',
   },
   {
     q: 'What kind of discount should I offer?',
-    a: 'Most merchants offer 10â€“20% off or a free item with purchase. We will help you choose an offer that drives traffic while protecting your margins.',
+    a: 'Most merchants offer 10–20% off or a free item with purchase. We will help you choose an offer that drives traffic while protecting your margins.',
   },
   {
     q: 'How do students redeem the discount?',
-    a: '`Students show their digital student ID through the Social App at checkout. You verify it in seconds â€” no paper coupons needed.`',
+    a: '`Students show their digital student ID through the Social App at checkout. You verify it in seconds — no paper coupons needed.`',
   },
 ];
 
-/* â”€â”€â”€â”€â”€ MERCHANT CARD â”€â”€â”€â”€â”€ */
+/* MERCHANT CARD */
 function MerchantCard({
   merchant,
   index,
@@ -192,7 +192,7 @@ function MerchantCard({
   );
 }
 
-/* â”€â”€â”€â”€â”€ FAQ ITEM â”€â”€â”€â”€â”€ */
+/* FAQ ITEM */
 function FaqItem({ q, a }: { q: string; a: string }) {
   const [open, setOpen] = useState(false);
   return (
@@ -217,7 +217,7 @@ function FaqItem({ q, a }: { q: string; a: string }) {
   );
 }
 
-/* â”€â”€â”€â”€â”€ MAIN PAGE â”€â”€â”€â”€â”€ */
+/* MAIN PAGE */
 export default function Merchants() {
   const [activeCategory, setActiveCategory] = useState<CategoryKey>('all');
   const [searchQuery, setSearchQuery] = useState('');
@@ -249,7 +249,7 @@ export default function Merchants() {
 
   return (
     <div>
-      {/* â•â•â•â•â•â•â•â•â•â•â• APP NOTICE â•â•â•â•â•â•â•â•â•â•â• */}
+      {/* APP NOTICE */}
       <div className="bg-amber-50 border-b border-amber-200/60 px-4 py-3">
         <div className="max-w-3xl mx-auto flex items-start sm:items-center gap-2">
           <AlertTriangle className="w-4 h-4 text-amber-500 shrink-0 mt-0.5 sm:mt-0" />
@@ -268,7 +268,7 @@ export default function Merchants() {
         </div>
       </div>
 
-      {/* â•â•â•â•â•â•â•â•â•â•â• HERO â•â•â•â•â•â•â•â•â•â•â• */}
+      {/* HERO */}
       <section className="pt-10 pb-4 px-4 sm:px-6 max-w-3xl mx-auto text-center">
         <span className="text-[11px] font-bold uppercase tracking-widest text-uw-purple mb-3 block">
           For Merchants
@@ -288,7 +288,7 @@ export default function Merchants() {
         </button>
       </section>
 
-      {/* â•â•â•â•â•â•â•â•â•â•â• VALUE PROPS â•â•â•â•â•â•â•â•â•â•â• */}
+      {/* VALUE PROPS */}
       <section className="px-4 sm:px-6 max-w-3xl mx-auto py-12">
         <h2 className="text-sm font-semibold text-[#1A1A1A] text-center mb-6">
           {`Why Join ${SITE_NAME}`}
@@ -309,7 +309,7 @@ export default function Merchants() {
         </div>
       </section>
 
-      {/* â•â•â•â•â•â•â•â•â•â•â• PROCESS STEPS â•â•â•â•â•â•â•â•â•â•â• */}
+      {/* PROCESS STEPS */}
       <section className="px-4 sm:px-6 max-w-3xl mx-auto pb-12">
         <div className="bg-[#F9F9F7] rounded-2xl p-6 sm:p-8">
           <h2 className="text-sm font-semibold text-[#1A1A1A] text-center mb-8">
@@ -332,7 +332,7 @@ export default function Merchants() {
         </div>
       </section>
 
-      {/* â•â•â•â•â•â•â•â•â•â•â• MERCHANT DIRECTORY â•â•â•â•â•â•â•â•â•â•â• */}
+      {/* MERCHANT DIRECTORY */}
       <section className="px-4 sm:px-6 max-w-3xl mx-auto pb-8">
         <div className="flex items-center justify-between mb-6">
           <div>
@@ -429,7 +429,7 @@ export default function Merchants() {
         )}
       </section>
 
-      {/* â•â•â•â•â•â•â•â•â•â•â• CTA BANNER â•â•â•â•â•â•â•â•â•â•â• */}
+      {/* CTA BANNER */}
       <section className="px-4 sm:px-6 max-w-3xl mx-auto pb-16">
         <div className="bg-gradient-to-br from-uw-purple to-uw-purple-dark rounded-2xl p-6 sm:p-8 text-center">
           <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">
@@ -448,7 +448,7 @@ export default function Merchants() {
         </div>
       </section>
 
-      {/* â•â•â•â•â•â•â•â•â•â•â• FAQ â•â•â•â•â•â•â•â•â•â•â• */}
+      {/* FAQ */}
       <section className="px-4 sm:px-6 max-w-3xl mx-auto pb-16">
         <h2 className="text-base font-semibold text-[#1A1A1A] mb-5 text-center">
           Frequently Asked Questions

@@ -1,4 +1,5 @@
 ﻿import { MapPin, GraduationCap } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { SITE_NAME } from '@/lib/siteConfig';
 
 const MERCHANTS_ON_THE_AVE = [
@@ -58,6 +59,18 @@ export default function UDistrict() {
                 {name}
               </span>
             ))}
+          </div>
+
+          <div className="mt-6 pt-5 border-t border-[#E8E8E6]">
+            <p className="text-xs text-[#6B6B6B] mb-3">
+              Know a great local spot we should activate next?
+            </p>
+            <Link
+              to="/submit-deal"
+              className="inline-flex items-center justify-center h-10 px-5 rounded-full bg-uw-purple text-white text-sm font-semibold hover:bg-uw-purple-light transition-colors"
+            >
+              Submit a Deal
+            </Link>
           </div>
         </div>
       </section>

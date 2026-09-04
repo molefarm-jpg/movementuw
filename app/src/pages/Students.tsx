@@ -20,7 +20,7 @@ const BENEFITS = [
   {
     icon: Shield,
     title: 'Always Free',
-    description: `${SITE_NAME} Social App is 100% free for students. No subscriptions, no fees, no catches â€” just verified savings on The Ave.`,
+    description: `${SITE_NAME} Social App is 100% free for students. No subscriptions, no fees, no catches — just verified savings on The Ave.`,
   },
 ];
 
@@ -67,7 +67,7 @@ export default function Students() {
           {[
             {
               q: `Is ${SITE_NAME} Social App free?`,
-              a: 'Yes â€” 100% free for all currently enrolled students. Just verify your status with your .edu email inside the app.',
+              a: 'Yes — 100% free for all currently enrolled students. Just verify your status with your .edu email inside the app.',
             },
             {
               q: 'Is the app the only way to redeem discounts?',

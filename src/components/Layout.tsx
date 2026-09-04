@@ -1,6 +1,6 @@
 ﻿import { useMemo, useState } from 'react';
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
-import { Handshake, Download, Menu, X, AlertTriangle } from 'lucide-react';
+import { Handshake, Download, Menu, X, AlertTriangle, Send } from 'lucide-react';
 import { useModal } from '@/hooks/useModal';
 import { APP_STORE_URLS, UDISTRICT_COLORS } from '@/lib/siteConfig';
 import { detectMobilePlatform } from '@/lib/utils';
@@ -92,16 +92,24 @@ export default function Layout() {
               rel="noopener noreferrer"
               aria-disabled={!isDownloadEnabled}
               tabIndex={isDownloadEnabled ? 0 : -1}
-              className={`flex items-center justify-center gap-1.5 sm:gap-2 h-9 sm:h-10 px-3 sm:px-6 text-[10px] sm:text-xs font-bold leading-none whitespace-nowrap rounded-full transition-all ${isDownloadEnabled ? 'hover:bg-white/20 active:scale-[0.98]' : 'opacity-50 cursor-not-allowed pointer-events-none'}`}
+              className={`shrink-0 min-w-max flex items-center justify-center gap-1.5 sm:gap-2 h-9 sm:h-10 px-3 sm:px-6 text-[10px] sm:text-xs font-bold leading-none whitespace-nowrap rounded-full transition-all ${isDownloadEnabled ? 'hover:bg-white/20 active:scale-[0.98]' : 'opacity-50 cursor-not-allowed pointer-events-none'}`}
               style={{ color: '#ffffff', border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.1)' }}
               onClick={() => console.log('[CLICK TRACK] Nav: Download Social App')}
             >
               <Download className="w-3.5 h-3.5" />
-              Download the Movement Social App
+              Get the Social App
             </a>
+            <NavLink
+              to="/submit-deal"
+              className="hidden md:flex shrink-0 min-w-max items-center justify-center gap-1.5 h-9 px-3 sm:px-4 text-[10px] sm:text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full active:scale-[0.97] transition-all"
+              style={{ color: '#ffffff', border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.1)' }}
+            >
+              <Send className="w-3.5 h-3.5" />
+              Submit a Deal
+            </NavLink>
             <button
               onClick={openPartner}
-              className="flex items-center justify-center gap-1.5 h-9 px-3 sm:px-4 text-white text-[10px] sm:text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full active:scale-[0.97] transition-all"
+              className="shrink-0 min-w-max flex items-center justify-center gap-1.5 h-9 px-3 sm:px-4 text-white text-[10px] sm:text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full active:scale-[0.97] transition-all"
               style={{ backgroundColor: UDISTRICT_COLORS.gold }}
             >
               <Handshake className="w-3.5 h-3.5" />
@@ -210,6 +218,20 @@ export default function Layout() {
             <div>
               <h4 className="text-xs font-semibold uppercase tracking-wider mb-3" style={{ color: '#FFFFFF' }}>Get Started</h4>
               <div className="flex flex-col gap-2">
+                <NavLink
+                  to="/contact"
+                  className="text-xs font-medium hover:underline text-left"
+                  style={{ color: '#FFFFFF' }}
+                >
+                  Contact Us
+                </NavLink>
+                <NavLink
+                  to="/submit-deal"
+                  className="text-xs font-medium hover:underline text-left"
+                  style={{ color: '#FFFFFF' }}
+                >
+                  Submit a Deal
+                </NavLink>
                 <button
                   onClick={openPartner}
                   className="text-xs font-medium hover:underline text-left"
@@ -245,6 +267,14 @@ export default function Layout() {
             <Download className="w-4 h-4" />
             Download the Movement Social App
           </a>
+          <NavLink
+            to="/submit-deal"
+            className="flex items-center justify-center gap-1.5 h-10 px-4 text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full active:scale-[0.97] transition-all"
+            style={{ color: UDISTRICT_COLORS.gold, border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.1)' }}
+          >
+            <Send className="w-3.5 h-3.5" />
+            Submit a Deal
+          </NavLink>
           <button
             onClick={openPartner}
             className="flex items-center justify-center gap-1.5 h-10 px-4 text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full active:scale-[0.97] transition-all"

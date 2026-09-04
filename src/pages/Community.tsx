@@ -5,7 +5,7 @@ const TESTIMONIALS = [
   {
     name: 'Alex R.',
     role: 'U-District Junior',
-    text: `I use ${SITE_NAME} Social App almost every day. The discounts at One Bite Cafe and Mama Grande's are only available through the app â€” I have saved over $40 this quarter alone.`,
+    text: `I use ${SITE_NAME} Social App almost every day. The discounts at One Bite Cafe and Mama Grande's are only available through the app — I have saved over $40 this quarter alone.`,
   },
   {
     name: 'Jordan M.',
@@ -15,7 +15,7 @@ const TESTIMONIALS = [
   {
     name: 'Priya S.',
     role: 'U-District Senior',
-    text: `I love that I can just pull up ${SITE_NAME} Social App and show my digital student ID. No fumbling for my U-District student ID â€” all the discounts are right there in one place.`,
+    text: `I love that I can just pull up ${SITE_NAME} Social App and show my digital student ID. No fumbling for my U-District student ID — all the discounts are right there in one place.`,
   },
 ];
 
@@ -31,7 +31,7 @@ export default function Community() {
           A movement built by <span className="text-uw-purple">students</span>, for <span className="text-uw-purple">students.</span>
         </h1>
         <p className="text-sm sm:text-base text-[#6B6B6B] leading-relaxed max-w-lg mx-auto">
-          {`${SITE_NAME} is more than discounts â€” it is a community of U-District students supporting local businesses through one shared app. Join thousands of U-District students already saving on The Ave. Download the Social App to be part of it.`}
+          {`${SITE_NAME} is more than discounts — it is a community of U-District students supporting local businesses through one shared app. Join thousands of U-District students already saving on The Ave. Download the Social App to be part of it.`}
         </p>
       </section>
 
@@ -112,7 +112,16 @@ export default function Community() {
             {`Help us grow ${SITE_NAME} at U-District. Download the Social App, share your favorite discounts, suggest new merchants, and bring your friends along.`}
           </p>
           <p className="text-xs text-[#9E9E9E]">
-            Have a story to share? Reach out â€” we would love to feature you.
+            Have a story to share? Reach out to our{' '}
+            <a
+              href="mailto:jon.waite@sales.movement.college"
+              className="inline-flex items-center h-6 px-2 rounded-full bg-uw-purple text-white font-semibold hover:bg-uw-purple-light transition-colors"
+            >
+              Webmaster
+            </a>
+            .
+            <br />
+            We would love to feature you.
           </p>
         </div>
       </section>

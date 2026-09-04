@@ -25,7 +25,7 @@ const VALUES = [
     icon: Heart,
     title: 'Community First',
     description:
-      `We are building more than a discount platform. ${SITE_NAME} strengthens the bond between students and their local community, keeping dollars circulating within the neighborhoods that matter most â€” all through a single, trusted app.`,
+      `We are building more than a discount platform. ${SITE_NAME} strengthens the bond between students and their local community, keeping dollars circulating within the neighborhoods that matter most — all through a single, trusted app.`,
   },
 ];
 
@@ -130,7 +130,7 @@ export default function About() {
                   aria-expanded={openIndex === idx}
                 >
                   <span className="text-sm font-semibold text-[#1A1A1A]">{item.title}</span>
-                  <span className="text-uw-purple text-lg">{openIndex === idx ? 'âˆ’' : '+'}</span>
+                  <span className="text-uw-purple text-lg">{openIndex === idx ? '−' : '+'}</span>
                 </button>
 
                 <div className={`${openIndex === idx ? 'block' : 'hidden'} px-4 pb-4 text-sm text-[#6B6B6B]`}>{item.content}</div>
@@ -146,7 +146,7 @@ export default function About() {
         <h2 className="text-xl font-bold text-[#1A1A1A] mb-4">Welcome to the all-new platform from The Movement</h2>
 
         <p className="text-sm text-[#6B6B6B] leading-relaxed mb-4">
-          The Movement is a collaboration between technologists and top economists and political scientists. It is the world's first fully-integrated social network, cryptocurrency and transactions-infused marketplace, crowdsourced worker, transportation, education, judicial and political system â€” uniquely of the people, by the people, for the people.
+          The Movement is a collaboration between technologists and top economists and political scientists. It is the world's first fully-integrated social network, cryptocurrency and transactions-infused marketplace, crowdsourced worker, transportation, education, judicial and political system — uniquely of the people, by the people, for the people.
         </p>
 
         <h3 className="text-base font-semibold text-[#1A1A1A] mb-2">Help launch a groundbreaking social platform</h3>
@@ -173,7 +173,14 @@ export default function About() {
           The Movement's mission is to empower people by enabling opportunity, hope and influence. It aims to achieve this mission using a transformative economy that helps people earn, shop and socialize while making local communities stronger.
         </p>
         <p className="text-sm text-[#6B6B6B] leading-relaxed">
-          Interested in getting involved? Reach out at <a href="mailto:jon.waite@sales.movement.college" className="underline text-uw-purple">jon.waite@sales.movement.college</a> to learn about territory ownership, campus roles, merchant participation, and student opportunities.
+          Interested in getting involved? Reach out to our{' '}
+          <a
+            href="mailto:jon.waite@sales.movement.college"
+            className="inline-flex items-center h-7 px-3 rounded-full bg-uw-purple text-white font-semibold hover:bg-uw-purple-light transition-colors"
+          >
+            Webmaster
+          </a>{' '}
+          to learn about territory ownership, campus roles, merchant participation, and student opportunities.
         </p>
       </section>
     </div>
