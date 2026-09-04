@@ -19,7 +19,7 @@ const VALUES = [
     icon: TrendingUp,
     title: 'For Merchants',
     description:
-      `Local businesses gain access to a loyal, engaged customer base of thousands of college students through ${SITE_NAME} Social App. No upfront costs, no complicated setup â€” just activate your discount and watch verified student foot traffic grow.`,
+      `Local businesses gain access to a loyal, engaged customer base of thousands of college students through ${SITE_NAME} Social App. No upfront costs, no complicated setup, just activate your discount and watch verified student foot traffic grow.`,
   },
   {
     icon: Heart,
