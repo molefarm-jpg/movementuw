@@ -75,30 +75,6 @@ export default function About() {
         </p>
       </section>
 
-      {/* Media & Resources: images, logos, patents */}
-      <section className="px-4 sm:px-6 max-w-3xl mx-auto pb-20">
-        <div className="rounded-2xl p-6 sm:p-8 border border-[#E8E8E6]">
-          <h2 className="text-xl font-bold text-[#1A1A1A] mb-3">Media & Resources</h2>
-          <p className="text-sm text-[#6B6B6B] leading-relaxed mb-4">
-            Graphics and resources are available below.
-          </p>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-            <div>
-              <h4 className="text-sm font-semibold mb-2">Product components</h4>
-              <img src="/media/movement-m-logo-v2.png" alt="Product components" className="w-full rounded-md shadow-sm bg-white p-6 object-contain" />
-            </div>
-            <div>
-              <h4 className="text-sm font-semibold mb-2">Industry references</h4>
-              <div className="flex gap-3 items-center">
-                <img src="/media/movement-m-logo-v2.png" alt="Movement brand" className="w-24 h-12 object-contain" />
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </section>
-
       {/* Values Grid */}
       <section className="px-4 sm:px-6 max-w-3xl mx-auto pb-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
