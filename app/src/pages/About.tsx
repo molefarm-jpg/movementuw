@@ -80,18 +80,17 @@ export default function About() {
         <div className="rounded-2xl p-6 sm:p-8 border border-[#E8E8E6]">
           <h2 className="text-xl font-bold text-[#1A1A1A] mb-3">Media & Resources</h2>
 
-          <p className="text-sm text-[#6B6B6B] leading-relaxed mb-4">Graphics and resources referenced from The Movement QA site.</p>
+          <p className="text-sm text-[#6B6B6B] leading-relaxed mb-4">Graphics and resources from The Movement platform.</p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
             <div>
               <h4 className="text-sm font-semibold mb-2">Product components</h4>
-              <img src="https://qa.movement.college/Theme/FrontPage/Images/section-3-full-image.webp" alt="Product components" className="w-full rounded-md shadow-sm" />
+              <img src="/media/movement-m-logo-v2.png" alt="Product components" className="w-full rounded-md shadow-sm bg-white p-6 object-contain" />
             </div>
             <div>
               <h4 className="text-sm font-semibold mb-2">Industry references</h4>
               <div className="flex gap-3 items-center">
-                <img src="https://qa.movement.college/Theme/FrontPage/Images/brand1.webp" alt="Brand 1" className="w-24 h-12 object-contain" />
-                <img src="https://qa.movement.college/Theme/FrontPage/Images/brand2.webp" alt="Brand 2" className="w-24 h-12 object-contain" />
+                <img src="/media/movement-m-logo-v2.png" alt="Movement brand" className="w-24 h-12 object-contain" />
               </div>
             </div>
           </div>
@@ -104,7 +103,7 @@ export default function About() {
 
           <h4 className="text-sm font-semibold mb-2">Video & Media</h4>
           <p className="text-xs text-[#6B6B6B] leading-relaxed mb-3">No video file was publicly linked on the front page. However, we're always looking for content. So if you provide a video URL (YouTube, Vimeo, or MP4), I can embed it here. Please contact the webmaster at jon.waite@sales.movement.college for more information.</p>
-          <a href="https://qa.movement.college/" target="_blank" rel="noopener noreferrer" className="inline-block text-xs text-uw-purple underline">Open The Movement QA site media</a>
+          <p className="text-xs text-[#6B6B6B] leading-relaxed">For media requests, contact the webmaster at jon.waite@sales.movement.college.</p>
         </div>
       </section>
 
@@ -174,7 +173,7 @@ export default function About() {
       </section>
 
 
-      {/* External: Welcome to the Movement (copied from qa.movement.college) */}
+      {/* External: Welcome to the Movement */}
       <section className="px-4 sm:px-6 max-w-3xl mx-auto pb-20">
         <h2 className="text-xl font-bold text-[#1A1A1A] mb-4">Welcome to the all-new platform from The Movement</h2>
 
@@ -188,7 +187,7 @@ export default function About() {
         </p>
 
         <div className="my-6">
-          <img src="https://qa.movement.college/Theme/FrontPage/Images/section-3-full-image.webp" alt="Movement feature" className="w-full rounded-lg shadow-sm" />
+          <img src="/media/movement-m-logo-v2.png" alt="Movement feature" className="w-full rounded-lg shadow-sm bg-white p-8 object-contain" />
         </div>
 
         <h3 className="text-base font-semibold text-[#1A1A1A] mb-2">A currency powering a new global economy</h3>
