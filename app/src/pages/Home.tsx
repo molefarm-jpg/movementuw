@@ -1,4 +1,5 @@
 ﻿import { useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import { Download, Store, QrCode, ArrowRight } from 'lucide-react';
 import { useModal } from '@/hooks/useModal';
 import MerchantCarousel from '@/components/MerchantCarousel';
@@ -49,6 +50,12 @@ const FEATURES = [
   },
 ];
 
+const PROOF_POINTS = [
+  { value: '8+', label: 'active local partners' },
+  { value: '5', label: 'nearby neighborhoods covered' },
+  { value: '100%', label: 'student-first local offers' },
+];
+
 export default function Home() {
   const { openPartner } = useModal();
   const { primaryAppStoreUrl, isDownloadEnabled } = useMemo(() => {
@@ -66,6 +73,23 @@ export default function Home() {
           <p className="text-[12px] sm:text-[13px] leading-relaxed" style={{ color: '#4A4A4A' }}>
             The Movement is an independent student discount directory for the U-District community &mdash; not affiliated with or endorsed by the University of Washington.
           </p>
+        </div>
+      </section>
+
+      <section className="px-4 sm:px-6 pt-4">
+        <div className="mx-auto max-w-3xl rounded-2xl border border-[#E8E8E6] bg-white px-4 py-4 sm:px-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            {PROOF_POINTS.map((point) => (
+              <div key={point.label} className="rounded-xl bg-[#F9F9F7] px-4 py-3 text-center border border-[#EFEFEF]">
+                <p className="text-xl sm:text-2xl font-bold" style={{ color: UDISTRICT_COLORS.purple }}>
+                  {point.value}
+                </p>
+                <p className="text-[11px] sm:text-xs uppercase tracking-wide" style={{ color: '#6B6B6B' }}>
+                  {point.label}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -174,6 +198,36 @@ export default function Home() {
               )}
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="px-4 sm:px-6 max-w-3xl mx-auto pb-16">
+        <div className="rounded-2xl border border-[#E8E8E6] bg-gradient-to-br from-uw-purple to-uw-purple-dark p-6 sm:p-8 text-center">
+          <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">Take the next step with The Movement</h2>
+          <p className="text-sm text-white/80 max-w-md mx-auto mb-6">
+            Explore discounts, recommend a local favorite, or connect your business with U-District students.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <Link
+              to="/contact"
+              className="h-10 px-5 rounded-full bg-white text-uw-purple text-sm font-semibold inline-flex items-center justify-center"
+            >
+              Contact Us
+            </Link>
+            <Link
+              to="/submit-deal"
+              className="h-10 px-5 rounded-full bg-uw-gold text-uw-purple text-sm font-semibold inline-flex items-center justify-center"
+            >
+              Submit a Deal
+            </Link>
+            <button
+              onClick={openPartner}
+              className="h-10 px-5 rounded-full border border-white/60 text-white text-sm font-semibold inline-flex items-center justify-center gap-1.5 hover:bg-white/10 transition-colors"
+            >
+              Partner with Us
+              <ArrowRight className="w-3 h-3" />
+            </button>
+          </div>
         </div>
       </section>
 

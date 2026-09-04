@@ -1,4 +1,5 @@
 ﻿import { useState, useMemo, useCallback } from 'react';
+import { Link } from 'react-router-dom';
 import {
   Search,
   Tag,
@@ -58,26 +59,20 @@ const PROCESS_STEPS = [
   {
     step: '1',
     icon: Phone,
-    title: 'Schedule a Free Call',
-    description: 'Tell us about your business and the student offer you want to activate.',
+    title: 'Share Your Business Info',
+    description: 'Tell us about your location, hours, and who students should know you for.',
   },
   {
     step: '2',
     icon: UserPlus,
-    title: 'Create Your Profile',
-    description: 'We build your merchant profile in the app with photos, hours, and your deal.',
+    title: 'Set Your Student Offer',
+    description: 'Choose a discount or offer that fits your margins and drives repeat visits.',
   },
   {
     step: '3',
     icon: Rocket,
-    title: 'Go Live & Get Discovered',
-    description: '`Your deal goes live to thousands of U-District students browsing the Social App.`',
-  },
-  {
-    step: '4',
-    icon: TrendingUp,
-    title: 'Track & Grow',
-    description: 'Monitor redemptions and engagement, then optimize your offer over time.',
+    title: 'Go Live in the Directory',
+    description: 'Your offer is published for verified U-District students to discover and redeem.',
   },
 ];
 
@@ -85,7 +80,7 @@ const PROCESS_STEPS = [
 const FAQS = [
   {
     q: 'How much does it cost to list my business?',
-    a: '`Nothing. Listing your business and activating a student discount on ${SITE_NAME} is completely free for merchants.`',
+    a: `Nothing. Listing your business and activating a student discount on ${SITE_NAME} is completely free for merchants.`,
   },
   {
     q: 'How quickly can I go live?',
@@ -97,7 +92,7 @@ const FAQS = [
   },
   {
     q: 'How do students redeem the discount?',
-    a: '`Students show their digital student ID through the Social App at checkout. You verify it in seconds — no paper coupons needed.`',
+    a: 'Students show their digital student ID through the Social App at checkout. You verify it in seconds with no paper coupons needed.',
   },
 ];
 
@@ -315,13 +310,13 @@ export default function Merchants() {
           <h2 className="text-sm font-semibold text-[#1A1A1A] text-center mb-8">
             How It Works
           </h2>
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {PROCESS_STEPS.map((s) => (
               <div key={s.step} className="flex flex-col items-center text-center">
-                <div className={`w-10 h-10 rounded-full ${s.step === '1' ? 'bg-uw-purple/10' : s.step === '2' ? 'bg-uw-gold/20' : s.step === '3' ? 'bg-emerald-50' : 'bg-blue-50'} flex items-center justify-center mb-3`}>
-                  <s.icon className={`w-4 h-4 ${s.step === '1' ? 'text-uw-purple' : s.step === '2' ? 'text-uw-gold-dark' : s.step === '3' ? 'text-emerald-600' : 'text-blue-600'}`} />
+                <div className={`w-10 h-10 rounded-full ${s.step === '1' ? 'bg-uw-purple/10' : s.step === '2' ? 'bg-uw-gold/20' : 'bg-emerald-50'} flex items-center justify-center mb-3`}>
+                  <s.icon className={`w-4 h-4 ${s.step === '1' ? 'text-uw-purple' : s.step === '2' ? 'text-uw-gold-dark' : 'text-emerald-600'}`} />
                 </div>
-                <span className={`text-[10px] font-bold uppercase tracking-widest mb-1 ${s.step === '1' ? 'text-uw-purple' : s.step === '2' ? 'text-uw-gold-dark' : s.step === '3' ? 'text-emerald-600' : 'text-blue-600'}`}>
+                <span className={`text-[10px] font-bold uppercase tracking-widest mb-1 ${s.step === '1' ? 'text-uw-purple' : s.step === '2' ? 'text-uw-gold-dark' : 'text-emerald-600'}`}>
                   Step {s.step}
                 </span>
                 <p className="text-xs font-semibold text-[#1A1A1A] mb-1">{s.title}</p>
@@ -435,16 +430,30 @@ export default function Merchants() {
           <h2 className="text-xl sm:text-2xl font-bold text-white mb-2">
             {`Ready to grow with ${SITE_NAME}?`}
           </h2>
-          <p className="text-sm text-white/70 max-w-md mx-auto mb-5">
-            List your business for free and start reaching thousands of U-District students today.
+          <p className="text-sm text-white/80 max-w-md mx-auto mb-5">
+            Start your merchant profile, send us questions, or share a business students want activated next.
           </p>
-          <button
-            onClick={openPartner}
-            className="inline-flex items-center gap-2 px-6 py-3 bg-uw-gold text-uw-purple font-bold text-sm rounded-full hover:bg-uw-gold-light active:scale-[0.97] transition-all"
-          >
-            List Your Business
-            <ArrowRight className="w-4 h-4" />
-          </button>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <button
+              onClick={openPartner}
+              className="h-10 px-5 rounded-full bg-uw-gold text-uw-purple font-semibold text-sm inline-flex items-center justify-center gap-1.5"
+            >
+              Partner with Us
+              <ArrowRight className="w-3 h-3" />
+            </button>
+            <Link
+              to="/contact"
+              className="h-10 px-5 rounded-full bg-white text-uw-purple font-semibold text-sm inline-flex items-center justify-center"
+            >
+              Contact Us
+            </Link>
+            <Link
+              to="/submit-deal"
+              className="h-10 px-5 rounded-full border border-white/60 text-white font-semibold text-sm inline-flex items-center justify-center"
+            >
+              Submit a Deal
+            </Link>
+          </div>
         </div>
       </section>
 

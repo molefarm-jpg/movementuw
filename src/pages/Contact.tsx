@@ -150,6 +150,12 @@ export default function Contact() {
               <Link to="/" className="text-sm text-uw-purple hover:underline">Back Home</Link>
             </div>
 
+            <div className="rounded-lg border border-[#E8E8E6] bg-[#F9F9F7] px-3 py-3">
+              <p className="text-xs text-[#6B6B6B] leading-relaxed">
+                Our Webmaster reviews submissions within 1-2 business days. We only use your contact details to respond to your message and do not share your information.
+              </p>
+            </div>
+
             {submitState === 'error' && (
               <p className="text-xs text-red-600">Could not send right now. Please try again.</p>
             )}
