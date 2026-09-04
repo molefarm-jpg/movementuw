@@ -7,7 +7,7 @@ const VALUES = [
     icon: Target,
     title: 'Our Mission',
     description:
-      `${SITE_NAME} connects college students with exclusive discounts from local merchants through our social app. Every offer on this hub is only redeemable via the app â€” creating a verified, win-win ecosystem that drives foot traffic to businesses while helping students save.`,
+      `${SITE_NAME} connects college students with exclusive discounts from local merchants through our social app. Every offer on this hub is only redeemable via the app creating a verified, win-win ecosystem that drives foot traffic to businesses while helping students save.`,
   },
   {
     icon: Users,
