@@ -80,7 +80,7 @@ export default function About() {
         <div className="rounded-2xl p-6 sm:p-8 border border-[#E8E8E6]">
           <h2 className="text-xl font-bold text-[#1A1A1A] mb-3">Media & Resources</h2>
           <p className="text-sm text-[#6B6B6B] leading-relaxed mb-4">
-            Graphics and resources are available below.
+            Graphics and resources referenced from The Movement are available below.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
