@@ -103,7 +103,7 @@ export default function About() {
           </ul>
 
           <h4 className="text-sm font-semibold mb-2">Video & Media</h4>
-          <p className="text-xs text-[#6B6B6B] leading-relaxed mb-3">No video file was publicly linked on the QA front page. If you provide a video URL (YouTube, Vimeo, or MP4), I can embed it here. For now, here's a link to the QA site media:</p>
+          <p className="text-xs text-[#6B6B6B] leading-relaxed mb-3">No video file was publicly linked on the front page. However, we're always looking for content. So if you provide a video URL (YouTube, Vimeo, or MP4), I can embed it here. Please contact the webmaster at jon.waite@sales.movement.college for more information.</p>
           <a href="https://qa.movement.college/" target="_blank" rel="noopener noreferrer" className="inline-block text-xs text-uw-purple underline">Open The Movement QA site media</a>
         </div>
       </section>
