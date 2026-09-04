@@ -80,7 +80,7 @@ export default function About() {
         <div className="rounded-2xl p-6 sm:p-8 border border-[#E8E8E6]">
           <h2 className="text-xl font-bold text-[#1A1A1A] mb-3">Media & Resources</h2>
           <p className="text-sm text-[#6B6B6B] leading-relaxed mb-4">
-            Graphics and resources referenced from The Movement are available below.
+            Graphics and resources are available below.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
@@ -95,12 +95,6 @@ export default function About() {
               </div>
             </div>
           </div>
-
-          <h4 className="text-sm font-semibold mb-2">Patents & Technical Links</h4>
-          <ul className="list-disc list-inside text-xs text-[#6B6B6B] mb-4">
-            <li><a href="https://patents.google.com/patent/US20060276171" className="underline text-uw-purple">US20060276171 â€” Virtual currency</a></li>
-            <li><a href="https://www.google.com/patents/CA2621108A1" className="underline text-uw-purple">CA2621108A1 â€” Applications in social networks / transactions</a></li>
-          </ul>
 
         </div>
       </section>
