@@ -19,7 +19,7 @@ const NAV_LINKS = [
 const HEADER_ROW_CLASS = 'max-w-6xl mx-auto pl-0 pr-3 sm:pl-1 sm:pr-4 lg:pl-2 lg:pr-6 h-[68px] sm:h-16 flex items-center gap-3';
 const BRAND_LINK_CLASS = '-ml-8 sm:-ml-9 md:-ml-12 lg:-ml-14 xl:-ml-[4.5rem] mr-auto flex items-center gap-2.5 sm:gap-3 shrink-0 min-w-0 max-w-[180px] sm:max-w-[240px] md:max-w-[340px] lg:max-w-[400px] rounded-lg px-1 py-1';
 const BRAND_TEXT_WRAP_CLASS = 'ml-0.5 sm:ml-1 min-w-0 text-left';
-const DESKTOP_NAV_CLASS = 'hidden xl:flex items-center justify-start gap-2 ml-8';
+const DESKTOP_NAV_CLASS = 'hidden lg:flex items-center justify-start gap-2 ml-8';
 const HEADER_ACTIONS_CLASS = 'ml-auto flex items-center justify-center gap-1.5 sm:gap-2 shrink-0';
 
 export default function Layout() {
@@ -118,7 +118,7 @@ export default function Layout() {
 
             {/* Mobile menu toggle */}
             <button
-              className="xl:hidden p-2 rounded-lg transition-colors"
+              className="lg:hidden p-2 rounded-lg transition-colors"
               style={{ backgroundColor: 'rgba(255,255,255,0.1)' }}
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             >
@@ -129,7 +129,7 @@ export default function Layout() {
 
         {/* Mobile Nav Dropdown */}
         {mobileMenuOpen && (
-          <div className="xl:hidden px-4 py-3" style={{ backgroundColor: 'rgba(255,255,255,0.05)', borderTop: `1px solid ${UDISTRICT_COLORS.gold}` }}>
+          <div className="lg:hidden px-4 py-3" style={{ backgroundColor: 'rgba(255,255,255,0.05)', borderTop: `1px solid ${UDISTRICT_COLORS.gold}` }}>
             <nav className="flex flex-col gap-1.5">
               {NAV_LINKS.map((link) => (
                 <NavLink
