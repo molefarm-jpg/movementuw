@@ -115,7 +115,7 @@ export default function Layout() {
             <button
               onClick={openPartner}
               className="shrink-0 min-w-max flex items-center justify-center gap-1.5 h-9 px-3 sm:px-4 text-white text-[10px] sm:text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full active:scale-[0.97] transition-all"
-              style={{ backgroundColor: UDISTRICT_COLORS.gold }}
+              style={{ color: '#FFFFFF', backgroundColor: UDISTRICT_COLORS.purple, border: `1.5px solid ${UDISTRICT_COLORS.gold}` }}
             >
               <Handshake className="w-3.5 h-3.5" />
               Partner with Us
@@ -301,7 +301,7 @@ export default function Layout() {
           <button
             onClick={openPartner}
             className="flex items-center justify-center gap-1.5 h-10 px-4 text-[11px] font-semibold tracking-[0.01em] whitespace-nowrap rounded-full active:scale-[0.97] transition-all"
-            style={{ color: UDISTRICT_COLORS.gold, border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: 'rgba(255,255,255,0.1)' }}
+            style={{ color: '#FFFFFF', border: `1.5px solid ${UDISTRICT_COLORS.gold}`, backgroundColor: UDISTRICT_COLORS.purple }}
           >
             <Handshake className="w-3.5 h-3.5" />
             Partner with Us
