@@ -222,7 +222,8 @@ export default function Home() {
             </Link>
             <button
               onClick={openPartner}
-              className="h-10 px-5 rounded-full border border-white/60 text-white text-sm font-semibold inline-flex items-center justify-center gap-1.5 hover:bg-white/10 transition-colors"
+              className="h-10 px-5 rounded-full border text-white text-sm font-semibold inline-flex items-center justify-center gap-1.5 transition-colors"
+              style={{ backgroundColor: UDISTRICT_COLORS.purple, borderColor: UDISTRICT_COLORS.gold }}
             >
               Partner with Us
               <ArrowRight className="w-3 h-3" />
